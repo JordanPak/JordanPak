@@ -1,0 +1,42 @@
+//=========================//
+//  JordanPak | Variables  //
+//=========================//
+
+
+//==========//
+//  COLORS  //
+//==========//
+
+//-- BASIC --//
+$white:         #FFFFFF;
+$black:         #000000;
+
+
+//-- PRIMARY --//
+$primary:       #333333;
+
+
+//-- SECONDARY --//
+$secondary:         #F5C320;
+$secondary-light:   #eecc99;
+$secondary-dark:    #a58153;
+
+
+//-- SUPPORT --//
+$gray:          #a7a9ae;
+$gray-light:    #f5f5f5;
+$gray-dark:     #292929;
+
+
+//-- DEFAULTS --//
+$body-text:         #333333;
+
+
+
+//===========//
+//  SPACING  //
+//===========//
+
+$space-default:         40px;
+$space-default-half:    $space-default / 2;
+$space-default-middle:  $space-default-half + ($space-default-half / 2);

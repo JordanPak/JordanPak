@@ -1,0 +1,33 @@
+//======================//
+//  JordanPak | Mixins  //
+//======================//
+
+
+//===============//
+//  TRANSITIONS  //
+//===============//
+
+@mixin transition-ease-in-out($speed: 200ms) {
+    -webkit-transition: all ease-in-out $speed;
+            transition: all ease-in-out $speed;
+}
+
+
+//============//
+//  CLEARFIX  //
+//============//
+
+@mixin clearfix() {
+
+    &:before {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+
+} // clearfix()
