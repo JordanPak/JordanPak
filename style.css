@@ -1584,5 +1584,24 @@ li.comment {
   ol,
   ul {
     page-break-before: avoid; } }
+body {
+  background: #f7f7f7; }
+
+.site-header {
+  height: 102px;
+  min-height: 0;
+  background: #201c1d;
+  color: #FFFFFF; }
+
+.header-image .site-title > a {
+  min-height: 130px;
+  background-size: 416px; }
+
+.title-area {
+  margin-top: -15px;
+  width: 416px; }
+
+.site-header .widget-area {
+  width: 600px; }
 
 /*# sourceMappingURL=style.css.map */

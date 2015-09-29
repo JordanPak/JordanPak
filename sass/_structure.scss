@@ -3,5 +3,28 @@
 //=========================//
 
 body {
-
+    background: $secondary-light;
 } // body
+
+.site-header {
+    height: 102px;
+    min-height: 0;
+    background: $secondary;
+    color: $white;
+} // .site-header
+
+.header-image .site-title > a {
+    min-height: 130px;
+    background-size: 416px;
+}
+
+.title-area {
+    margin-top: -15px;
+    width: 416px;
+}
+
+
+
+.site-header .widget-area {
+    width: 600px;
+}
