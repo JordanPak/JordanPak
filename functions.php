@@ -24,6 +24,6 @@ add_theme_support( 'genesis-responsive-viewport' );
 //----------------------//
 
 // CHILD THEME STUFF
-define( 'CHILD_THEME_NAME', 'RenaRomano' );
-define( 'CHILD_THEME_URL', 'http://RenaRomano.com/' );
-define( 'CHILD_THEME_VERSION', '2.0.0' );
+define( 'CHILD_THEME_NAME', 'JordanPak' );
+define( 'CHILD_THEME_URL', 'http://JordanPak.com/' );
+define( 'CHILD_THEME_VERSION', '1.0.0' );
