@@ -1604,4 +1604,17 @@ body {
 .site-header .widget-area {
   width: 600px; }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "bebas-neue", "Roboto Condensed", sans-serif; }
+
+.page .entry-title {
+  font-weight: 700;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */
