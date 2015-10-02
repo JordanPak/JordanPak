@@ -1,8 +1,21 @@
 <?php
 
-//===========//
-//  GENESIS  //
-//===========//
+/**
+ * JordanPak Functions
+ *
+ * Genesis Child Theme Functions.
+ *
+ * @package JordanPak
+ * @since 1.0.0 (when the file was introduced)
+ */
+
+
+
+/*
+ * -----------------
+ *   GENESIS STUFF
+ * -----------------
+ */
 
 // Start Genesis Engine
 include_once( get_template_directory() . '/lib/init.php' );
@@ -20,9 +33,11 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 
 
-//===============//
-//  JPAK CUSTOM  //
-//===============//
+/*
+ * ---------------
+ *   JPAK CUSTOM
+ * ---------------
+ */
 
 // GLOBAL STYLES
 add_action( 'wp_enqueue_scripts', 'jpak_global_styles' );
@@ -39,7 +54,7 @@ function jpak_global_styles() {
 //  WIDGET AREAS  //
 
 genesis_register_sidebar( array(
-	'id'            => 'jimbo-social',
+	'id'            => 'home-hero',
 	'name'          => __( 'Home Hero', 'jpak' ),
 	'description'   => __( 'For Text Widget', 'jpak' ),
 ) );
