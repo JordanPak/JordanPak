@@ -7,23 +7,36 @@ body {
 } // body
 
 .site-header {
-    height: 102px;
+    height: $site-header-height;
     min-height: 0;
     background: $secondary;
     color: $white;
+
+    .wrap {
+        position: relative;
+        height: 102px;
+        padding: 0;
+    }
+
+    .widget-area {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
 } // .site-header
+
+.title-area {
+    position: relative;
+    top: 30px;
+    padding: 0;
+    width: 416px;
+}
 
 .header-image .site-title > a {
     min-height: 130px;
     background-size: 416px;
 }
-
-.title-area {
-    margin-top: -15px;
-    width: 416px;
-}
-
-
 
 .site-header .widget-area {
     width: 600px;

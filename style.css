@@ -1592,14 +1592,24 @@ body {
   min-height: 0;
   background: #201c1d;
   color: #FFFFFF; }
+  .site-header .wrap {
+    position: relative;
+    height: 102px;
+    padding: 0; }
+  .site-header .widget-area {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.title-area {
+  position: relative;
+  top: 30px;
+  padding: 0;
+  width: 416px; }
 
 .header-image .site-title > a {
   min-height: 130px;
   background-size: 416px; }
-
-.title-area {
-  margin-top: -15px;
-  width: 416px; }
 
 .site-header .widget-area {
   width: 600px; }
