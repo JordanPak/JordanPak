@@ -45,9 +45,12 @@ $space-default-middle:  $space-default-half + ($space-default-half / 2);
 
 $site-header-height:    102px;
 
+
+
 //=========//
 //  FONTS  //
 //=========//
 
-$font-family-sans-serif:    'Roboto', sans-serif;
-$font-family-heading:       "bebas-neue", 'Roboto Condensed', sans-serif;
+$font-family-sans-serif:   'Roboto', sans-serif;
+$font-family-condensed:    'Roboto Condensed', sans-serif;
+$font-family-heading:      'bebas-neue', 'Roboto Condensed', sans-serif;
