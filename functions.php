@@ -69,6 +69,11 @@ add_action( 'genesis_after_header', 'jpak_mini_hero' );
 */
 function jpak_mini_hero() {
 
+    // Display if Default Page
+    if ( basename( get_page_template() ) == 'page.php' ) {
+        echo '<div id="mini-hero"></div>';
+    }
+
 } // jpak_mini_hero()
 
 
