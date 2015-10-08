@@ -41,3 +41,15 @@ body {
 .site-header .widget-area {
     width: 600px;
 }
+
+#mini-hero {
+    display: block;
+    width: 100%;
+    height: $mini-hero-height;
+    background: url('images/hero-bg.jpg') no-repeat top center $primary;
+}
+
+.site-inner {
+    padding: 0;
+    margin-top: $mini-hero-displacement;
+}

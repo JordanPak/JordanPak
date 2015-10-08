@@ -47,7 +47,9 @@ $space-default-middle:  $space-default-half + ($space-default-half / 2);
 //  ELEMENT SIZING  //
 //==================//
 
-$site-header-height:    102px;
+$site-header-height:        102px;
+$mini-hero-height:          200px;
+$mini-hero-displacement:    -$mini-hero-height + 120px;
 
 
 
