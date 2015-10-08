@@ -24,10 +24,20 @@
 
  // HOME HERO WIDGET AREA //
  add_action( 'genesis_before_content', 'jpak_home_hero' );
+
+ /**
+ * Home Hero
+ *
+ * Echos the warpped home-hero widget area
+ *
+ * @package JordanPak
+ * @since 1.0.0
+ */
  function jpak_home_hero() {
 
-     // Home Hero
-     genesis_widget_area( 'home-hero' );
+    echo '<div id="home-hero">';
+        genesis_widget_area( 'home-hero' );
+    echo '</div>';
 
  } // jpak_home_hero()
 
