@@ -35,9 +35,9 @@
  */
  function jpak_home_hero() {
 
-    echo '<div id="home-hero">';
+    echo '<div id="home-hero"><div class="wrap">';
         genesis_widget_area( 'home-hero' );
-    echo '</div>';
+    echo '</div></div>';
 
  } // jpak_home_hero()
 

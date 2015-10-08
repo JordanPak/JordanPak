@@ -1668,10 +1668,23 @@ h1, h2, h3, h4, h5, h6 {
     color: #8dc63f; }
 
 #home-hero {
-  background: #8dc63f;
+  padding: 80px;
+  padding-top: 120px;
+  background: url("images/hero-bg.jpg") no-repeat top center #8dc63f;
   color: #FFFFFF;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 0 0 10px #67a227, 0 1px 3px #67a227; }
   #home-hero h2 {
-    color: #FFFFFF; }
+    font-size: 56px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    letter-spacing: -0.022em; }
+    #home-hero h2 strong {
+      font-family: "Roboto Condensed", sans-serif; }
+    #home-hero h2 b {
+      font-weight: 400; }
+  #home-hero p {
+    font-size: 28px; }
 
 /*# sourceMappingURL=style.css.map */
