@@ -1692,6 +1692,15 @@ h1, h2, h3, h4, h5, h6 {
   .genesis-nav-menu .sub-menu a:hover {
     color: #8dc63f; }
 
+.site-footer {
+  background: #201c1d;
+  color: #FFFFFF; }
+  .site-footer a {
+    color: #FFFFFF;
+    border-bottom: 1px solid #8dc63f; }
+    .site-footer a:hover {
+      border-bottom: 2px solid #8dc63f; }
+
 #home-hero {
   padding: 80px;
   padding-top: 120px;
