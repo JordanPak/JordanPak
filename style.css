@@ -1020,8 +1020,7 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-  color: #8dc63f;
-  text-decoration: underline; }
+  color: #8dc63f; }
 
 .genesis-nav-menu .sub-menu {
   left: -9999px;
