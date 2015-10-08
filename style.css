@@ -1666,4 +1666,8 @@ h1, h2, h3, h4, h5, h6 {
   .genesis-nav-menu .sub-menu a:hover {
     color: #8dc63f; }
 
+#home-hero {
+  background: #8dc63f;
+  color: #FFFFFF; }
+
 /*# sourceMappingURL=style.css.map */

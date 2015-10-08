@@ -23,7 +23,7 @@
 
 
  // HOME HERO WIDGET AREA //
- add_action( 'genesis_before_content', 'jpak_home_hero' );
+ add_action( 'genesis_after_header', 'jpak_home_hero' );
 
  /**
  * Home Hero
