@@ -16,7 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .page .entry-title {
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 52px;
+    border-bottom: 2px solid $secondary-mid-light;
+    margin-bottom: $space-default;
+    padding-bottom: $space-default-half + 5px;
 }
 
 .content .entry a {
@@ -37,3 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 } // .content .entry .entry-title a
+
+.widgettitle {
+    font-size: 32px;
+}
