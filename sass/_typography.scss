@@ -18,3 +18,13 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-size: 42px;
 }
+
+.content .entry a {
+    color: inherit;
+    border-bottom: 2px solid $primary;
+
+    &:hover {
+        border-color: $body-text;
+    }
+
+} // .content .entry a
