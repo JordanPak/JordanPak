@@ -1631,6 +1631,11 @@ h1, h2, h3, h4, h5, h6 {
   .content .entry a:hover {
     border-color: #333333; }
 
+.content .entry .entry-title a {
+  border-bottom: 2px solid transparent; }
+  .content .entry .entry-title a:hover {
+    border-bottom: 2px solid #8dc63f; }
+
 .genesis-nav-menu li > a {
   padding: 10px 18px 20px 18px;
   color: #FFFFFF;

@@ -28,3 +28,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 } // .content .entry a
+
+.content .entry .entry-title a {
+    border-bottom: 2px solid $transparent;
+
+    &:hover {
+        border-bottom: 2px solid $primary;
+    }
+
+} // .content .entry .entry-title a
