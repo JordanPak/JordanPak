@@ -5,5 +5,10 @@
 #home-hero {
     background: $primary;
     color: $white;
+    text-align: center;
+
+    h2 {
+        color: $white;
+    }
 
 } // #home-hero

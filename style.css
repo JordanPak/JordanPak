@@ -1606,6 +1606,7 @@ body {
   width: 416px; }
 
 .header-image .site-title > a {
+  position: absolute;
   min-height: 130px;
   background-size: 416px; }
 
@@ -1668,6 +1669,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #home-hero {
   background: #8dc63f;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center; }
+  #home-hero h2 {
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */
