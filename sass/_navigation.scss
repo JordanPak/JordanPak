@@ -34,4 +34,19 @@
 
     } // .current-menu-item > a
 
+    .sub-menu a {
+        color: $secondary;
+        font-family: $font-family-sans-serif;
+        font-weight: 700;
+        border-left: 4px solid $primary;
+
+        @include transition-ease-in-out();
+
+        &:hover {
+            // background: $primary;
+            color: $primary
+        }
+
+    } // .sub-menu a
+
 } // .genesis-nav-menu
