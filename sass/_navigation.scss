@@ -12,12 +12,16 @@
         letter-spacing: 0.025em;
         text-transform: uppercase;
         text-decoration: none;
+        // -moz-box-shadow: inset 0 -4px $transparent;
+        // box-shadow: inset 0 -4px $transparent;
 
         @include transition-ease-in-out(150ms);
 
         &:hover {
-            color: $primary;
+            color: $white;
             text-decoration: none;
+            -moz-box-shadow: inset 0 -4px $white;
+            box-shadow: inset 0 -4px $white;
         } // :hover
 
     } // li > a
@@ -38,7 +42,7 @@
         color: $secondary;
         font-family: $font-family-sans-serif;
         font-weight: 700;
-        border-left: 4px solid $primary;
+        border-left: 4px solid $secondary-mid-light;
 
         @include transition-ease-in-out();
 

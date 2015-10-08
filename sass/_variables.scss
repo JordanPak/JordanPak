@@ -19,9 +19,10 @@ $primary-darkest:   rgba(60, 106, 10, 1);
 
 
 //-- SECONDARY --//
-$secondary:         rgba(32, 28, 29, 1); // JP Gray
-$secondary-mid:     rgba(121, 122, 125, 1); // JP Dark Gray
-$secondary-light:   rgba(247, 247, 247, 1); // JP Light Gray
+$secondary:             rgba(32, 28, 29, 1);            // JP Gray
+$secondary-mid:         rgba(121, 122, 125, 1);         // JP Dark Gray
+$secondary-mid-light:   lighten( $secondary-mid, 45 );
+$secondary-light:       rgba(247, 247, 247, 1);         // JP Light Gray
 
 
 //-- DEFAULTS --//

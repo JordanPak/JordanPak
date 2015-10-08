@@ -1648,8 +1648,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all ease-in-out 150ms;
   transition: all ease-in-out 150ms; }
   .genesis-nav-menu li > a:hover {
-    color: #8dc63f;
-    text-decoration: none; }
+    color: #FFFFFF;
+    text-decoration: none;
+    -moz-box-shadow: inset 0 -4px #FFFFFF;
+    box-shadow: inset 0 -4px #FFFFFF; }
 .genesis-nav-menu .current-menu-item > a {
   color: #FFFFFF;
   text-decoration: none;
@@ -1661,7 +1663,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #201c1d;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  border-left: 4px solid #8dc63f;
+  border-left: 4px solid #edeeee;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
   .genesis-nav-menu .sub-menu a:hover {
