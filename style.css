@@ -1623,6 +1623,13 @@ body {
   padding: 0;
   margin-top: -80px; }
 
+.page-template-page_home .site-inner {
+  margin-top: 0; }
+
+.entry, .sidebar .widget {
+  border-top: 5px solid #67a227;
+  border-bottom: 2px solid #edeeee; }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;

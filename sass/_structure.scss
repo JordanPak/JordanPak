@@ -53,3 +53,12 @@ body {
     padding: 0;
     margin-top: $mini-hero-displacement;
 }
+
+.page-template-page_home .site-inner {
+    margin-top: 0;
+}
+
+.entry, .sidebar .widget {
+    border-top: 5px solid $primary-dark;
+    border-bottom: 2px solid $secondary-mid-light;
+}
