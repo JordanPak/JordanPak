@@ -32,6 +32,14 @@ define( 'CHILD_THEME_URL', 'http://JordanPak.com/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 
+// Unregister Unneeded Stuff
+unregister_sidebar( 'sidebar-alt' );                    // Secondary Sidebar
+add_filter( 'edit_post_link', '__return_false' );       // Edit Link on Posts
+genesis_unregister_layout( 'content-sidebar-sidebar' ); // Content-Sidebar-Sidebar Layout
+genesis_unregister_layout( 'sidebar-sidebar-content' ); // Sidebar-Sidebar-Content Layout
+genesis_unregister_layout( 'sidebar-content-sidebar' ); // Sidebar-Content-Sidebar Layout
+
+
 
 /*
  * ---------------
