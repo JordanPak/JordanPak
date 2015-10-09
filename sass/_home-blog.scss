@@ -1,0 +1,61 @@
+//================================================//
+//  JordanPak | Widget: Home Featured Blog Posts  //
+//================================================//
+
+section.featuredpost {
+    margin-bottom: $space-default;
+
+    @include clearfix();
+
+    .entry {
+        padding: $space-default;
+        background: $white;
+        border-top: 5px solid $secondary-mid-light;
+
+        @include col( one-half );
+
+        &:first-child {
+            @include col( one-half, true );
+        }
+
+    } // .entry
+
+    p {
+        margin: 0;
+    }
+
+    .entry-title {
+        padding: 0;
+        margin-bottom: $space-default-half;
+        font-size: 36px;
+        border: 0;
+    }
+
+    .entry-time {
+        font-weight: 700;
+        text-transform: uppercase;;
+        font-size: 14px;
+        color: $secondary-mid;
+    }
+
+    .more-link {
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        padding: 3px 8px 2px 8px;
+        font-size: 12px;
+        background: $primary;
+        text-transform: uppercase;
+        letter-spacing: .030em;
+        color: $white;
+        font-weight: 700;
+
+        @include transition-ease-in-out();
+
+        &:hover {
+            background: $primary-dark;
+        }
+
+    } // .more-link
+
+} // section.featuredpost

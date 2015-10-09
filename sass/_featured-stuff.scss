@@ -4,7 +4,7 @@
 
 #featured-stuff {
     margin: 0;
-    margin-bottom: 400px;
+    margin-bottom: $space-default + $space-default-half;
     padding: ($space-default * 2) 0 $space-default 0;
     background: $secondary;
     color: $white;
