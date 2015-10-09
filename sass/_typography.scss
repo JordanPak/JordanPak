@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: $space-default-half + 5px;
 }
 
+.single .entry-title {
+    text-transform: uppercase;
+    font-size: 52px;
+}
+
 .content .entry a {
     color: inherit;
     border-bottom: 2px solid $primary;

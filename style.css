@@ -1646,6 +1646,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
   padding-bottom: 25px; }
 
+.single .entry-title {
+  text-transform: uppercase;
+  font-size: 52px; }
+
 .content .entry a {
   color: inherit;
   border-bottom: 2px solid #8dc63f; }
