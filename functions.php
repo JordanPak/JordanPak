@@ -123,6 +123,22 @@ genesis_register_sidebar( array(
 
 
 
+add_filter( 'genesis_post_info', 'jpak_post_info_filter' );
+/**
+* Customize Post Meta
+*
+* @package JordanPak
+* @since 1.0.0
+*
+* @return string
+*/
+function jpak_post_info_filter($post_info) {
+	$post_info = '[post_date format="M j, Y"]';
+	return $post_info;
+}
+
+
+
 add_filter('genesis_footer_creds_text', 'jpak_footer_creds');
 /**
 * Customize Footer Credits
