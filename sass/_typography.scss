@@ -47,6 +47,11 @@ h1, h2, h3, h4, h5, h6 {
         border-color: $body-text;
     }
 
+    &.share {
+        color: $white;
+        border: none;
+    }
+
 } // .content .entry a
 
 .content .entry .entry-title a {
