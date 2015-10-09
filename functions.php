@@ -78,6 +78,27 @@ function jpak_mini_hero() {
 
 
 
+/**
+* Customize Search Bar
+*
+* Changes Values for Search Text and Button Text
+*
+* @package JordanPak
+* @since 1.0.0
+*/
+
+add_filter( 'genesis_search_text', 'jpak_search_text' );
+function jpak_search_text( $text ) {
+	return esc_attr( 'Search This Website' );
+}
+
+add_filter( 'genesis_search_button_text', 'jpak_search_button_text' );
+function jpak_search_button_text( $text ) {
+	return esc_attr( 'Go' );
+}
+
+
+
 //  WIDGET AREAS  //
 
 genesis_register_sidebar( array(
