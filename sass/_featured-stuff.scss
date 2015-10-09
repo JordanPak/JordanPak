@@ -5,11 +5,23 @@
 #featured-stuff {
     margin: 0;
     margin-bottom: 400px;
-    padding: $space-default;
+    padding: $space-default * 2;
     background: $secondary;
+    color: $white;
+    text-align: center;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+    }
 
     .widget {
-        
-    }
+
+        @include col( one-third );
+
+        &:first-child {
+            @include col( one-third, true );
+        }
+
+    } // .widget
 
 } // #featured-stuff
