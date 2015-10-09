@@ -85,6 +85,8 @@ function jpak_mini_hero() {
 *
 * @package JordanPak
 * @since 1.0.0
+*
+* @return string
 */
 
 add_filter( 'genesis_search_text', 'jpak_search_text' );
@@ -106,3 +108,19 @@ genesis_register_sidebar( array(
 	'name'          => __( 'Home Hero', 'jpak' ),
 	'description'   => __( 'For Text Widget', 'jpak' ),
 ) );
+
+
+
+add_filter('genesis_footer_creds_text', 'jpak_footer_creds');
+/**
+* Customize Footer Credits
+*
+* @package JordanPak
+* @since 1.0.0
+*
+* @return string
+*/
+function jpak_footer_creds( $creds ) {
+	$creds = '[footer_copyright] Jordan Pakrosnis &middot; Powered by <b>WordPress</b> and the <b>Genesis Framework</b>';
+	return $creds;
+}
