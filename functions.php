@@ -109,6 +109,12 @@ genesis_register_sidebar( array(
 	'description'   => __( 'For Text Widget', 'jpak' ),
 ) );
 
+genesis_register_sidebar( array(
+    'id'            => 'featured-stuff',
+    'name'          => __( 'Featured WP Stuff', 'jpak' ),
+    'description'   => __( '3-Column Area for Text Widgets', 'jpak' ),
+) );
+
 
 
 add_filter('genesis_footer_creds_text', 'jpak_footer_creds');
