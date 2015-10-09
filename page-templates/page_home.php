@@ -20,9 +20,7 @@
 
 
 
- // HOME HERO WIDGET AREA //
  add_action( 'genesis_after_header', 'jpak_home_hero' );
-
  /**
  * Home Hero
  *
@@ -38,6 +36,26 @@
     echo '</div></div>';
 
  } // jpak_home_hero()
+
+
+
+ add_action( 'genesis_after_header', 'jpak_home_featured_stuff' );
+ /**
+ * Home Featured Stuff
+ *
+ * Echos the Featured WP Stuff Widget Area
+ *
+ * @package JordanPak
+ * @since 1.0.0
+ */
+ function jpak_home_featured_stuff() {
+
+    echo '<div id="featured-stuff"><div class="wrap">';
+        genesis_widget_area( 'featured-stuff' );
+    echo '</div></div>';
+
+ } // jpak_home_hero()
+
 
 
  //-- LOAD FRAMEWORK --//
