@@ -1683,14 +1683,22 @@ h1, h2, h3, h4, h5, h6 {
   .genesis-nav-menu .current-menu-item > a:hover {
     color: #8dc63f; }
 .genesis-nav-menu .sub-menu a {
+  margin: 0;
+  -moz-box-shadow: none;
+  box-shadow: none;
   color: #201c1d;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  font-size: 16px;
+  text-transform: none;
   border-left: 4px solid #edeeee;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
   .genesis-nav-menu .sub-menu a:hover {
-    color: #8dc63f; }
+    -moz-boz-shadow: none;
+    box-shadow: none;
+    background: #f7f7f7;
+    color: #000000; }
 
 .site-footer {
   background: #201c1d;

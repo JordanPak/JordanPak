@@ -37,16 +37,23 @@
     } // .current-menu-item > a
 
     .sub-menu a {
+        margin: 0;
+        -moz-box-shadow: none;
+        box-shadow: none;
         color: $secondary;
         font-family: $font-family-sans-serif;
         font-weight: 700;
+        font-size: 16px;
+        text-transform: none;
         border-left: 4px solid $secondary-mid-light;
 
         @include transition-ease-in-out();
 
         &:hover {
-            // background: $primary;
-            color: $primary
+            -moz-boz-shadow: none;
+            box-shadow: none;
+            background: $secondary-light;
+            color: $black;
         }
 
     } // .sub-menu a
