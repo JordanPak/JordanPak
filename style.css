@@ -1743,4 +1743,10 @@ h1, h2, h3, h4, h5, h6 {
   #home-hero p {
     font-size: 28px; }
 
+#featured-stuff {
+  margin: 0;
+  margin-bottom: 400px;
+  padding: 40px;
+  background: #201c1d; }
+
 /*# sourceMappingURL=style.css.map */
