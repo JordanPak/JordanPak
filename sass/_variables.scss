@@ -13,16 +13,16 @@ $black:         #000000;
 
 
 //-- PRIMARY --//
-$primary:           rgba(141, 198, 63, 1); // JP Green
-$primary-dark:      rgba(103, 162, 39, 1);
-$primary-darkest:   rgba(60, 106, 10, 1);
+$primary:               rgba(141, 198, 63, 1);    // #8dc63f    JP Green
+$primary-dark:          rgba(103, 162, 39, 1);    // #67a227
+$primary-darkest:       rgba(60, 106, 10, 1);     // #3c6a0a
 
 
 //-- SECONDARY --//
-$secondary:             rgba(32, 28, 29, 1);            // JP Gray
-$secondary-mid:         rgba(121, 122, 125, 1);         // JP Dark Gray
+$secondary:             rgba(32, 28, 29, 1);            // #201c1d    JP Gray
+$secondary-mid:         rgba(121, 122, 125, 1);         // #797a7d    JP Dark Gray
 $secondary-mid-light:   lighten( $secondary-mid, 45 );
-$secondary-light:       rgba(247, 247, 247, 1);         // JP Light Gray
+$secondary-light:       rgba(247, 247, 247, 1);         // #f7f7f7    JP Light Gray
 
 
 //-- TRANSPARENCIES --/
