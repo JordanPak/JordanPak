@@ -105,7 +105,7 @@ function jpak_search_button_text( $text ) {
 
 genesis_register_sidebar( array(
 	'id'            => 'home-hero',
-	'name'          => __( 'Home Hero', 'jpak' ),
+	'name'          => __( 'Home: Hero', 'jpak' ),
 	'description'   => __( 'For Text Widget', 'jpak' ),
 ) );
 
@@ -113,6 +113,12 @@ genesis_register_sidebar( array(
     'id'            => 'featured-stuff',
     'name'          => __( 'Featured WP Stuff', 'jpak' ),
     'description'   => __( '3-Column Area for Text Widgets', 'jpak' ),
+) );
+
+genesis_register_sidebar( array(
+    'id'            => 'home-more',
+    'name'          => __( 'Home: More', 'jpak' ),
+    // 'description'   => __( '', 'jpak' ),
 ) );
 
 

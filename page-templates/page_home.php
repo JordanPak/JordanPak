@@ -58,5 +58,22 @@
 
 
 
+ add_action( 'genesis_before_content', 'jpak_home_more' );
+ /**
+ * Home: More Widget Area
+ *
+ * @package JordanPak
+ * @since 1.0.0
+ */
+ function jpak_home_more() {
+
+    echo '<div id="home-more"><div class="wrap">';
+        genesis_widget_area( 'home-more' );
+    echo '</div></div>';
+
+ } // jpak_home_hero()
+
+
+
  //-- LOAD FRAMEWORK --//
  genesis();
