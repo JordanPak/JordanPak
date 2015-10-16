@@ -84,3 +84,12 @@
 .comment-reply-link {
     @include button( sm );
 }
+
+.comment-respond label {
+    font-weight: bold;
+
+    .required {
+        color: #ff0000;
+    }
+
+} // .comment-respond label

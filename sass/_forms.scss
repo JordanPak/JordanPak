@@ -10,3 +10,14 @@ input, select, textarea {
 input:focus, textarea:focus {
     border-color: $primary;
 }
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .button {
+    @include button();
+}
+
+
+// NINJA FORMS
+
+.ninja-forms-required-items {
+    margin-bottom: $space-default-half;
+}
