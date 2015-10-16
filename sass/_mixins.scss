@@ -35,6 +35,9 @@
     @if $size == sm {
         padding: 8px ($space-default-half - 4px) 7px ($space-default-half - 4px);
     }
+    @if $size == med {
+        padding: 16px 24px;
+    }
 
 
     // BORDER

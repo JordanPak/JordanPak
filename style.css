@@ -1680,6 +1680,8 @@ h3 {
   .content .entry a.share {
     color: #FFFFFF;
     border: none; }
+  .content .entry a.button {
+    border: none; }
 .content .entry .entry-title a {
   font-size: 42px;
   border-bottom: 2px solid transparent; }
@@ -1713,21 +1715,55 @@ p.entry-meta {
 .widgettitle {
   font-size: 32px; }
 
-.button {
+.content .entry .button {
   display: inline-block;
+  padding: 12px 24px 11px 24px;
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .030em;
-  -webkit-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms;
   border: 0;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  background: #8dc63f;
   color: #FFFFFF;
-  background: #8dc63f; }
-  .button:hover {
-    background: #67a227;
-    color: #FFFFFF; }
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms; }
+  .content .entry .button.button-xsm {
+    padding: 4px 12px 3px 12px; }
+  .content .entry .button.button-sm {
+    padding: 6px 14px 5px 14px; }
+  .content .entry .button:hover {
+    background: #67a227; }
+  .content .entry .button.button-dark {
+    background: #201c1d; }
+    .content .entry .button.button-dark:hover {
+      background: #000000; }
+  .content .entry .button.button-light {
+    background: #edeeee;
+    color: #201c1d; }
+    .content .entry .button.button-light:hover {
+      background: #201c1d;
+      color: #FFFFFF; }
+  .content .entry .button.button-outline {
+    background: none;
+    border: 2px solid #8dc63f;
+    color: #8dc63f; }
+    .content .entry .button.button-outline:hover {
+      background: #8dc63f;
+      color: #FFFFFF; }
+    .content .entry .button.button-outline.button-dark {
+      border-color: #201c1d;
+      color: #201c1d; }
+      .content .entry .button.button-outline.button-dark:hover {
+        background: #201c1d;
+        color: #FFFFFF; }
+    .content .entry .button.button-outline.button-white {
+      border-color: #FFFFFF;
+      color: #FFFFFF; }
+      .content .entry .button.button-outline.button-white:hover {
+        background: #FFFFFF;
+        color: #201c1d; }
 
 a.alignleft, img.alignleft, .wp-caption.alignleft {
   margin: 0 40px 40px 0; }
