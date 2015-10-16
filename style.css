@@ -1784,8 +1784,10 @@ p.entry-meta {
   .content .entry .button.button-sm {
     padding: 6px 14px 5px 14px; }
   .content .entry .button.button-lg {
-    padding: 17px 32px 16px 32px;
-    font-size: 18px; }
+    padding: 12px 30px 13px 30px;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: "bebas-neue", "Roboto Condensed", sans-serif; }
   .content .entry .button.button-outline {
     background: none;
     color: #8dc63f;
@@ -2040,17 +2042,22 @@ section.featuredpost {
     color: #797a7d; }
   section.featuredpost .more-link {
     display: inline-block;
-    position: relative;
-    top: -2px;
-    padding: 3px 8px 2px 8px;
-    font-size: 12px;
-    background: #8dc63f;
+    padding: 12px 24px 11px 24px;
+    font-weight: 700;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .030em;
+    border: 0;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #8dc63f;
     color: #FFFFFF;
-    font-weight: 700;
     -webkit-transition: all ease-in-out 200ms;
-    transition: all ease-in-out 200ms; }
+    transition: all ease-in-out 200ms;
+    padding: 4px 12px 3px 12px;
+    font-size: 12px; }
+    section.featuredpost .more-link .fa {
+      margin-right: 10px; }
     section.featuredpost .more-link:hover {
       background: #67a227; }
 

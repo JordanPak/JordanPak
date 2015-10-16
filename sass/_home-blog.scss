@@ -39,23 +39,8 @@ section.featuredpost {
     }
 
     .more-link {
-        display: inline-block;
-        position: relative;
-        top: -2px;
-        padding: 3px 8px 2px 8px;
-        font-size: 12px;
-        background: $primary;
-        text-transform: uppercase;
-        letter-spacing: .030em;
-        color: $white;
-        font-weight: 700;
-
-        @include transition-ease-in-out();
-
-        &:hover {
-            background: $primary-dark;
-        }
-
+        @include button();
+        @include button-size( xsm );
     } // .more-link
 
 } // section.featuredpost
