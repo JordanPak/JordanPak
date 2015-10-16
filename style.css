@@ -1729,38 +1729,97 @@ p.entry-meta {
   color: #FFFFFF;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
-  .content .entry .button.button-xsm {
-    padding: 4px 12px 3px 12px; }
-  .content .entry .button.button-sm {
-    padding: 6px 14px 5px 14px; }
+  .content .entry .button .fa {
+    margin-right: 10px; }
   .content .entry .button:hover {
     background: #67a227; }
   .content .entry .button.button-dark {
-    background: #201c1d; }
+    display: inline-block;
+    padding: 12px 24px 11px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .030em;
+    border: 0;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #8dc63f;
+    color: #FFFFFF;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
+    background: #201c1d;
+    color: #FFFFFF; }
+    .content .entry .button.button-dark .fa {
+      margin-right: 10px; }
+    .content .entry .button.button-dark:hover {
+      background: #67a227; }
     .content .entry .button.button-dark:hover {
       background: #000000; }
   .content .entry .button.button-light {
+    display: inline-block;
+    padding: 12px 24px 11px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .030em;
+    border: 0;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #8dc63f;
+    color: #FFFFFF;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
     background: #edeeee;
     color: #201c1d; }
+    .content .entry .button.button-light .fa {
+      margin-right: 10px; }
+    .content .entry .button.button-light:hover {
+      background: #67a227; }
     .content .entry .button.button-light:hover {
       background: #201c1d;
       color: #FFFFFF; }
+  .content .entry .button.button-xsm {
+    padding: 4px 12px 3px 12px;
+    font-size: 12px; }
+  .content .entry .button.button-sm {
+    padding: 6px 14px 5px 14px; }
+  .content .entry .button.button-lg {
+    padding: 17px 32px 16px 32px;
+    font-size: 18px; }
   .content .entry .button.button-outline {
     background: none;
-    border: 2px solid #8dc63f;
-    color: #8dc63f; }
+    color: #8dc63f;
+    border: 2px solid #8dc63f; }
     .content .entry .button.button-outline:hover {
+      border-width: 2px;
+      border-style: solid;
       background: #8dc63f;
       color: #FFFFFF; }
     .content .entry .button.button-outline.button-dark {
+      background: none;
+      color: #8dc63f;
+      border: 2px solid #8dc63f;
       border-color: #201c1d;
       color: #201c1d; }
+      .content .entry .button.button-outline.button-dark:hover {
+        border-width: 2px;
+        border-style: solid;
+        background: #8dc63f;
+        color: #FFFFFF; }
       .content .entry .button.button-outline.button-dark:hover {
         background: #201c1d;
         color: #FFFFFF; }
     .content .entry .button.button-outline.button-white {
+      background: none;
+      color: #8dc63f;
+      border: 2px solid #8dc63f;
       border-color: #FFFFFF;
       color: #FFFFFF; }
+      .content .entry .button.button-outline.button-white:hover {
+        border-width: 2px;
+        border-style: solid;
+        background: #8dc63f;
+        color: #FFFFFF; }
       .content .entry .button.button-outline.button-white:hover {
         background: #FFFFFF;
         color: #201c1d; }
@@ -1876,21 +1935,22 @@ a.alignright, img.alignright, .wp-caption.alignright {
 
 .comment-reply-link {
   display: inline-block;
+  padding: 12px 24px 11px 24px;
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .030em;
-  -webkit-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms;
-  padding: 8px 16px 7px 16px;
   border: 0;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font-size: 14px;
+  background: #8dc63f;
   color: #FFFFFF;
-  background: #8dc63f; }
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms; }
+  .comment-reply-link .fa {
+    margin-right: 10px; }
   .comment-reply-link:hover {
-    background: #67a227;
-    color: #FFFFFF; }
+    background: #67a227; }
 
 #home-hero {
   padding: 80px;

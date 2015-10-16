@@ -159,91 +159,40 @@ p.entry-meta {
 
 .content .entry .button {
 
-    // Default Styles
-    display: inline-block;
-    padding: 12px 24px 11px 24px;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: .030em;
-    border: 0;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background: $primary;
-    color: $white;
-
-    @include transition-ease-in-out();
-
-
-    // Sizes
-    &.button-xsm {
-        padding: 4px ($space-default-half - 8px) 3px ($space-default-half - 8px);
-    }
-    &.button-sm {
-        padding: 6px ($space-default-half - 6px) 5px ($space-default-half - 6px);
-    }
-
-
-    // Default Hover
-    &:hover {
-        background: $primary-dark;
-    }
-
+    @include button();
 
     // Additional Colors
     &.button-dark {
-        background: $secondary;
-
-        &:hover {
-            background: $black;
-        }
-
-    } // .button-dark
-
+        @include button( dark );
+    }
     &.button-light {
-        background: $secondary-mid-light;
-        color: $secondary;
+        @include button( light );
+    }
 
-        &:hover {
-            background: $secondary;
-            color: $white;
-        }
-
-    } // .button-light
-
+    // Sizes
+    &.button-xsm {
+        @include button-size( xsm );
+    }
+    &.button-sm {
+        @include button-size( sm );
+    }
+    &.button-lg {
+        @include button-size( lg );
+    }
 
     // Outline Button
     &.button-outline {
-        background: none;
-        border: 2px solid $primary;
-        color: $primary;
 
-        &:hover {
-            background: $primary;
-            color: $white;
+        @include button-outline();
+
+        // Outline Colors
+        &.button-dark {
+            @include button-outline( dark );
+        }
+        &.button-white {
+            @include button-outline( white );
         }
 
-        &.button-dark {
-            border-color: $secondary;
-            color: $secondary;
-
-            &:hover {
-                background: $secondary;
-                color: $white;
-            }
-
-        } // &.button-dark
-
-        &.button-white {
-            border-color: $white;
-            color: $white;
-
-            &:hover {
-                background: $white;
-                color: $secondary;
-            }
-        } // &.button-white
-
-    } // .button-outline
+    } // &.button-outline
 
 } // .button

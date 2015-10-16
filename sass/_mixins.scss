@@ -17,81 +17,120 @@
 //  BUTTONS  //
 //===========//
 
-@mixin button( $size: med, $color: $primary, $outline: false ) {
+@mixin button( $color: default ) {
 
-    // BASIC DEFAULTS
+    // Default Styles
     display: inline-block;
+    padding: 12px 24px 11px 24px;
     font-weight: 700;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .030em;
-
-    @include transition-ease-in-out();
-
-
-    // PADDING
-    @if $size == xsm {
-        padding: 4px ($space-default-half - 8px) 3px ($space-default-half - 8px);
-    }
-    @if $size == sm {
-        padding: 8px ($space-default-half - 4px) 7px ($space-default-half - 4px);
-    }
-    @if $size == med {
-        padding: 16px 24px;
-    }
-
-
-    // BORDER
     border: 0;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    background: $primary;
+    color: $white;
 
+    @include transition-ease-in-out();
 
-    // TEXT SIZE
-    @if $size == xsm {
-        font-size: 12px;
+    // Font Awesome Icon
+    .fa {
+        margin-right: 10px;
     }
-    @if $size == sm {
-        font-size: 14px;
-    }
 
-
-    // TEXT COLOR
-    $text-color: $white;
-    @if $color == $secondary-mid-light {
-        $text-color: $secondary;
-    }
-    color: $text-color;
-
-
-    // BACKGROUND COLOR
-    background: $color;
-
-
-    // HOVER
+    // Default Hover
     &:hover {
+        background: $primary-dark;
+    }
 
-        // Background
-        @if $color == $primary {
-            background: $primary-dark;
-        }
-        @if $color == $secondary {
+
+    // Color: Dark
+    @if $color == dark {
+        background: $secondary;
+        color: $white;
+
+        &:hover {
             background: $black;
         }
-        @if $color == $secondary-mid-light {
-            background: $secondary;
-        }
 
-        // Text
-        color: $white;
-        @if $color == $secondary-mid-light {
+    } // Dark
+
+    // Color: Light
+    @if $color == light {
+        background: $secondary-mid-light;
+        color: $secondary;
+
+        &:hover {
+            background: $secondary;
             color: $white;
         }
 
+    } // Light
 
-    } // &:hover
+} // button
 
 
-} // button()
+@mixin button-outline( $color: default ) {
+
+    // Default Outline
+    background: none;
+    color: $primary;
+    border: 2px solid $primary;
+
+    // Default Outline Hover
+    &:hover {
+        border-width: 2px;
+        border-style: solid;
+        background: $primary;
+        color: $white;
+    }
+
+    // Color: Dark
+    @if $color == dark {
+        border-color: $secondary;
+        color: $secondary;
+
+        &:hover {
+            background: $secondary;
+            color: $white;
+        }
+
+    } // Dark
+
+    // Color: White
+    @if $color == white {
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+            background: $white;
+            color: $secondary;
+        }
+
+    } // White
+
+} // button-outline()
+
+
+@mixin button-size( $size: med ) {
+
+    @if $size == xsm {
+        padding: 4px ($space-default-half - 8px) 3px ($space-default-half - 8px);
+        font-size: 12px;
+    }
+    @if $size == sm {
+        padding: 6px ($space-default-half - 6px) 5px ($space-default-half - 6px);
+    }
+    @if $size == med {
+        padding: 12px 24px 11px 24px;
+    }
+    @if $size == lg {
+        padding: 17px 32px 16px 32px;
+        font-size: 18px;
+    }
+
+} // button-size()
 
 
 
