@@ -1729,6 +1729,17 @@ p.entry-meta {
     background: #67a227;
     color: #FFFFFF; }
 
+a.alignleft, img.alignleft, .wp-caption.alignleft {
+  margin: 0 40px 40px 0; }
+
+a.alignright, img.alignright, .wp-caption.alignright {
+  margin: 0 0 40px 40px; }
+
+.wp-caption-text {
+  color: #797a7d;
+  font-style: italic;
+  font-weight: 400; }
+
 .genesis-nav-menu li > a {
   padding: 10px 18px 20px 18px;
   color: #f7f7f7;
