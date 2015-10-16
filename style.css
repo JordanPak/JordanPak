@@ -1630,12 +1630,6 @@ body {
   border-top: 5px solid #67a227;
   border-bottom: 2px solid #edeeee; }
 
-.entry-meta {
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #797a7d; }
-
 ::-moz-selection {
   background: #201c1d;
   color: #FFFFFF;
@@ -1658,6 +1652,15 @@ body > div {
 h1, h2, h3, h4, h5, h6 {
   font-family: "bebas-neue", "Roboto Condensed", sans-serif; }
 
+h1 {
+  font-size: 52px; }
+
+h2 {
+  font-size: 42px; }
+
+h3 {
+  font-size: 32px; }
+
 .page .entry-title {
   text-transform: uppercase;
   font-size: 52px;
@@ -1679,9 +1682,34 @@ h1, h2, h3, h4, h5, h6 {
     border: none; }
 
 .content .entry .entry-title a {
+  font-size: 42px;
   border-bottom: 2px solid transparent; }
   .content .entry .entry-title a:hover {
     border-bottom: 2px solid #8dc63f; }
+
+.entry-header .entry-meta {
+  margin-bottom: 40px; }
+
+p.entry-meta {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #797a7d; }
+
+.content .entry .entry-categories {
+  display: inline; }
+  .content .entry .entry-categories a {
+    border: 0;
+    color: #8dc63f; }
+    .content .entry .entry-categories a:hover {
+      color: #67a227; }
+
+.share-after {
+  margin-top: 60px; }
+
+.post-info-separator {
+  margin: 0 12px;
+  letter-spacing: -0.1em; }
 
 .widgettitle {
   font-size: 32px; }
@@ -1693,6 +1721,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .030em;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
+  border: 0;
   -moz-border-radius: 3px;
   border-radius: 3px;
   color: #FFFFFF;
@@ -1807,6 +1836,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
   padding: 8px 16px 7px 16px;
+  border: 0;
   -moz-border-radius: 3px;
   border-radius: 3px;
   font-size: 14px;

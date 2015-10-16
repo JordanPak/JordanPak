@@ -29,6 +29,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-heading;
 } // Headers
 
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 32px;
+}
 
 .page .entry-title {
     text-transform: uppercase;
@@ -59,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 } // .content .entry a
 
 .content .entry .entry-title a {
+    font-size: 42px;
     border-bottom: 2px solid $transparent;
 
     &:hover {
@@ -66,6 +78,41 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 } // .content .entry .entry-title a
+
+.entry-header .entry-meta {
+    margin-bottom: $space-default;
+}
+
+p.entry-meta {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $secondary-mid;
+}
+
+.content .entry .entry-categories {
+    display: inline;
+
+    a {
+        border: 0;
+        color: $primary;
+
+        &:hover {
+            color: $primary-dark;
+        }
+
+    } // a
+
+} // .entry-categories
+
+.share-after {
+    margin-top: $space-default + $space-default-half;
+}
+
+.post-info-separator {
+    margin: 0 12px;
+    letter-spacing: -0.1em;
+}
 
 .widgettitle {
     font-size: 32px;

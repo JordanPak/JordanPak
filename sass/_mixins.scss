@@ -29,17 +29,24 @@
 
 
     // PADDING
+    @if $size == xsm {
+        padding: 4px ($space-default-half - 8px) 3px ($space-default-half - 8px);
+    }
     @if $size == sm {
         padding: 8px ($space-default-half - 4px) 7px ($space-default-half - 4px);
     }
 
 
     // BORDER
+    border: 0;
     -moz-border-radius: 3px;
     border-radius: 3px;
 
 
     // TEXT SIZE
+    @if $size == xsm {
+        font-size: 12px;
+    }
     @if $size == sm {
         font-size: 14px;
     }
@@ -47,7 +54,7 @@
 
     // TEXT COLOR
     $text-color: $white;
-    @if $color == $secondary-light {
+    @if $color == $secondary-mid-light {
         $text-color: $secondary;
     }
     color: $text-color;
@@ -65,13 +72,16 @@
             background: $primary-dark;
         }
         @if $color == $secondary {
-            background: $black;   
+            background: $black;
+        }
+        @if $color == $secondary-mid-light {
+            background: $secondary;
         }
 
         // Text
         color: $white;
-        @if $color == $secondary-light {
-            color: $black;
+        @if $color == $secondary-mid-light {
+            color: $white;
         }
 
 

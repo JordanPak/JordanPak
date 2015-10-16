@@ -133,7 +133,7 @@ add_filter( 'genesis_post_info', 'jpak_post_info_filter' );
 * @return string
 */
 function jpak_post_info_filter( $post_info ) {
-	$post_info = '<i class="fa fa-calendar"></i>&nbsp;&nbsp;[post_date format="M j, Y"]';
+	$post_info = '[post_date format="M j, Y"]<span class="post-info-separator">//</span>[post_categories before="" sep=", "]';
 	return $post_info;
 }
 
@@ -148,7 +148,7 @@ add_filter( 'genesis_post_meta', 'jpak_post_meta_filter' );
 * @return string
 */
 function jpak_post_meta_filter( $post_meta ) {
-	$post_meta = '[post_categories before="" sep=""]';
+    $post_meta = '';
 	return $post_meta;
 }
 
