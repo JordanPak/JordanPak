@@ -2,6 +2,9 @@
 //  JordanPak | Typography  //
 //==========================//
 
+
+//-- UTILITY --//
+
 ::-moz-selection {
     background: $secondary;
     color: $white;
@@ -14,6 +17,10 @@
     text-shadow: none;
 }
 
+
+
+//-- GLOBAL BODY --//
+
 body {
     font-family: $font-family-sans-serif;
     font-size: 16px;
@@ -24,6 +31,10 @@ body {
 body > div {
     font-size: 16px;
 }
+
+
+
+//-- HEADINGS --//
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-heading;
@@ -54,30 +65,42 @@ h3 {
     font-size: 52px;
 }
 
-.content .entry a {
-    color: inherit;
-    border-bottom: 2px solid $primary;
 
-    &:hover {
-        border-color: $body-text;
-    }
 
-    &.share {
-        color: $white;
-        border: none;
-    }
+//-- INLINE ANCHORS --//
+
+.content .entry {
+
+    a {
+        color: inherit;
+        border-bottom: 2px solid $primary;
+
+        &:hover {
+            border-color: $body-text;
+        }
+
+        &.share {
+            color: $white;
+            border: none;
+        }
+
+    } // a
+
+    .entry-title a {
+        font-size: 42px;
+        border-bottom: 2px solid $transparent;
+
+        &:hover {
+            border-bottom: 2px solid $primary;
+        }
+
+    } // .entry-title a
 
 } // .content .entry a
 
-.content .entry .entry-title a {
-    font-size: 42px;
-    border-bottom: 2px solid $transparent;
 
-    &:hover {
-        border-bottom: 2px solid $primary;
-    }
 
-} // .content .entry .entry-title a
+//-- ENTRY META --//
 
 .entry-header .entry-meta {
     margin-bottom: $space-default;
@@ -105,18 +128,30 @@ p.entry-meta {
 
 } // .entry-categories
 
-.share-after {
-    margin-top: $space-default + $space-default-half;
-}
-
 .post-info-separator {
     margin: 0 12px;
     letter-spacing: -0.1em;
 }
 
+
+
+//-- SHARING --//
+
+.share-after {
+    margin-top: $space-default + $space-default-half;
+}
+
+
+
+//-- WIDGET --//
+
 .widgettitle {
     font-size: 32px;
 }
+
+
+
+//-- BUTTON --//
 
 .button {
     @include button();

@@ -1680,7 +1680,6 @@ h3 {
   .content .entry a.share {
     color: #FFFFFF;
     border: none; }
-
 .content .entry .entry-title a {
   font-size: 42px;
   border-bottom: 2px solid transparent; }
@@ -1704,12 +1703,12 @@ p.entry-meta {
     .content .entry .entry-categories a:hover {
       color: #67a227; }
 
-.share-after {
-  margin-top: 60px; }
-
 .post-info-separator {
   margin: 0 12px;
   letter-spacing: -0.1em; }
+
+.share-after {
+  margin-top: 60px; }
 
 .widgettitle {
   font-size: 32px; }
