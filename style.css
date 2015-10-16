@@ -1715,7 +1715,7 @@ p.entry-meta {
 .widgettitle {
   font-size: 32px; }
 
-.content .entry .button {
+.button, .content .entry .button {
   display: inline-block;
   padding: 12px 24px 11px 24px;
   font-weight: 700;
@@ -1729,11 +1729,11 @@ p.entry-meta {
   color: #FFFFFF;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
-  .content .entry .button .fa {
+  .button .fa, .content .entry .button .fa {
     margin-right: 10px; }
-  .content .entry .button:hover {
+  .button:hover, .content .entry .button:hover {
     background: #67a227; }
-  .content .entry .button.button-dark {
+  .button.button-dark, .content .entry .button.button-dark {
     display: inline-block;
     padding: 12px 24px 11px 24px;
     font-weight: 700;
@@ -1749,13 +1749,13 @@ p.entry-meta {
     transition: all ease-in-out 200ms;
     background: #201c1d;
     color: #FFFFFF; }
-    .content .entry .button.button-dark .fa {
+    .button.button-dark .fa, .content .entry .button.button-dark .fa {
       margin-right: 10px; }
-    .content .entry .button.button-dark:hover {
+    .button.button-dark:hover, .content .entry .button.button-dark:hover {
       background: #67a227; }
-    .content .entry .button.button-dark:hover {
+    .button.button-dark:hover, .content .entry .button.button-dark:hover {
       background: #000000; }
-  .content .entry .button.button-light {
+  .button.button-light, .content .entry .button.button-light {
     display: inline-block;
     padding: 12px 24px 11px 24px;
     font-weight: 700;
@@ -1771,58 +1771,58 @@ p.entry-meta {
     transition: all ease-in-out 200ms;
     background: #edeeee;
     color: #201c1d; }
-    .content .entry .button.button-light .fa {
+    .button.button-light .fa, .content .entry .button.button-light .fa {
       margin-right: 10px; }
-    .content .entry .button.button-light:hover {
+    .button.button-light:hover, .content .entry .button.button-light:hover {
       background: #67a227; }
-    .content .entry .button.button-light:hover {
+    .button.button-light:hover, .content .entry .button.button-light:hover {
       background: #201c1d;
       color: #FFFFFF; }
-  .content .entry .button.button-xsm {
+  .button.button-xsm, .content .entry .button.button-xsm {
     padding: 4px 12px 3px 12px;
     font-size: 12px; }
-  .content .entry .button.button-sm {
+  .button.button-sm, .content .entry .button.button-sm {
     padding: 6px 14px 5px 14px; }
-  .content .entry .button.button-lg {
+  .button.button-lg, .content .entry .button.button-lg {
     padding: 12px 30px 13px 30px;
     font-size: 22px;
     font-weight: normal;
     font-family: "bebas-neue", "Roboto Condensed", sans-serif; }
-  .content .entry .button.button-outline {
+  .button.button-outline, .content .entry .button.button-outline {
     background: none;
     color: #8dc63f;
     border: 2px solid #8dc63f; }
-    .content .entry .button.button-outline:hover {
+    .button.button-outline:hover, .content .entry .button.button-outline:hover {
       border-width: 2px;
       border-style: solid;
       background: #8dc63f;
       color: #FFFFFF; }
-    .content .entry .button.button-outline.button-dark {
+    .button.button-outline.button-dark, .content .entry .button.button-outline.button-dark {
       background: none;
       color: #8dc63f;
       border: 2px solid #8dc63f;
       border-color: #201c1d;
       color: #201c1d; }
-      .content .entry .button.button-outline.button-dark:hover {
+      .button.button-outline.button-dark:hover, .content .entry .button.button-outline.button-dark:hover {
         border-width: 2px;
         border-style: solid;
         background: #8dc63f;
         color: #FFFFFF; }
-      .content .entry .button.button-outline.button-dark:hover {
+      .button.button-outline.button-dark:hover, .content .entry .button.button-outline.button-dark:hover {
         background: #201c1d;
         color: #FFFFFF; }
-    .content .entry .button.button-outline.button-white {
+    .button.button-outline.button-white, .content .entry .button.button-outline.button-white {
       background: none;
       color: #8dc63f;
       border: 2px solid #8dc63f;
       border-color: #FFFFFF;
       color: #FFFFFF; }
-      .content .entry .button.button-outline.button-white:hover {
+      .button.button-outline.button-white:hover, .content .entry .button.button-outline.button-white:hover {
         border-width: 2px;
         border-style: solid;
         background: #8dc63f;
         color: #FFFFFF; }
-      .content .entry .button.button-outline.button-white:hover {
+      .button.button-outline.button-white:hover, .content .entry .button.button-outline.button-white:hover {
         background: #FFFFFF;
         color: #201c1d; }
 
@@ -1973,6 +1973,24 @@ a.alignright, img.alignright, .wp-caption.alignright {
       font-weight: 400; }
   #home-hero p {
     font-size: 28px; }
+  #home-hero .button {
+    margin-top: 30px;
+    background: none;
+    color: #8dc63f;
+    border: 2px solid #8dc63f;
+    border-color: #FFFFFF;
+    color: #FFFFFF; }
+    #home-hero .button:hover {
+      border-width: 2px;
+      border-style: solid;
+      background: #8dc63f;
+      color: #FFFFFF; }
+    #home-hero .button:hover {
+      background: #FFFFFF;
+      color: #201c1d; }
+    #home-hero .button:hover {
+      text-shadow: none;
+      color: #8dc63f; }
 
 #featured-stuff {
   margin: 0;

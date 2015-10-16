@@ -157,7 +157,7 @@ p.entry-meta {
 
 //-- BUTTON --//
 
-.content .entry .button {
+.button, .content .entry .button {
 
     @include button();
 
