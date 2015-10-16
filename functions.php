@@ -133,7 +133,7 @@ add_filter( 'genesis_post_info', 'jpak_post_info_filter' );
 * @return string
 */
 function jpak_post_info_filter($post_info) {
-	$post_info = '[post_date format="M j, Y"]';
+	$post_info = '<i class="fa fa-calendar"></i>&nbsp;&nbsp;[post_date format="M j, Y"]';
 	return $post_info;
 }
 

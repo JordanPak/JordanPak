@@ -1630,6 +1630,12 @@ body {
   border-top: 5px solid #67a227;
   border-bottom: 2px solid #edeeee; }
 
+.entry-meta {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #797a7d; }
+
 ::-moz-selection {
   background: #201c1d;
   color: #FFFFFF;
