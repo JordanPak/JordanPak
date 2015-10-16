@@ -2,9 +2,14 @@
 //  JordanPak | Comments  //
 //========================//
 
+.comment-respond, .entry-comments, .entry-pings {
+    margin-bottom: 0;
+}
+
 .entry-comments {
     display: block;
-    padding: 0;
+    padding: $space-default-half * 3;
+    padding-top: $space-default-half;
     background: none;
     border: 0;
 } // .entry-contents
@@ -32,11 +37,12 @@
         border: none;
 
         article {
-            padding: $space-default-middle;
+            padding: $space-default + 10px;
             background: $white;
             border-bottom: 2px solid $secondary-mid-light;
             font-size: 16px;
-        }
+
+        } // article
 
     } // .comment
 
@@ -51,6 +57,10 @@
     } // .children
 
 } // .comment-list
+
+.comment-header {
+    position: relative;
+}
 
 .comment-author {
     font-weight: 700;
@@ -74,15 +84,28 @@
 
 } // .comment-author
 
-.comment-meta a {
-    color: $secondary-mid;
-    font-size: 14px;
-    // font-weight: 700;
-    font-style: italic;
+.comment .avatar {
+    position: absolute;
+    left: -74px;
+    margin: 0;
+    border-bottom: 4px solid $secondary-mid-light;
 }
 
+p.comment-meta {
+    margin-bottom: $space-default-middle;
+
+    a {
+        color: $secondary-mid;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+} // p.comment-meta
+
 .comment-reply-link {
-    @include button( sm );
+    margin-top: 10px;
+    @include button();
+    @include button-size( sm );
 }
 
 .comment-respond label {
@@ -93,3 +116,25 @@
     }
 
 } // .comment-respond label
+
+.comment-reply-title {
+    margin-bottom: $space-default-half;
+}
+
+.comment-respond, .entry-pings {
+    background: none;
+    padding: $space-default-half * 3;
+    padding-top: 0;
+
+    form {
+        padding: $space-default;
+        background: white;
+        border-bottom: 2px solid $secondary-mid-light;
+
+        .form-submit {
+            margin: 0;
+        }
+
+    } // form
+
+} // .comment-respond, .entry-pings
