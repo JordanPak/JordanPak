@@ -1769,6 +1769,29 @@ h1, h2, h3, h4, h5, h6 {
       background: #FFFFFF;
       border-bottom: 2px solid #edeeee;
       font-size: 16px; }
+  .comment-list .children {
+    padding-bottom: 30px; }
+    .comment-list .children li {
+      margin-top: 0;
+      padding-bottom: 0; }
+
+.comment-author {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0; }
+  .comment-author a {
+    color: #000000;
+    border-bottom: 2px solid transparent; }
+    .comment-author a:hover {
+      border-bottom: 2px solid #8dc63f; }
+  .comment-author .says {
+    font-weight: normal;
+    color: #797a7d; }
+
+.comment-meta a {
+  color: #797a7d;
+  font-size: 14px;
+  font-style: italic; }
 
 .comment-reply-link {
   display: inline-block;

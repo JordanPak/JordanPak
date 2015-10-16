@@ -40,7 +40,46 @@
 
     } // .comment
 
+    .children {
+        padding-bottom: $space-default-middle;
+
+        li {
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+
+    } // .children
+
 } // .comment-list
+
+.comment-author {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0;
+
+    a {
+        color: $black;
+        border-bottom: 2px solid $transparent;
+
+        &:hover {
+            border-bottom: 2px solid $primary;
+        }
+
+    } // a
+
+    .says {
+        font-weight: normal;
+        color: $secondary-mid;
+    }
+
+} // .comment-author
+
+.comment-meta a {
+    color: $secondary-mid;
+    font-size: 14px;
+    // font-weight: 700;
+    font-style: italic;
+}
 
 .comment-reply-link {
     @include button( sm );
