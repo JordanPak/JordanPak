@@ -35,8 +35,13 @@
             padding: $space-default-middle;
             background: $white;
             border-bottom: 2px solid $secondary-mid-light;
+            font-size: 16px;
         }
 
     } // .comment
 
 } // .comment-list
+
+.comment-reply-link {
+    @include button( sm );
+}

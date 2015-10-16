@@ -14,6 +14,74 @@
 
 
 //===========//
+//  BUTTONS  //
+//===========//
+
+@mixin button( $size: med, $color: $primary, $outline: false ) {
+
+    // BASIC DEFAULTS
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .030em;
+
+    @include transition-ease-in-out();
+
+
+    // PADDING
+    @if $size == sm {
+        padding: 8px ($space-default-half - 4px) 7px ($space-default-half - 4px);
+    }
+
+
+    // BORDER
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+
+    // TEXT SIZE
+    @if $size == sm {
+        font-size: 14px;
+    }
+
+
+    // TEXT COLOR
+    $text-color: $white;
+    @if $color == $secondary-light {
+        $text-color: $secondary;
+    }
+    color: $text-color;
+
+
+    // BACKGROUND COLOR
+    background: $color;
+
+
+    // HOVER
+    &:hover {
+
+        // Background
+        @if $color == $primary {
+            background: $primary-dark;
+        }
+        @if $color == $secondary {
+            background: $black;   
+        }
+
+        // Text
+        color: $white;
+        @if $color == $secondary-light {
+            color: $black;
+        }
+
+
+    } // &:hover
+
+
+} // button()
+
+
+//===========//
 //  COLUMNS  //
 //===========//
 

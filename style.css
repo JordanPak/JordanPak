@@ -1646,6 +1646,9 @@ body {
   font-weight: 400;
   color: #333333; }
 
+body > div {
+  font-size: 16px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "bebas-neue", "Roboto Condensed", sans-serif; }
 
@@ -1676,6 +1679,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .widgettitle {
   font-size: 32px; }
+
+.button {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .030em;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #FFFFFF;
+  background: #8dc63f; }
+  .button:hover {
+    background: #67a227;
+    color: #FFFFFF; }
 
 .genesis-nav-menu li > a {
   padding: 10px 18px 20px 18px;
@@ -1749,7 +1767,25 @@ h1, h2, h3, h4, h5, h6 {
     .comment-list .comment article {
       padding: 30px;
       background: #FFFFFF;
-      border-bottom: 2px solid #edeeee; }
+      border-bottom: 2px solid #edeeee;
+      font-size: 16px; }
+
+.comment-reply-link {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .030em;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+  padding: 8px 16px 7px 16px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #8dc63f; }
+  .comment-reply-link:hover {
+    background: #67a227;
+    color: #FFFFFF; }
 
 #home-hero {
   padding: 80px;
