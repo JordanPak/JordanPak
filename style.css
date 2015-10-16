@@ -1877,6 +1877,13 @@ a.alignright, img.alignright, .wp-caption.alignright {
     background: #f7f7f7;
     color: #000000; }
 
+input, select, textarea {
+  font-size: 16px;
+  font-weight: 400; }
+
+input:focus, textarea:focus {
+  border-color: #8dc63f; }
+
 .site-footer {
   background: #201c1d;
   color: #FFFFFF; }
