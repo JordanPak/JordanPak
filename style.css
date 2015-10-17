@@ -2051,6 +2051,39 @@ p.comment-meta {
   margin-bottom: 20px;
   text-align: center; }
 
+#cancel-comment-reply-link {
+  display: inline-block;
+  padding: 12px 24px 11px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .030em;
+  border: 0;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #8dc63f;
+  color: #FFFFFF;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+  background: #edeeee;
+  color: #201c1d;
+  padding: 4px 12px 3px 12px;
+  font-size: 12px;
+  margin-left: 10px;
+  position: relative;
+  top: -4px;
+  font-family: "Roboto", sans-serif; }
+  #cancel-comment-reply-link .fa {
+    margin-right: 10px; }
+  #cancel-comment-reply-link:hover {
+    color: #FFFFFF;
+    background: #67a227; }
+  #cancel-comment-reply-link:hover {
+    background: #201c1d;
+    color: #FFFFFF; }
+  #cancel-comment-reply-link .fa {
+    margin-right: 3px; }
+
 .comment-respond, .entry-pings {
   background: none;
   padding: 60px; }

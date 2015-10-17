@@ -117,7 +117,7 @@ p.comment-meta {
     position: absolute;
     top: 0;
     right: 0;
-    
+
     @include button( light );
     @include button-size( xsm );
 }
@@ -140,6 +140,16 @@ p.comment-meta {
 .comment-reply-title {
     margin-bottom: $space-default-half;
     text-align: center;
+}
+
+#cancel-comment-reply-link {
+    @include button( light );
+    @include button-size( xsm );
+
+    margin-left: 10px;
+    position: relative;
+    top: -4px;
+    font-family: $font-family-sans-serif;
 }
 
 .comment-respond, .entry-pings {
