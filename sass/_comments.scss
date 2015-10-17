@@ -102,6 +102,14 @@ p.comment-meta {
 
 } // p.comment-meta
 
+.comment-edit-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $secondary;
+    border-bottom: 2px solid $primary;
+}
+
 .comment-reply-link {
     margin-top: 10px;
     @include button();

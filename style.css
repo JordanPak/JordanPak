@@ -1983,6 +1983,13 @@ p.comment-meta {
     font-size: 14px;
     font-style: italic; }
 
+.comment-edit-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #201c1d;
+  border-bottom: 2px solid #8dc63f; }
+
 .comment-reply-link {
   margin-top: 10px;
   display: inline-block;
