@@ -73,6 +73,31 @@ h3 {
 
 
 
+//-- LISTS --//
+
+ul.big {
+    margin-top: $space-default-half;
+    font-size: 18px;
+
+    li {
+        margin-bottom: $space-default-half - 4px;
+    }
+
+} // ul.big
+
+ul.checkmark {
+    margin-left: $space-default-half;
+
+    li {
+        list-style-type: none;
+        padding-left: $space-default-middle + 2px;
+        background: url('images/bullet-checkmark.png') no-repeat left;
+    }
+
+} // ul.checkmark
+
+
+
 //-- INLINE ANCHORS --//
 
 .content .entry {

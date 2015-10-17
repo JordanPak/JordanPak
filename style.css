@@ -1677,6 +1677,19 @@ h3 {
   text-transform: uppercase;
   font-size: 52px; }
 
+ul.big {
+  margin-top: 20px;
+  font-size: 18px; }
+  ul.big li {
+    margin-bottom: 16px; }
+
+ul.checkmark {
+  margin-left: 20px; }
+  ul.checkmark li {
+    list-style-type: none;
+    padding-left: 32px;
+    background: url("images/bullet-checkmark.png") no-repeat left; }
+
 .content .entry a {
   color: inherit;
   border-bottom: 2px solid #8dc63f; }
