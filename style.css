@@ -1928,6 +1928,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   padding-top: 20px;
   background: none;
   border: 0; }
+  .entry-comments h3 {
+    text-align: center; }
 
 .comment-list {
   display: block;
@@ -2018,7 +2020,8 @@ p.comment-meta {
     color: #ff0000; }
 
 .comment-reply-title {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: center; }
 
 .comment-respond, .entry-pings {
   background: none;

@@ -12,6 +12,11 @@
     padding-top: $space-default-half;
     background: none;
     border: 0;
+
+    h3 {
+        text-align: center;
+    }
+
 } // .entry-contents
 
 .comment-list {
@@ -127,6 +132,7 @@ p.comment-meta {
 
 .comment-reply-title {
     margin-bottom: $space-default-half;
+    text-align: center;
 }
 
 .comment-respond, .entry-pings {

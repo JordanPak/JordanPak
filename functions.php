@@ -153,6 +153,23 @@ function jpak_post_meta_filter( $post_meta ) {
 }
 
 
+
+add_filter ( 'edit_comment_link' , 'jpak_edit_comment_link' );
+/**
+* Customize Comment Edit Link
+*
+* @package JordanPak
+* @since 1.0.0
+*
+* @return string
+*/
+function jpak_edit_comment_link( $edit_link ) {
+    $edit_link = '<a href="' . get_edit_comment_link() . '" class="comment-edit-link"><i class="fa fa-wrench"></i> EDIT</a>';
+    return $edit_link;
+}
+
+
+
 add_filter('genesis_footer_creds_text', 'jpak_footer_creds');
 /**
 * Customize Footer Credits
