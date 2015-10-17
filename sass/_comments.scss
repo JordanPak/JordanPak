@@ -25,12 +25,11 @@
     margin: 0;
 
     li li {
-        margin-right: -$space-default-half;
+        margin-right: -$space-default-middle;
     }
 
     li {
-        margin-top: $space-default-half;
-        padding: $space-default-half;
+        padding: $space-default-middle;
     }
 
     > .comment {
@@ -52,11 +51,18 @@
     } // .comment
 
     .children {
-        padding-bottom: $space-default-middle;
 
         li {
             margin-top: 0;
             padding-bottom: 0;
+        }
+
+        article {
+            border-left: 6px solid $secondary-mid-light;
+        }
+
+        &:last-child {
+            margin-bottom: $space-default-half * 3;
         }
 
     } // .children
