@@ -1691,6 +1691,9 @@ ul.checkmark {
     padding-left: 32px;
     background: url("images/bullet-checkmark.png") no-repeat left; }
 
+hr {
+  margin: 60px 0; }
+
 .content .entry a {
   color: inherit;
   border-bottom: 2px solid #8dc63f; }
