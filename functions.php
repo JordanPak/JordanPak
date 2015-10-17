@@ -57,6 +57,13 @@ function jpak_global_styles() {
 } // jpak_global_styles()
 
 
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+    if ( !current_user_can('administrator') && !is_admin() ) {
+      show_admin_bar(false);
+    }
+} // remove_admin_bar()
+
 
 add_action( 'genesis_after_header', 'jpak_mini_hero' );
 /**
