@@ -60,6 +60,12 @@ h3 {
     padding-bottom: $space-default-half + 5px;
 }
 
+.page.full-width-content .entry-title {
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: $space-default + 5px;
+}
+
 .single .entry-title {
     text-transform: uppercase;
     font-size: 52px;

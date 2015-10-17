@@ -1668,6 +1668,11 @@ h3 {
   margin-bottom: 40px;
   padding-bottom: 25px; }
 
+.page.full-width-content .entry-title {
+  font-size: 72px;
+  text-align: center;
+  padding-bottom: 45px; }
+
 .single .entry-title {
   text-transform: uppercase;
   font-size: 52px; }
