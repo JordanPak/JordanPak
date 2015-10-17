@@ -117,8 +117,9 @@ p.comment-meta {
     position: absolute;
     top: 0;
     right: 0;
-    color: $secondary;
-    border-bottom: 2px solid $primary;
+    
+    @include button( light );
+    @include button-size( xsm );
 }
 
 .comment-reply-link {

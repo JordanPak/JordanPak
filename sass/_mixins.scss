@@ -120,7 +120,12 @@
     @if $size == xsm {
         padding: 4px ($space-default-half - 8px) 3px ($space-default-half - 8px);
         font-size: 12px;
-    }
+
+        .fa {
+            margin-right: 3px;
+        }
+
+    } // xsm
     @if $size == sm {
         padding: 6px ($space-default-half - 6px) 5px ($space-default-half - 6px);
     }

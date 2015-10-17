@@ -1784,6 +1784,8 @@ p.entry-meta {
   .button.button-xsm, .content .entry .button.button-xsm {
     padding: 4px 12px 3px 12px;
     font-size: 12px; }
+    .button.button-xsm .fa, .content .entry .button.button-xsm .fa {
+      margin-right: 3px; }
   .button.button-sm, .content .entry .button.button-sm {
     padding: 6px 14px 5px 14px; }
   .button.button-lg, .content .entry .button.button-lg {
@@ -1990,8 +1992,33 @@ p.comment-meta {
   position: absolute;
   top: 0;
   right: 0;
+  display: inline-block;
+  padding: 12px 24px 11px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .030em;
+  border: 0;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #8dc63f;
+  color: #FFFFFF;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+  background: #edeeee;
   color: #201c1d;
-  border-bottom: 2px solid #8dc63f; }
+  padding: 4px 12px 3px 12px;
+  font-size: 12px; }
+  .comment-edit-link .fa {
+    margin-right: 10px; }
+  .comment-edit-link:hover {
+    color: #FFFFFF;
+    background: #67a227; }
+  .comment-edit-link:hover {
+    background: #201c1d;
+    color: #FFFFFF; }
+  .comment-edit-link .fa {
+    margin-right: 3px; }
 
 .comment-reply-link {
   margin-top: 10px;
@@ -2159,5 +2186,7 @@ section.featuredpost {
     section.featuredpost .more-link:hover {
       color: #FFFFFF;
       background: #67a227; }
+    section.featuredpost .more-link .fa {
+      margin-right: 3px; }
 
 /*# sourceMappingURL=style.css.map */
