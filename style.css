@@ -2026,8 +2026,7 @@ p.comment-meta {
 
 .comment-respond, .entry-pings {
   background: none;
-  padding: 60px;
-  padding-top: 0; }
+  padding: 60px; }
   .comment-respond form, .entry-pings form {
     padding: 40px;
     background: white;
