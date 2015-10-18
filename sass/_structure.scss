@@ -69,10 +69,9 @@ body {
     margin-top: $mini-hero-displacement;
 }
 
-.page-template-page_home .site-inner {
+.page-template-page_home .site-inner, .no-mini-hero .site-inner {
     margin-top: 0;
 }
-
 
 
 //-- WIDGET --//
