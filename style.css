@@ -2246,7 +2246,7 @@ section.featuredpost {
       margin-right: 3px; }
 
 .project-background-previews {
-  padding: 120px 220px 140px 220px;
+  padding: 120px 220px 150px 220px;
   background-image: url("images/bg-slashes.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -2317,6 +2317,6 @@ section.featuredpost {
     max-width: 500px; }
 
 .single-jpak_project .site-inner {
-  margin-top: -60px; }
+  margin-top: -80px; }
 
 /*# sourceMappingURL=style.css.map */
