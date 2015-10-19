@@ -133,11 +133,9 @@
 
 .project-features {
     float: right;
-    // padding: $space-default-middle;
+    padding: $space-default-middle;
     width: 33%;
-    // background: rgba($primary, 0.1);
-    // border-top: 2px solid $primary;
-    // font-weight: 700;
+    border: 2px solid $secondary-mid-light;
 
     h3 {
         text-align: center;
@@ -151,4 +149,16 @@
         margin: 0;
     }
 
-}
+} // .project-features
+
+.project-buttons {
+    margin-top: $space-default-middle;
+    text-align: center;
+
+    span {
+        margin: 0 $space-default-half;
+        font-style: italic;
+        border-bottom: 2px solid $primary;
+    }
+
+} // .project-buttons

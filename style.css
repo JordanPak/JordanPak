@@ -2349,7 +2349,9 @@ section.featuredpost {
 
 .project-features {
   float: right;
-  width: 33%; }
+  padding: 30px;
+  width: 33%;
+  border: 2px solid #edeeee; }
   .project-features h3 {
     text-align: center;
     border-bottom: 2px solid #edeeee;
@@ -2358,5 +2360,13 @@ section.featuredpost {
   .project-features ul {
     padding: 0;
     margin: 0; }
+
+.project-buttons {
+  margin-top: 30px;
+  text-align: center; }
+  .project-buttons span {
+    margin: 0 20px;
+    font-style: italic;
+    border-bottom: 2px solid #8dc63f; }
 
 /*# sourceMappingURL=style.css.map */
