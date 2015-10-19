@@ -2333,7 +2333,8 @@ section.featuredpost {
   text-align: left; }
 
 .single-jpak_project .entry-header {
-  position: relative; }
+  position: relative;
+  margin-bottom: 40px; }
 
 .project-visit-website {
   position: absolute;
