@@ -2309,6 +2309,10 @@ section.featuredpost {
   .browser-mockup.position-right {
     float: right;
     margin-top: -600px; }
+  .browser-mockup.size-desktop img {
+    max-width: 1100px; }
+  .browser-mockup.size-mobile img {
+    max-width: 500px; }
 
 .single-jpak_project .site-inner {
   margin-top: -60px; }
