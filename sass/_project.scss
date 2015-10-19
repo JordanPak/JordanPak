@@ -3,13 +3,17 @@
 //======================//
 
 .project-background-previews {
+    padding: 120px 220px 140px 220px; // For No Wrap
+    // padding-bottom: 140px; // With Wrap
+
+    @include clearfix();
 
     .wrap {
+        position: relative;
         padding-top: $space-default * 3;
     }
 
 } // .project-background-previews
-
 
 
 /*
@@ -21,7 +25,7 @@
 .browser-mockup {
     display: inline-block;
     border-top: 2em solid rgb(237, 238, 238);
-    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
     position: relative;
     border-radius: 3px 3px 0 0;
 
@@ -67,4 +71,21 @@
         display: block;
     }
 
+    &.position-left {
+        float: left;
+    }
+
+    &.position-right {
+        // position: absolute;
+        // top: ($space-default * 3) + 130px;
+        // right: 0;
+        float: right;
+        margin-top: -550px;
+    }
+
 } // .browser-mockup
+
+
+.single-jpak_project .site-inner {
+    margin-top: -($space-default-half * 3);
+}

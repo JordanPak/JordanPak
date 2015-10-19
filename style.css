@@ -2245,8 +2245,18 @@ section.featuredpost {
     section.featuredpost .more-link .fa {
       margin-right: 3px; }
 
-.project-background-previews .wrap {
-  padding-top: 120px; }
+.project-background-previews {
+  padding: 120px 220px 140px 220px; }
+  .project-background-previews:before {
+    content: " ";
+    display: table; }
+  .project-background-previews:after {
+    clear: both;
+    content: " ";
+    display: table; }
+  .project-background-previews .wrap {
+    position: relative;
+    padding-top: 120px; }
 
 /*
  *    Browser mockup code
@@ -2256,7 +2266,7 @@ section.featuredpost {
 .browser-mockup {
   display: inline-block;
   border-top: 2em solid #edeeee;
-  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
   position: relative;
   border-radius: 3px 3px 0 0; }
   .browser-mockup:before {
@@ -2293,5 +2303,13 @@ section.featuredpost {
     background-color: white; }
   .browser-mockup > * {
     display: block; }
+  .browser-mockup.position-left {
+    float: left; }
+  .browser-mockup.position-right {
+    float: right;
+    margin-top: -550px; }
+
+.single-jpak_project .site-inner {
+  margin-top: -60px; }
 
 /*# sourceMappingURL=style.css.map */
