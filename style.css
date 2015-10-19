@@ -2246,7 +2246,8 @@ section.featuredpost {
       margin-right: 3px; }
 
 .project-background-previews {
-  padding: 120px 220px 140px 220px; }
+  padding: 120px 220px 140px 220px;
+  background: #8dc63f; }
   .project-background-previews:before {
     content: " ";
     display: table; }
