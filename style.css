@@ -2319,4 +2319,17 @@ section.featuredpost {
 .single-jpak_project .site-inner {
   margin-top: -80px; }
 
+.project-header-label {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #67a227;
+  text-transform: uppercase; }
+
+.single-jpak_project.full-width-content .entry-title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: left; }
+
 /*# sourceMappingURL=style.css.map */

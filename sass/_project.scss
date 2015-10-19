@@ -99,3 +99,18 @@
 .single-jpak_project .site-inner {
     margin-top: -($space-default * 2);
 }
+
+.project-header-label {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: $primary-dark;
+    text-transform: uppercase;
+} // .project-header-label
+
+.single-jpak_project.full-width-content .entry-title {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
