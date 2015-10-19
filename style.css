@@ -2324,6 +2324,7 @@ section.featuredpost {
 .project-header-label {
   margin: 0;
   padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   color: #67a227;
   text-transform: uppercase; }
@@ -2362,11 +2363,49 @@ section.featuredpost {
     margin: 0; }
 
 .project-buttons {
-  margin-top: 30px;
+  margin-top: 40px;
   text-align: center; }
   .project-buttons span {
     margin: 0 20px;
     font-style: italic;
     border-bottom: 2px solid #8dc63f; }
+
+.project-testimonial {
+  margin-top: 100px; }
+  .project-testimonial blockquote {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 160px;
+    text-align: center;
+    font-size: 22px; }
+    .project-testimonial blockquote::before {
+      display: block;
+      position: absolute;
+      top: -60px;
+      left: 64px;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 120px;
+      color: #8dc63f; }
+  .project-testimonial cite {
+    display: block;
+    margin-top: 30px;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif; }
+    .project-testimonial cite::before {
+      display: block;
+      content: ' ';
+      margin: 0 auto;
+      padding-top: 20px;
+      width: 50px;
+      border-top: 2px solid #edeeee; }
+  .project-testimonial span {
+    display: block;
+    font-size: 14px;
+    color: #67a227;
+    text-transform: uppercase;
+    line-height: 18px; }
 
 /*# sourceMappingURL=style.css.map */

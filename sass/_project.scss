@@ -103,6 +103,7 @@
 .project-header-label {
     margin: 0;
     padding: 0;
+    font-family: $font-family-condensed;
     font-size: 18px;
     color: $primary-dark;
     text-transform: uppercase;
@@ -152,7 +153,7 @@
 } // .project-features
 
 .project-buttons {
-    margin-top: $space-default-middle;
+    margin-top: $space-default;
     text-align: center;
 
     span {
@@ -162,3 +163,57 @@
     }
 
 } // .project-buttons
+
+.project-testimonial {
+    margin-top: $space-default-half * 5;
+
+    blockquote {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0 ($space-default * 4);
+        text-align: center;
+        font-size: 22px;
+        // color: $secondary-mid;
+
+        &::before {
+            display: block;
+            position: absolute;
+            top: -60px;
+            left: 64px;
+            font-family: $font-family-condensed;
+            font-size: 120px;
+            // font-weight: 700;
+            color: $primary;
+        }
+
+    } // blockquote
+
+    cite {
+        display: block;
+        margin-top: $space-default-middle;
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font-family-condensed;
+
+        &::before {
+            display: block;
+            content: ' ';
+            margin: 0 auto;
+            padding-top: $space-default-half;
+            width: 50px;
+            border-top: 2px solid $secondary-mid-light;
+        }
+
+    } // cite
+
+    span {
+        display: block;
+        font-size: 14px;
+        color: $primary-dark;
+        text-transform: uppercase;
+        line-height: 18px;
+    }
+
+} // .project-testimonial
