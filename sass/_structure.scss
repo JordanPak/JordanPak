@@ -80,3 +80,25 @@ body {
     border-top: 5px solid $primary-dark;
     border-bottom: 2px solid $secondary-mid-light;
 }
+
+
+
+//-- GRID LOOP --//
+
+.genesis-grid-even {
+  float: right;
+	padding: 0 0 15px;
+	width: 48%;
+}
+
+.genesis-grid-odd {
+	clear: both;
+	float: left;
+	padding: 0 0 15px ;
+	width: 48%;
+}
+
+.genesis-grid-even,
+.genesis-grid-odd {
+	margin: 0 0 20px;
+}
