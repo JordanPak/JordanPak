@@ -2,6 +2,15 @@
 //  JordanPak | Project //
 //======================//
 
+.project-grid-entry {
+    border-top-color: $secondary-mid-light;
+
+    &:first-child, &:nth-child(2) {
+        border-top-color: $primary-dark;
+    }
+
+} // .project-grid-entry
+
 .project-background-previews {
     padding: 120px 220px 150px 220px; // padding-bottom: 140px; // With Wrap
     background-image: url('images/bg-slashes.svg');

@@ -2262,6 +2262,11 @@ section.featuredpost {
     section.featuredpost .more-link .fa {
       margin-right: 3px; }
 
+.project-grid-entry {
+  border-top-color: #edeeee; }
+  .project-grid-entry:first-child, .project-grid-entry:nth-child(2) {
+    border-top-color: #67a227; }
+
 .project-background-previews {
   padding: 120px 220px 150px 220px;
   background-image: url("images/bg-slashes.svg");
