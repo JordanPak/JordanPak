@@ -2262,17 +2262,18 @@ section.featuredpost {
     section.featuredpost .more-link .fa {
       margin-right: 3px; }
 
-.project-grid a:first-child .entry, .project-grid a:nth-child(2) .entry {
-  border-top-color: #67a227; }
-
 .project-grid-entry {
   position: relative;
-  height: 320px;
+  padding: 10px;
   background: no-repeat top;
   border-top-color: #edeeee;
   border-bottom: 0;
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.22), inset 0 0 0 10px #FFFFFF;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.22), inset 0 0 0 10px #FFFFFF; }
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.22); }
+  .project-grid-entry:first-child, .project-grid-entry:nth-child(2) {
+    border-top-color: #67a227; }
+  .project-grid-entry img {
+    display: block; }
   .project-grid-entry .entry-title {
     display: block;
     position: absolute;

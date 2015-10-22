@@ -2,26 +2,23 @@
 //  JordanPak | Project //
 //======================//
 
-.project-grid {
-
-    a {
-
-        &:first-child .entry, &:nth-child(2) .entry {
-            border-top-color: $primary-dark;
-        }
-
-    } // a
-
-} // .project-grid
-
 .project-grid-entry {
     position: relative;
-    height: 320px;
+    padding: 10px;
+    // height: 320px;
     background: no-repeat top;
     border-top-color: $secondary-mid-light;
     border-bottom: 0;
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.22), inset 0 0 0 10px $white;
-    box-shadow: 0 0 8px rgba(0,0,0,0.22), inset 0 0 0 10px $white;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.22);
+    box-shadow: 0 0 8px rgba(0,0,0,0.22);
+
+    &:first-child, &:nth-child(2) {
+        border-top-color: $primary-dark;
+    }
+
+    img {
+        display: block;
+    }
 
     .entry-title {
         display: block;
