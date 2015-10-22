@@ -3,6 +3,7 @@
 //======================//
 
 .project-grid-entry {
+    position: relative;
     height: 320px;
     background: no-repeat top;
     border-top-color: $secondary-mid-light;
@@ -12,6 +13,20 @@
 
     &:first-child, &:nth-child(2) {
         border-top-color: $primary-dark;
+    }
+
+    .entry-title {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: $space-default-half;
+        left: 0;
+        font-family: $font-family-sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        color: $white;
+        text-shadow: 0 0 8px rgba(0,0,0,0.5), 0 2px 3px $black;
     }
 
 } // .project-grid-entry

@@ -2263,6 +2263,7 @@ section.featuredpost {
       margin-right: 3px; }
 
 .project-grid-entry {
+  position: relative;
   height: 320px;
   background: no-repeat top;
   border-top-color: #edeeee;
@@ -2271,6 +2272,18 @@ section.featuredpost {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.22), inset 0 0 0 10px #FFFFFF; }
   .project-grid-entry:first-child, .project-grid-entry:nth-child(2) {
     border-top-color: #67a227; }
+  .project-grid-entry .entry-title {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5), 0 2px 3px #000000; }
 
 .project-background-previews {
   padding: 120px 220px 150px 220px;
