@@ -2,6 +2,18 @@
 //  JordanPak | Project //
 //======================//
 
+.project-grid {
+
+    a {
+
+        &:first-child .entry, &:nth-child(2) .entry {
+            border-top-color: $primary-dark;
+        }
+
+    } // a
+
+} // .project-grid
+
 .project-grid-entry {
     position: relative;
     height: 320px;
@@ -10,10 +22,6 @@
     border-bottom: 0;
     -moz-box-shadow: 0 0 8px rgba(0,0,0,0.22), inset 0 0 0 10px $white;
     box-shadow: 0 0 8px rgba(0,0,0,0.22), inset 0 0 0 10px $white;
-
-    &:first-child, &:nth-child(2) {
-        border-top-color: $primary-dark;
-    }
 
     .entry-title {
         display: block;
