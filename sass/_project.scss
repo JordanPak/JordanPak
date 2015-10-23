@@ -22,7 +22,11 @@
         &:hover {
 
             .entry-title {
-                color: $primary;
+                color: $white;
+            }
+
+            .fade {
+                opacity: 1;
             }
 
         } // &:hover
@@ -36,35 +40,39 @@
     }
 
     .fade {
+        opacity: 0.85;
         position: absolute;
         top: 0;
         left: 0;
         display: block;
         width: 100%;
         height: 100%;
-        background: -webkit-linear-gradient( $transparent 35%, rgba(0,0,0,0.9) );
-        background: -o-linear-gradient( $transparent 35%, rgba(0,0,0,0.9) );
-        background: -moz-linear-gradient( $transparent 35%, rgba(0,0,0,0.9) );                        
-        background: linear-gradient( $transparent 35%, rgba(0,0,0,0.9) );
+        background: -webkit-linear-gradient( $transparent 30%, rgba(0,0,0,0.9) );
+        background: -o-linear-gradient( $transparent 30%, rgba(0,0,0,0.9) );
+        background: -moz-linear-gradient( $transparent 30%, rgba(0,0,0,0.9) );
+        background: linear-gradient( $transparent 30%, rgba(0,0,0,0.9) );
+
+        @include transition-ease-in-out( 400ms );
     }
 
     .entry-title {
         display: block;
         position: absolute;
         width: 100%;
-        bottom: $space-default-half + 10px;
+        bottom: $space-default-half + 5px;
         left: 0;
         font-family: $font-family-sans-serif;
         font-size: 38px;
         font-weight: 300;
         text-align: center;
-        color: $white;
+        color: $secondary-light;
         text-shadow: 0 0 8px rgba(0,0,0,0.5), 0 2px 3px $black;
 
         @include transition-ease-in-out();
     }
 
 } // .project-grid-entry
+
 
 .project-background-previews {
     padding: 120px 220px 150px 220px; // padding-bottom: 140px; // With Wrap
@@ -76,11 +84,6 @@
     background-color: $primary;
 
     @include clearfix();
-
-    // .wrap {
-    //     position: relative;
-    //     padding-top: $space-default * 3;
-    // }
 
 } // .project-background-previews
 
