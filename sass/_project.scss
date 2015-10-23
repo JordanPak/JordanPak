@@ -5,14 +5,9 @@
 .project-grid-entry {
     padding: 10px;
     background: no-repeat top;
-    border-top-color: $secondary-mid-light;
-    border-bottom: 0;
+    border: 0;
     -moz-box-shadow: 0 0 8px rgba(0,0,0,0.22);
     box-shadow: 0 0 8px rgba(0,0,0,0.22);
-
-    &:first-child, &:nth-child(2) {
-        border-top-color: $primary-dark;
-    }
 
     &.entry a {
         display: block;
@@ -23,6 +18,7 @@
 
             .entry-title {
                 color: $white;
+                bottom: 28px;
             }
 
             .fade {
