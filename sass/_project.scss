@@ -18,7 +18,11 @@
 
             .entry-title {
                 color: $white;
-                bottom: 28px;
+                bottom: 54px; //28px;
+            }
+
+            .entry-subtitle {
+                opacity: 1;
             }
 
             .fade {
@@ -51,20 +55,32 @@
         @include transition-ease-in-out( 400ms );
     }
 
-    .entry-title {
+    .entry-title, .entry-subtitle {
         display: block;
         position: absolute;
         width: 100%;
-        bottom: $space-default-half + 5px;
         left: 0;
-        font-family: $font-family-sans-serif;
-        font-size: 38px;
-        font-weight: 300;
         text-align: center;
-        color: $secondary-light;
         text-shadow: 0 0 8px rgba(0,0,0,0.5), 0 2px 3px $black;
 
         @include transition-ease-in-out();
+    }
+
+    .entry-title {
+        bottom: $space-default-half + 5px;
+        font-family: $font-family-sans-serif;
+        font-size: 38px;
+        font-weight: 300;
+        color: $secondary-light;
+    }
+
+    .entry-subtitle {
+        opacity: 0;
+        bottom: 4px;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $primary;
     }
 
 } // .project-grid-entry
