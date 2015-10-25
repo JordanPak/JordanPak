@@ -1,0 +1,170 @@
+//========================//
+//  JordanPak | Comments  //
+//========================//
+
+.comment-respond, .entry-comments, .entry-pings {
+    margin-bottom: 0;
+}
+
+.entry-comments {
+    display: block;
+    padding: $space-default-half * 3;
+    padding-top: $space-default-half;
+    background: none;
+    border: 0;
+
+    h3 {
+        text-align: center;
+    }
+
+} // .entry-contents
+
+.comment-list {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    li li {
+        margin-right: -$space-default-middle;
+    }
+
+    li {
+        padding: $space-default-middle;
+    }
+
+    > .comment {
+        padding: 0;
+    }
+
+    .comment {
+        background: none;
+        border: none;
+
+        article {
+            padding: $space-default + 10px;
+            background: $white;
+            border-bottom: 2px solid $secondary-mid-light;
+            font-size: 16px;
+
+        } // article
+
+    } // .comment
+
+    .children {
+
+        li {
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+
+        article {
+            border-left: 6px solid $secondary-mid-light;
+        }
+
+        &:last-child {
+            margin-bottom: $space-default-half * 3;
+        }
+
+    } // .children
+
+} // .comment-list
+
+.comment-header {
+    position: relative;
+}
+
+.comment-author {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0;
+
+    a {
+        color: $black;
+        border-bottom: 2px solid $transparent;
+
+        &:hover {
+            border-bottom: 2px solid $primary;
+        }
+
+    } // a
+
+    .says {
+        font-weight: normal;
+        color: $secondary-mid;
+    }
+
+} // .comment-author
+
+.comment .avatar {
+    position: absolute;
+    left: -74px;
+    margin: 0;
+    border-bottom: 4px solid $secondary-mid-light;
+}
+
+p.comment-meta {
+    margin-bottom: $space-default-middle;
+
+    a {
+        color: $secondary-mid;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+} // p.comment-meta
+
+.comment-edit-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include button( light );
+    @include button-size( xsm );
+}
+
+.comment-reply-link {
+    margin-top: 10px;
+    @include button();
+    @include button-size( sm );
+}
+
+.comment-respond label {
+    font-weight: bold;
+
+    .required {
+        color: #ff0000;
+    }
+
+} // .comment-respond label
+
+.comment-reply-title {
+    margin-bottom: $space-default-half;
+    text-align: center;
+}
+
+#cancel-comment-reply-link {
+    @include button( light );
+    @include button-size( xsm );
+
+    margin-left: 10px;
+    position: relative;
+    top: -4px;
+    font-family: $font-family-sans-serif;
+}
+
+.comment-respond, .entry-pings {
+    background: none;
+    padding: $space-default-half * 3;
+
+    form {
+        padding: $space-default;
+        background: white;
+        border-bottom: 2px solid $secondary-mid-light;
+
+        .form-submit {
+            margin: 0;
+        }
+
+    } // form
+
+} // .comment-respond, .entry-pings

@@ -1,0 +1,47 @@
+//=========================================//
+//  JordanPak | Widget: Featured WP Stuff  //
+//=========================================//
+
+#featured-stuff {
+    margin: 0;
+    margin-bottom: $space-default + $space-default-half;
+    padding: ($space-default * 2) 0 $space-default 0;
+    background: $secondary;
+    color: $white;
+    text-align: center;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+    }
+
+    .widget {
+
+        @include col( one-third );
+
+        &:first-child {
+            @include col( one-third, true );
+        }
+
+    } // .widget
+
+    .wordpress-stuff {
+
+        h3 {
+            display: inline-block;
+            margin-bottom: 2px;
+            padding-bottom: 2px;
+            font-family: $font-family-sans-serif;
+            font-weight: 300;
+            font-size: 36px;
+            border-bottom: 1px solid $primary;
+        }
+
+        p {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+
+    } // .wordpress stuff
+
+} // #featured-stuff

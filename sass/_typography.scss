@@ -1,0 +1,238 @@
+//========================-=//
+//  JordanPak | Typography  //
+//==========================//
+
+
+//-- UTILITY --//
+
+::-moz-selection {
+    background: $secondary;
+    color: $white;
+    text-shadow: none;
+}
+
+::selection {
+    background: $secondary;
+    color: $white;
+    text-shadow: none;
+}
+
+
+
+//-- GLOBAL BODY --//
+
+body {
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: $body-text;
+}
+
+body > div {
+    font-size: 16px;
+}
+
+
+
+//-- HEADINGS --//
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-heading;
+} // Headers
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.page .entry-title {
+    text-transform: uppercase;
+    font-size: 52px;
+    border-bottom: 2px solid $secondary-mid-light;
+    margin-bottom: $space-default;
+    padding-bottom: $space-default-half + 5px;
+}
+
+.page.full-width-content .entry-title {
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: $space-default + 5px;
+    margin-bottom: $space-default + 5px;
+}
+
+.single .entry-title {
+    text-transform: uppercase;
+    font-size: 52px;
+}
+
+
+
+//-- LISTS --//
+
+ul.big {
+    margin-top: $space-default-half;
+    margin-bottom: $space-default + 10px;
+    font-size: 18px;
+
+    li {
+        margin-bottom: $space-default-half - 4px;
+    }
+
+} // ul.big
+
+ul.checkmark {
+    margin-left: $space-default-half;
+
+    li {
+        list-style-type: none;
+        padding-left: $space-default-middle + 2px;
+        background: url('images/bullet-checkmark.png') no-repeat left;
+    }
+
+} // ul.checkmark
+
+
+
+//-- HORIZONAL RULE --//
+
+hr {
+    margin: ($space-default-half * 3) 0;
+}
+
+
+//-- INLINE ANCHORS --//
+
+.content .entry {
+
+    a {
+        color: inherit;
+        border-bottom: 2px solid $primary;
+
+        &:hover {
+            border-color: $body-text;
+        }
+
+        &.share {
+            color: $white;
+            border: none;
+        }
+
+        &.button {
+            border: none;
+        }
+
+    } // a
+
+    .entry-title a {
+        font-size: 42px;
+        border-bottom: 2px solid $transparent;
+
+        &:hover {
+            border-bottom: 2px solid $primary;
+        }
+
+    } // .entry-title a
+
+} // .content .entry a
+
+
+
+//-- ENTRY META --//
+
+.entry-header .entry-meta {
+    margin-bottom: $space-default;
+}
+
+p.entry-meta {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $secondary-mid;
+}
+
+.content .entry .entry-categories {
+    display: inline;
+
+    a {
+        border: 0;
+        color: $primary;
+
+        &:hover {
+            color: $primary-dark;
+        }
+
+    } // a
+
+} // .entry-categories
+
+.post-info-separator {
+    margin: 0 12px;
+    letter-spacing: -0.1em;
+}
+
+
+
+//-- SHARING --//
+
+.share-after {
+    margin-top: $space-default + $space-default-half;
+}
+
+
+
+//-- WIDGET --//
+
+.widgettitle {
+    font-size: 32px;
+}
+
+
+
+//-- BUTTON --//
+
+.button, .content .entry .button {
+
+    @include button();
+
+    // Additional Colors
+    &.button-dark {
+        @include button( dark );
+    }
+    &.button-light {
+        @include button( light );
+    }
+
+    // Sizes
+    &.button-xsm {
+        @include button-size( xsm );
+    }
+    &.button-sm {
+        @include button-size( sm );
+    }
+    &.button-lg {
+        @include button-size( lg );
+    }
+
+    // Outline Button
+    &.button-outline {
+
+        @include button-outline();
+
+        // Outline Colors
+        &.button-dark {
+            @include button-outline( dark );
+        }
+        &.button-white {
+            @include button-outline( white );
+        }
+
+    } // &.button-outline
+
+} // .button

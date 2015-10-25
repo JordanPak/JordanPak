@@ -13,23 +13,29 @@ $black:         #000000;
 
 
 //-- PRIMARY --//
-$primary:       #333333;
+$primary:               rgba(141, 198, 63, 1);    // #8dc63f    JP Green
+$primary-dark:          rgba(103, 162, 39, 1);    // #67a227
+$primary-darkest:       rgba(60, 106, 10, 1);     // #3c6a0a
 
 
 //-- SECONDARY --//
-$secondary:         #F5C320;
-$secondary-light:   #eecc99;
-$secondary-dark:    #a58153;
+$secondary-dark:        rgba(23, 22, 22, 1);            // #171616
+$secondary:             rgba(32, 28, 29, 1);            // #201c1d    JP Gray
+$secondary-mid:         rgba(121, 122, 125, 1);         // #797a7d    JP Dark Gray
+$secondary-mid-light:   lighten( $secondary-mid, 45 );
+$secondary-light:       rgba(247, 247, 247, 1);         // #f7f7f7    JP Light Gray
 
 
-//-- SUPPORT --//
-$gray:          #a7a9ae;
-$gray-light:    #f5f5f5;
-$gray-dark:     #292929;
+//-- TRANSPARENCIES --/
+$secondary-trans-90:    rgba(32, 28, 29, 0.9);
 
 
 //-- DEFAULTS --//
 $body-text:         #333333;
+
+
+//-- HELPERS --//
+$transparent:       rgba(0,0,0,0);
 
 
 
@@ -40,3 +46,23 @@ $body-text:         #333333;
 $space-default:         40px;
 $space-default-half:    $space-default / 2;
 $space-default-middle:  $space-default-half + ($space-default-half / 2);
+
+
+
+//==================//
+//  ELEMENT SIZING  //
+//==================//
+
+$site-header-height:        102px;
+$mini-hero-height:          200px;
+$mini-hero-displacement:    -$mini-hero-height + 120px;
+
+
+
+//=========//
+//  FONTS  //
+//=========//
+
+$font-family-sans-serif:   'Roboto', sans-serif;
+$font-family-condensed:    'Roboto Condensed', sans-serif;
+$font-family-heading:      'bebas-neue', 'Roboto Condensed', sans-serif;
