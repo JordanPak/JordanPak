@@ -16,32 +16,24 @@
     $breakpoint-large:             1200px;      // Medium up to Large (Desktop)
 
 
-
 //=========//
 //  MIXIN  //
 //=========//
 
 @mixin breakpoint( $class ) {
 
-
-    //-- WIDTHS --//
-
     @if $class == extra-extra-small {
         @media (max-width: $breakpoint-extra-extra-small) { @content; }
     }
-
     @if $class == extra-small {
         @media (max-width: $breakpoint-extra-small) { @content; }
     }
-
     @if $class == small {
         @media (max-width: $breakpoint-small) { @content; }
     }
-
     @if $class == medium {
         @media (max-width: $breakpoint-medium) { @content; }
     }
-
     @if $class == large {
         @media (max-width: $breakpoint-large) { @content; }
     }
