@@ -2274,7 +2274,7 @@ section.featuredpost {
     border: 0; }
     .project-grid-entry.entry a:hover .entry-title {
       color: #FFFFFF;
-      bottom: 54px; }
+      bottom: 52px; }
     .project-grid-entry.entry a:hover .entry-subtitle {
       opacity: 1; }
     .project-grid-entry.entry a:hover .fade {
@@ -2304,12 +2304,12 @@ section.featuredpost {
     left: 0;
     text-align: center;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5), 0 2px 3px #000000;
-    -webkit-transition: all ease-in-out 200ms;
-    transition: all ease-in-out 200ms; }
+    -webkit-transition: all ease-in-out 275ms;
+    transition: all ease-in-out 275ms; }
   .project-grid-entry .entry-title {
     bottom: 25px;
     font-family: "Roboto", sans-serif;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 300;
     color: #f7f7f7; }
   .project-grid-entry .entry-subtitle {
