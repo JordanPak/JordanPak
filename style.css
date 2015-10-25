@@ -2274,7 +2274,7 @@ section.featuredpost {
     border: 0; }
     .project-grid-entry.entry a:hover .entry-title {
       color: #FFFFFF;
-      bottom: 52px; }
+      bottom: 50px; }
     .project-grid-entry.entry a:hover .entry-subtitle {
       opacity: 1; }
     .project-grid-entry.entry a:hover .fade {
