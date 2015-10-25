@@ -93,7 +93,9 @@ ul.checkmark {
     li {
         list-style-type: none;
         padding-left: $space-default-middle + 2px;
-        background: url('images/bullet-checkmark.png') no-repeat left;
+        background-image: url('images/bullet-checkmark.png');
+        background-repeat: no-repeat;
+        background-position: 0 5px;
     }
 
 } // ul.checkmark

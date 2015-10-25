@@ -1,0 +1,305 @@
+//======================//
+//  JordanPak | Project //
+//======================//
+
+.project-grid-entry {
+    padding: 10px;
+    background: no-repeat top;
+    border: 0;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.22);
+    box-shadow: 0 0 8px rgba(0,0,0,0.22);
+
+    &.entry a {
+        display: block;
+        position: relative;
+        border: 0;
+
+        &:hover {
+
+            .entry-title {
+                color: $white;
+                bottom: 50px;
+            }
+
+            .entry-subtitle {
+                opacity: 1;
+            }
+
+            .fade {
+                opacity: 1;
+            }
+
+        } // &:hover
+
+    } // a
+
+    img {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fade {
+        opacity: 0.85;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient( $transparent 30%, rgba(0,0,0,0.9) );
+        background: -o-linear-gradient( $transparent 30%, rgba(0,0,0,0.9) );
+        background: -moz-linear-gradient( $transparent 30%, rgba(0,0,0,0.9) );
+        background: linear-gradient( $transparent 30%, rgba(0,0,0,0.9) );
+
+        @include transition-ease-in-out( 400ms );
+    }
+
+    .entry-title, .entry-subtitle {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        text-shadow: 0 0 8px rgba(0,0,0,0.5), 0 2px 3px $black;
+
+        @include transition-ease-in-out( 275ms );
+    }
+
+    .entry-title {
+        bottom: $space-default-half + 5px;
+        font-family: $font-family-sans-serif;
+        font-size: 32px;
+        font-weight: 300;
+        color: $secondary-light;
+    }
+
+    .entry-subtitle {
+        opacity: 0;
+        bottom: 4px;
+        font-size: 18px;
+        font-weight: 700;
+        // text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: $primary;
+    }
+
+} // .project-grid-entry
+
+.project-full-image {
+    border: 10px solid $white;
+    -moz-box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
+}
+
+.project-background-previews {
+    padding: 120px 220px 150px 220px; // padding-bottom: 140px; // With Wrap
+    background-image: url('images/bg-slashes.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: $primary;
+
+    @include clearfix();
+
+} // .project-background-previews
+
+
+/*
+ *    Browser mockup code
+ *
+ *    @author Adrien Jarthon
+ */
+
+.browser-mockup {
+    display: inline-block;
+    border-top: 2em solid rgb(237, 238, 238);
+    -moz-box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 3px 3px 0 0;
+
+    &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: -1.25em;
+        left: 1em;
+        width: 0.5em;
+        height: 0.5em;
+        border-radius: 50%;
+        background-color: #f44;
+        box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+    }
+
+    &.with-tab:after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: -2em;
+        left: 5.5em;
+        width: 20%;
+        height: 0em;
+        border-bottom: 2em solid white;
+        border-left: 0.8em solid transparent;
+        border-right: 0.8em solid transparent;
+    }
+
+    &.with-url:after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: -1.6em;
+        left: 5.5em;
+        width: calc(100% - 6em);
+        height: 1.2em;
+        border-radius: 2px;
+        background-color: white;
+    }
+
+    > * {
+        display: block;
+    }
+
+    &.position-left {
+        float: left;
+    }
+
+    &.position-right {
+        float: right;
+        margin-top: -600px;
+    }
+
+    &.size-desktop img {
+        max-width: 1100px;
+    }
+
+    &.size-mobile img {
+        max-width: 500px;
+    }
+
+} // .browser-mockup
+
+
+.single-jpak_project .site-inner {
+    margin-top: -($space-default * 2);
+}
+
+.project-header-label {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-condensed;
+    font-size: 18px;
+    color: $primary-dark;
+    text-transform: uppercase;
+} // .project-header-label
+
+.single-jpak_project.full-width-content .entry-title {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
+
+.single-jpak_project .entry-header {
+    position: relative;
+    margin-bottom: $space-default;
+}
+
+.project-visit-website {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.project-description {
+    float: left;
+    width: 60%;
+}
+
+.project-features {
+    float: right;
+    padding: $space-default-middle;
+    width: 33%;
+    border: 2px solid $secondary-mid-light;
+
+    h3 {
+        text-align: center;
+        border-bottom: 2px solid $secondary-mid-light;
+        padding-bottom:  6px;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+} // .project-features
+
+.project-buttons {
+    margin-top: $space-default;
+    text-align: center;
+
+    span {
+        margin: 0 $space-default-half;
+        font-style: italic;
+        border-bottom: 2px solid $primary;
+    }
+
+} // .project-buttons
+
+.project-testimonial {
+    margin-top: $space-default-half * 5;
+
+    blockquote {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0 ($space-default * 4);
+        text-align: center;
+        font-size: 22px;
+        // color: $secondary-mid;
+
+        &::before {
+            display: block;
+            position: absolute;
+            top: -60px;
+            left: 64px;
+            font-family: $font-family-condensed;
+            font-size: 120px;
+            // font-weight: 700;
+            color: $primary;
+        }
+
+    } // blockquote
+
+    cite {
+        display: block;
+        margin-top: $space-default-middle;
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font-family-condensed;
+
+        &::before {
+            display: block;
+            content: ' ';
+            margin: 0 auto;
+            padding-top: $space-default-half;
+            width: 50px;
+            border-top: 2px solid $secondary-mid-light;
+        }
+
+    } // cite
+
+    span {
+        display: block;
+        font-size: 14px;
+        color: $primary-dark;
+        text-transform: uppercase;
+        line-height: 18px;
+    }
+
+} // .project-testimonial
