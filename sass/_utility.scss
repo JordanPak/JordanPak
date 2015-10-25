@@ -1,0 +1,24 @@
+//=======================//
+//  JordanPak | Utility  //
+//=======================//
+
+
+//-- ALIGNMENT --//
+
+a.alignleft, img.alignleft, .wp-caption.alignleft {
+    margin: 0 $space-default $space-default 0;
+}
+
+a.alignright, img.alignright, .wp-caption.alignright {
+    margin: 0 0 $space-default $space-default;
+}
+
+
+
+//-- CAPTIONS --//
+
+.wp-caption-text {
+    color: $secondary-mid;
+    font-style: italic;
+    font-weight: 400;
+}

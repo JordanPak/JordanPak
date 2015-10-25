@@ -13,6 +13,204 @@
 }
 
 
+
+//===========//
+//  BUTTONS  //
+//===========//
+
+@mixin button( $color: default ) {
+
+    // Default Styles
+    display: inline-block;
+    padding: 12px 24px 11px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .030em;
+    border: 0;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: $primary;
+    color: $white;
+
+    @include transition-ease-in-out();
+
+    // Font Awesome Icon
+    .fa {
+        margin-right: 10px;
+    }
+
+    // Default Hover
+    &:hover {
+        color: $white;
+        background: $primary-dark;
+    }
+
+
+    // Color: Dark
+    @if $color == dark {
+        background: $secondary;
+        color: $white;
+
+        &:hover {
+            background: $black;
+        }
+
+    } // Dark
+
+    // Color: Light
+    @if $color == light {
+        background: $secondary-mid-light;
+        color: $secondary;
+
+        &:hover {
+            background: $secondary;
+            color: $white;
+        }
+
+    } // Light
+
+} // button
+
+
+@mixin button-outline( $color: default ) {
+
+    // Default Outline
+    background: none;
+    color: $primary;
+    border: 2px solid $primary;
+
+    // Default Outline Hover
+    &:hover {
+        border-width: 2px;
+        border-style: solid;
+        background: $primary;
+        color: $white;
+    }
+
+    // Color: Dark
+    @if $color == dark {
+        border-color: $secondary;
+        color: $secondary;
+
+        &:hover {
+            background: $secondary;
+            color: $white;
+        }
+
+    } // Dark
+
+    // Color: White
+    @if $color == white {
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+            background: $white;
+            color: $secondary;
+        }
+
+    } // White
+
+} // button-outline()
+
+
+@mixin button-size( $size: med ) {
+
+    @if $size == xsm {
+        padding: 4px ($space-default-half - 8px) 3px ($space-default-half - 8px);
+        font-size: 12px;
+
+        .fa {
+            margin-right: 3px;
+        }
+
+    } // xsm
+    @if $size == sm {
+        padding: 6px ($space-default-half - 6px) 5px ($space-default-half - 6px);
+    }
+    @if $size == med {
+        padding: 12px 24px 11px 24px;
+    }
+    @if $size == lg {
+        padding: 12px 30px 13px 30px;
+        font-size: 22px;
+        font-weight: normal;
+        font-family: $font-family-heading;
+    }
+
+} // button-size()
+
+
+
+//===========//
+//  COLUMNS  //
+//===========//
+
+@mixin col( $size, $is_first: false ) {
+
+    // Global
+    float: left;
+    margin-left: 2.564102564102564%;
+
+    // One Half
+    @if $size == one-half {
+        width: 48.717948717948715%;
+    }
+    @if $size == three-sixths {
+        width: 48.717948717948715%;
+    }
+    @if $size == two-fourths {
+        width: 48.717948717948715%;
+    }
+
+    // One Third
+    @if $size == one-third {
+        width: 31.623931623931625%;
+    }
+    @if $size == two-sixths {
+        width: 31.623931623931625%;
+    }
+
+    // Two Thirds
+    @if $size == two-thirds {
+        width: 65.81196581196582%;
+    }
+    @if $size == four-sixths {
+        width: 65.81196581196582%;
+    }
+
+    // One Fourth
+    @if $size == one-fourth {
+        width: 23.076923076923077%;
+    }
+
+    // Three Fourths
+    @if $size == three-fourths {
+        width: 74.35897435897436%;
+    }
+
+    // One Sixth
+    @if $size == one-sixth {
+        width: 14.52991452991453%;
+    }
+
+    // Five Sixths
+    @if $size == five-sixths {
+        width: 82.90598290598291%;
+    }
+
+
+    // First?
+    @if $is_first == true {
+        clear: both;
+        margin-left: 0;
+    }
+
+} // col()
+
+
+
 //============//
 //  CLEARFIX  //
 //============//

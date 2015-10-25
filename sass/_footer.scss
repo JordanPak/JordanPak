@@ -1,0 +1,19 @@
+//======================//
+//  JordanPak | Footer  //
+//======================//
+
+.site-footer {
+    background: $secondary;
+    color: $white;
+
+    a {
+        color: $white;
+        border-bottom: 1px solid $primary;
+
+        &:hover {
+            border-bottom: 2px solid $primary;
+        }
+
+    } // a
+
+} // .site-footer

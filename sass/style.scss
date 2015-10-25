@@ -18,3 +18,20 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 // Variables & Mixins
 @import 'variables';
 @import 'mixins';
+
+// Customizations
+@import 'structure';
+@import 'typography';
+@import 'utility';
+@import 'navigation';
+@import 'forms';
+@import 'footer';
+@import 'comments';
+
+// Wigets
+@import 'home-hero';
+@import 'featured-stuff';
+@import 'home-blog';
+
+// Custom Templates
+@import 'project';
