@@ -66,10 +66,33 @@ function remove_admin_bar() {
 
 
 
-// PRIMARY NAVIGATION
+// NAVIGATION
 unregister_sidebar( 'header-right' );                       // Remove header-right Widget Area
 remove_action( 'genesis_after_header', 'genesis_do_nav' );  // Remove Default Menu Location
-add_action( 'genesis_header', 'genesis_do_nav', 12 );       // Place Default Menu after Title
+add_action( 'genesis_header', 'jpak_nav', 13 );
+/**
+* Navigation
+*
+* Custom navigation - Outputs Primary Menu & Mobile Toggle
+*
+* @package JordanPak
+* @since 1.0.0
+*/
+function jpak_nav() {
+
+    $nav_args = array(
+        'theme_location'    => 'primary',
+        'container'         => 'nav',
+        'container_class'   => 'nav-primary',
+        'menu_class'        => 'menu genesis-nav-menu menu-primary',
+        'link_before'       => '<span>',
+        'link_after'        => '</span>',
+    );
+
+    // Normal Nav Menu
+    echo wp_nav_menu( $nav_args );
+
+} // jpak_primary_nav()
 
 
 
