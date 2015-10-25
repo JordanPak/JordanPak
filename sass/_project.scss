@@ -86,6 +86,11 @@
 
 } // .project-grid-entry
 
+.project-full-image {
+    border: 10px solid $white;
+    -moz-box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
+}
 
 .project-background-previews {
     padding: 120px 220px 150px 220px; // padding-bottom: 140px; // With Wrap
@@ -110,6 +115,7 @@
 .browser-mockup {
     display: inline-block;
     border-top: 2em solid rgb(237, 238, 238);
+    -moz-box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
     position: relative;
     border-radius: 3px 3px 0 0;
