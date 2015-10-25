@@ -2,7 +2,15 @@
 //  JordanPak | Navigation  //
 //==========================//
 
-.genesis-nav-menu {
+.nav-primary {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $secondary;
+
+    .wrap {
+        height: auto;
+    }
 
     li > a {
         padding: 10px 18px 20px 18px;

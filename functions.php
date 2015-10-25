@@ -65,6 +65,14 @@ function remove_admin_bar() {
 } // remove_admin_bar()
 
 
+
+// PRIMARY NAVIGATION
+unregister_sidebar( 'header-right' );                       // Remove header-right Widget Area
+remove_action( 'genesis_after_header', 'genesis_do_nav' );  // Remove Default Menu Location
+add_action( 'genesis_header', 'genesis_do_nav', 12 );       // Place Default Menu after Title
+
+
+
 add_action( 'genesis_after_header', 'jpak_mini_hero' );
 /**
 * Mini Hero
