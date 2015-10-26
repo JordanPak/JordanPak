@@ -71,7 +71,7 @@
     } // Breakpoint: Med
 
     @include breakpoint( small ) {
-        padding: 60px 40px;
+        padding: 80px 60px;
 
         .wrap {
             padding: 0;
@@ -89,7 +89,7 @@
     } // Breakpoint: Sm
 
     @include breakpoint( extra-small ) {
-        padding: 40px;
+        padding: 60px;
 
         h2 {
             font-size: 38px;
