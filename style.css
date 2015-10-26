@@ -2602,15 +2602,18 @@ section.featuredpost {
   color: #67a227;
   text-transform: uppercase; }
 
-.single-jpak_project.full-width-content .entry-title {
+.single-jpak_project .entry-header {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 0;
+  border: 0;
+  text-align: left; }
+
+.single-jpak_project .entry-title {
   margin: 0;
   padding: 0;
   border: 0;
   text-align: left; }
-
-.single-jpak_project .entry-header {
-  position: relative;
-  margin-bottom: 40px; }
 
 .project-visit-website {
   position: absolute;

@@ -258,16 +258,19 @@
     text-transform: uppercase;
 } // .project-header-label
 
-.single-jpak_project.full-width-content .entry-title {
-    margin: 0;
-    padding: 0;
+.single-jpak_project .entry-header {
+    position: relative;
+    margin-bottom: $space-default;
+    padding-bottom: 0;
     border: 0;
     text-align: left;
 }
 
-.single-jpak_project .entry-header {
-    position: relative;
-    margin-bottom: $space-default;
+.single-jpak_project .entry-title {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
 }
 
 .project-visit-website {
