@@ -4,6 +4,10 @@
 
 .post-type-archive-jpak_project .site-inner {
 
+    @include breakpoint( medium ) {
+        width: 600px;
+    }
+
     @include breakpoint( small ) {
         width: 550px;
     }
@@ -20,11 +24,16 @@
     &:nth-child(2) {
         border-top-color: $primary-dark;
 
-        @include breakpoint( small ) {
+        @include breakpoint( medium ) {
             border-top-color: $secondary-mid-light;
         }
 
     } // 2nd Entry
+
+    @include breakpoint( medium ) {
+        width: 100%;
+        margin-left: 0;
+    }
 
     &.entry a {
         display: block;
@@ -35,8 +44,13 @@
 
             .entry-title {
                 color: $white;
-                bottom: 50px;
-            }
+                bottom: $space-default-half * 3;
+
+                @include breakpoint( extra-extra-small ) {
+                    bottom: $space-default-middle;
+                }
+
+            } // .entry-title
 
             .entry-subtitle {
                 opacity: 1;
@@ -75,31 +89,63 @@
     .entry-title, .entry-subtitle {
         display: block;
         position: absolute;
+        padding: 0 $space-default;
         width: 100%;
         left: 0;
         text-align: center;
         text-shadow: 0 0 8px rgba(0,0,0,0.5), 0 2px 3px $black;
 
         @include transition-ease-in-out( 275ms );
-    }
+
+        @include breakpoint( small ) {
+            padding: 0 $space-default-middle;
+        }
+
+        @include breakpoint( extra-extra-small ) {
+            padding: 0 $space-default-half;
+        }
+
+    } // .enty-title, .entry-subtitle
 
     .entry-title {
-        bottom: $space-default-half + 5px;
+        margin: 0;
+        bottom: $space-default-middle + 5px; // 25 -> 35
         font-family: $font-family-sans-serif;
         font-size: 32px;
         font-weight: 300;
         color: $secondary-light;
-    }
+
+        @include breakpoint( large ) {
+            font-size: 28px;
+        }
+
+        @include breakpoint( extra-small ) {
+            font-size: 24px;
+        }
+
+        @include breakpoint( extra-extra-small ) {
+            bottom: $space-default-half + 5px;
+        }
+
+    } // .entry-title
 
     .entry-subtitle {
         opacity: 0;
         bottom: 4px;
         font-size: 18px;
         font-weight: 700;
-        // text-transform: uppercase;
         letter-spacing: 0.04em;
         color: $primary;
-    }
+
+        @include breakpoint( extra-small ) {
+            font-size: 16px;
+        }
+
+        @include breakpoint( extra-extra-small ) {
+            display: none;
+        }
+
+    } // .entry-subtitle
 
 } // .project-grid-entry
 
