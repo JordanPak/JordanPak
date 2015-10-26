@@ -1632,8 +1632,7 @@ body {
       width: 100%; } }
   @media (max-width: 600px) {
     .header-image .site-title > a {
-      margin-bottom: 20px;
-      min-height: 100px; } }
+      margin-bottom: 20px; } }
 
 #mini-hero {
   display: block;
@@ -1933,7 +1932,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
       text-decoration: none;
       -moz-box-shadow: inset 0 -4px #FFFFFF;
       box-shadow: inset 0 -4px #FFFFFF; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1024px) {
       .nav-primary .genesis-nav-menu li > a {
         padding: 10px 11px 20px 11px;
         font-size: 20px; } }

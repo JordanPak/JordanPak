@@ -77,7 +77,7 @@ body {
 
     @include breakpoint( extra-small ) {
         margin-bottom: 20px;
-        min-height: 100px;
+        // min-height: 100px;
     }
 
 } // .header-iamge .site-title > a

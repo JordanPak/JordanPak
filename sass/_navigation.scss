@@ -57,7 +57,7 @@
                 box-shadow: inset 0 -4px $white;
             } // :hover
 
-            @include breakpoint( large ) {
+            @include breakpoint( medium-large ) {
                 padding: 10px 11px 20px 11px;
                 font-size: 20px;
             }
