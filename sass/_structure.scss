@@ -133,8 +133,12 @@ body {
 //-- BORDERS --//
 
 .entry, .sidebar .widget {
-    border-top: 5px solid $primary-dark;
+    border-top: 5px solid $secondary-mid-light;
     border-bottom: 2px solid $secondary-mid-light;
+
+    &:first-child {
+        border-top-color: $primary-dark;
+    }
 
     @include breakpoint( small ) {
         padding: $space-default;
@@ -170,7 +174,7 @@ body {
 @include breakpoint( medium ) {
 
     .one-fourth {
-                width: 48.717948717948715%;
+        width: 48.717948717948715%;
     }
 
 } // Breakpoint: Med

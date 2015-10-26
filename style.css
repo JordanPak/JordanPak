@@ -1661,8 +1661,10 @@ body {
   margin-top: 0; }
 
 .entry, .sidebar .widget {
-  border-top: 5px solid #67a227;
+  border-top: 5px solid #edeeee;
   border-bottom: 2px solid #edeeee; }
+  .entry:first-child, .sidebar .widget:first-child {
+    border-top-color: #67a227; }
   @media (max-width: 800px) {
     .entry, .sidebar .widget {
       padding: 40px; } }
