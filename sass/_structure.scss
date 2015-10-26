@@ -49,29 +49,35 @@ body {
     position: absolute;
     margin-top: 30px;
     padding: 0;
-    width: 416px;
+    width: 460px;
 
     @include breakpoint( large ) {
-        margin-top: 10px;
+        margin-top: 20px;
+        width: 360px;
     }
 
     @include breakpoint( small ) {
         position: static;
         width: 100%;
+        text-align: center;
     }
 
 } // .title-area
 
 .header-image .site-title > a {
     min-height: 130px;
-    background-size: 416px;
-
-    @include breakpoint( large ) {
-        background-size: 350px;
-    }
+    background-size: contain;
+    background-position: top;
 
     @include breakpoint( small ) {
-        min-height: 120px;
+        margin-bottom: 10px;
+        min-height: 110px;
+        width: 100%;
+    }
+
+    @include breakpoint( extra-small ) {
+        margin-bottom: 20px;
+        min-height: 100px;
     }
 
 } // .header-iamge .site-title > a
