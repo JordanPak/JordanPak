@@ -88,7 +88,6 @@ body {
 } // #mini-hero
 
 
-
 //-- SITE-INNER --//
 .site-inner {
     padding: 0;
@@ -113,9 +112,17 @@ body {
 
 } // .site-inner
 
-.page-template-page_home .site-inner, .no-mini-hero .site-inner {
-    margin-top: 0;
-}
+.page-template-page_home, .no-mini-hero {
+
+    .site-inner {
+        margin-top: 0;
+    }
+
+    #mini-hero {
+        display: none;
+    }
+
+} // page_home and .no-mini-hero templates/classes
 
 
 //-- BORDERS --//

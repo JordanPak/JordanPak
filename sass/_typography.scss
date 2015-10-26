@@ -29,7 +29,7 @@ body {
 }
 
 body > div {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -52,33 +52,42 @@ h3 {
     font-size: 32px;
 } // h3
 
-.page .entry-title {
-    text-transform: uppercase;
-    font-size: 52px;
-    border-bottom: 2px solid $secondary-mid-light;
-    margin-bottom: $space-default;
-    padding-bottom: $space-default-half + 5px;
-}
 
-.page.full-width-content .entry-title {
+.entry-title {
     font-size: 72px;
-    text-align: center;
-    padding-bottom: $space-default + 5px;
-    margin-bottom: $space-default + 5px;
-}
+    margin-bottom: 0;
 
-.single .entry-title {
-    text-transform: uppercase;
-    font-size: 52px;
-}
-
-@include breakpoint( small ) {
-
-    .page.full-width-content .entry-title {
-        font-size: 58px;
+    @include breakpoint( small ) {
+        font-size: 52px;
     }
 
-} // Breakpoint: S
+} // &.entry-title
+
+.entry-header {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid $secondary-mid-light;
+    margin-bottom: $space-default + 5px;
+    padding-bottom: $space-default + 10px;
+
+    @include breakpoint( small ) {
+        margin-bottom: $space-default;
+        padding-bottom: $space-default;
+    } // Breakpoint: S
+
+} // .page & .single Entry Headers
+
+.page-template-page_blog {
+
+    .entry-header {
+        padding-bottom: $space-default-middle + 5px;
+    }
+
+    .entry-title {
+        font-size: 54px;
+    }
+
+} // Blog Template entry header & title
 
 
 //-- LISTS --//
@@ -110,7 +119,6 @@ ul.checkmark {
 
 
 //-- HORIZONAL RULE --//
-
 hr {
     margin: ($space-default-half * 3) 0;
 }
@@ -140,7 +148,6 @@ hr {
     } // a
 
     .entry-title a {
-        font-size: 42px;
         border-bottom: 2px solid $transparent;
 
         &:hover {
@@ -156,12 +163,12 @@ hr {
 //-- ENTRY META --//
 
 .entry-header .entry-meta {
-    margin-bottom: $space-default;
+    margin-bottom: 0;
 }
 
 p.entry-meta {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     color: $secondary-mid;
 }
@@ -189,7 +196,6 @@ p.entry-meta {
 
 
 //-- SHARING --//
-
 .share-after {
     margin-top: $space-default + $space-default-half;
 }
@@ -197,7 +203,6 @@ p.entry-meta {
 
 
 //-- WIDGET --//
-
 .widgettitle {
     font-size: 32px;
 }
@@ -205,7 +210,6 @@ p.entry-meta {
 
 
 //-- BUTTON --//
-
 .button, .content .entry .button {
 
     @include button();
