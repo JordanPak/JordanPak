@@ -128,7 +128,6 @@ body {
 
 
 //-- BORDERS --//
-
 .entry, .sidebar .widget {
     border-top: 5px solid $secondary-mid-light;
     border-bottom: 2px solid $secondary-mid-light;
@@ -139,6 +138,7 @@ body {
 
     @include breakpoint( small ) {
         padding: $space-default;
+        margin-bottom: $space-default-half + 10px;
     }
 
 } // .entry, .sidebar .widget
