@@ -1593,8 +1593,7 @@ body {
   background: url("images/hero-bg.jpg") no-repeat top center #8dc63f; }
 
 .site-inner, .wrap {
-  padding: 0;
-  background: rgba(255, 0, 255, 0.2); }
+  padding: 0; }
   @media (max-width: 1024px) {
     .site-inner, .wrap {
       max-width: 920px; } }
@@ -1618,6 +1617,13 @@ body {
   margin-top: 0; }
 .page-template-page_home #mini-hero, .no-mini-hero #mini-hero {
   display: none; }
+
+@media (max-width: 1024px) {
+  .content {
+    width: 580px; } }
+@media (max-width: 960px) {
+  .content {
+    width: 100%; } }
 
 .entry, .sidebar .widget {
   border-top: 5px solid #edeeee;

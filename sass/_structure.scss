@@ -21,7 +21,6 @@ body {
 //-- SITE-INNER & WRAP --//
 .site-inner, .wrap {
     padding: 0;
-    background: rgba(255,0,255,0.2);
 
     @include breakpoint( medium-large ) {
         max-width: 920px;
@@ -72,6 +71,20 @@ body {
     }
 
 } // page_home and .no-mini-hero templates/classes
+
+
+//-- CONTENT MEDIUM-LARGE FIX
+.content {
+
+    @include breakpoint( medium-large ) {
+        width: 580px;
+    }
+
+    @include breakpoint( medium ) {
+        width: 100%;
+    }
+
+} // .content Medium-Large Fix
 
 
 //-- GLOBAL BORDERS --//
