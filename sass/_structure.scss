@@ -61,15 +61,18 @@ body {
 
 } // .title-area
 
+
+// LOGO
 .header-image .site-title > a {
     min-height: 130px;
     background-size: contain;
-    background-position: top;
+    background-position: top left;
 
     @include breakpoint( small ) {
         margin-bottom: $space-default-half;
         min-height: 110px;
         width: 100%;
+        background-position: top center;
     }
 
 } // .header-iamge .site-title > a
