@@ -29,10 +29,11 @@
 
     p {
         font-size: 28px;
+        margin: 0;
     }
 
     .button {
-        margin-top: $space-default-middle;
+        margin-top: $space-default;
         @include button-outline( white );
 
         &:hover {
@@ -41,5 +42,63 @@
         }
 
     } // .button
+
+    @include breakpoint( medium-large ) {
+        padding: 60px;
+        padding-top: 100px;
+
+        h2 {
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+    } // Breakpoint: Lg
+
+    @include breakpoint( medium ) {
+        padding: 100px 45px 60px 45px;
+
+        h2 {
+            font-size: 44px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+    } // Breakpoint: Med
+
+    @include breakpoint( small ) {
+        padding: 60px 40px;
+
+        .wrap {
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+    } // Breakpoint: Sm
+
+    @include breakpoint( extra-small ) {
+        padding: 40px;
+
+        h2 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+    } // Breakpoint: XS
 
 } // #home-hero

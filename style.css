@@ -2209,9 +2209,10 @@ p.comment-meta {
     #home-hero h2 b {
       font-weight: 400; }
   #home-hero p {
-    font-size: 28px; }
+    font-size: 28px;
+    margin: 0; }
   #home-hero .button {
-    margin-top: 30px;
+    margin-top: 40px;
     background: none;
     color: #8dc63f;
     border: 2px solid #8dc63f;
@@ -2228,6 +2229,38 @@ p.comment-meta {
     #home-hero .button:hover {
       text-shadow: none;
       color: #8dc63f; }
+  @media (max-width: 1024px) {
+    #home-hero {
+      padding: 60px;
+      padding-top: 100px; }
+      #home-hero h2 {
+        font-size: 48px; }
+      #home-hero p {
+        font-size: 24px; } }
+  @media (max-width: 960px) {
+    #home-hero {
+      padding: 100px 45px 60px 45px; }
+      #home-hero h2 {
+        font-size: 44px; }
+      #home-hero p {
+        font-size: 22px; } }
+  @media (max-width: 800px) {
+    #home-hero {
+      padding: 60px 40px; }
+      #home-hero .wrap {
+        padding: 0; }
+      #home-hero h2 {
+        font-size: 42px;
+        margin-bottom: 20px; }
+      #home-hero p {
+        font-size: 22px; } }
+  @media (max-width: 600px) {
+    #home-hero {
+      padding: 40px; }
+      #home-hero h2 {
+        font-size: 38px; }
+      #home-hero p {
+        font-size: 20px; } }
 
 #featured-stuff {
   margin: 0;
