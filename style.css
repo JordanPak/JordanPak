@@ -1727,6 +1727,9 @@ h3 {
   @media (max-width: 800px) {
     .entry-title {
       font-size: 52px; } }
+  @media (max-width: 460px) {
+    .entry-title {
+      font-size: 46px; } }
 
 .entry-header {
   text-align: center;

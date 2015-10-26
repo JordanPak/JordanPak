@@ -57,6 +57,10 @@ h3 {
         font-size: 52px;
     }
 
+    @include breakpoint( extra-extra-small ) {
+        font-size: 46px;
+    }
+
 } // &.entry-title
 
 .entry-header {
