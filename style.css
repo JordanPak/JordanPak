@@ -1624,21 +1624,6 @@ body {
       padding: 40px;
       margin-bottom: 30px; } }
 
-.genesis-grid-even {
-  float: right;
-  padding: 0 0 15px;
-  width: 48%; }
-
-.genesis-grid-odd {
-  clear: both;
-  float: left;
-  padding: 0 0 15px;
-  width: 48%; }
-
-.genesis-grid-even,
-.genesis-grid-odd {
-  margin: 0 0 20px; }
-
 @media (max-width: 960px) {
   .one-fourth {
     width: 48.717948717948715%; } }
