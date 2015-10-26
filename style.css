@@ -1627,28 +1627,25 @@ body {
   background-position: top; }
   @media (max-width: 800px) {
     .header-image .site-title > a {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       min-height: 110px;
       width: 100%; } }
-  @media (max-width: 600px) {
-    .header-image .site-title > a {
-      margin-bottom: 20px; } }
 
 #mini-hero {
   display: block;
   width: 100%;
   height: 200px;
   background: url("images/hero-bg.jpg") no-repeat top center #8dc63f; }
-  @media (max-width: 800px) {
-    #mini-hero {
-      display: none; } }
 
 .site-inner {
   padding: 0;
   margin-top: -80px; }
   @media (max-width: 800px) {
     .site-inner {
-      margin: 0; } }
+      margin-top: -160px; } }
+  @media (max-width: 600px) {
+    .site-inner {
+      margin-top: -170px; } }
 
 @media (max-width: 1024px) {
   .site-inner, .wrap {
@@ -1656,6 +1653,9 @@ body {
 @media (max-width: 960px) {
   .site-inner, .wrap {
     max-width: 800px; } }
+@media (max-width: 800px) {
+  .site-inner, .wrap {
+    width: 90%; } }
 
 .page-template-page_home .site-inner, .no-mini-hero .site-inner {
   margin-top: 0; }

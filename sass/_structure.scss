@@ -70,14 +70,9 @@ body {
     background-position: top;
 
     @include breakpoint( small ) {
-        margin-bottom: 10px;
+        margin-bottom: $space-default-half;
         min-height: 110px;
         width: 100%;
-    }
-
-    @include breakpoint( extra-small ) {
-        margin-bottom: 20px;
-        // min-height: 100px;
     }
 
 } // .header-iamge .site-title > a
@@ -85,17 +80,11 @@ body {
 
 
 //-- MINI-HERO --//
-
 #mini-hero {
     display: block;
     width: 100%;
     height: $mini-hero-height;
     background: url('images/hero-bg.jpg') no-repeat top center $primary;
-
-    @include breakpoint( small ) {
-        display: none;
-    }
-
 } // #mini-hero
 
 
@@ -107,7 +96,11 @@ body {
     margin-top: $mini-hero-displacement;
 
     @include breakpoint( small ) {
-        margin: 0;
+        margin-top: $mini-hero-displacement-small;
+    }
+
+    @include breakpoint( extra-small ) {
+        margin-top: $mini-hero-displacement-extra-small;
     }
 
 } // .site-inner
@@ -121,6 +114,10 @@ body {
 
     @include breakpoint( medium ) {
         max-width: 800px;
+    }
+
+    @include breakpoint( small ) {
+        width: 90%;
     }
 
 } // .wrap
