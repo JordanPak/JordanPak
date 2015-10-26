@@ -2407,12 +2407,20 @@ section.featuredpost {
     section.featuredpost .more-link .fa {
       margin-right: 3px; }
 
+@media (max-width: 800px) {
+  .post-type-archive-jpak_project .site-inner {
+    width: 550px; } }
+@media (max-width: 600px) {
+  .post-type-archive-jpak_project .site-inner {
+    width: 90%; } }
+
 .project-grid-entry {
-  padding: 10px;
-  background: no-repeat top;
-  border: 0;
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.22);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.22); }
+  padding: 10px; }
+  .project-grid-entry:nth-child(2) {
+    border-top-color: #67a227; }
+    @media (max-width: 800px) {
+      .project-grid-entry:nth-child(2) {
+        border-top-color: #edeeee; } }
   .project-grid-entry.entry a {
     display: block;
     position: relative;

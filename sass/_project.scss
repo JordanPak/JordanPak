@@ -2,12 +2,29 @@
 //  JordanPak | Project //
 //======================//
 
+.post-type-archive-jpak_project .site-inner {
+
+    @include breakpoint( small ) {
+        width: 550px;
+    }
+
+    @include breakpoint( extra-small ) {
+        width: 90%;
+    }
+
+} // Project Archive .site-inner
+
 .project-grid-entry {
     padding: 10px;
-    background: no-repeat top;
-    border: 0;
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.22);
-    box-shadow: 0 0 8px rgba(0,0,0,0.22);
+
+    &:nth-child(2) {
+        border-top-color: $primary-dark;
+
+        @include breakpoint( small ) {
+            border-top-color: $secondary-mid-light;
+        }
+
+    } // 2nd Entry
 
     &.entry a {
         display: block;
