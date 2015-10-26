@@ -1600,6 +1600,11 @@ body {
       height: 80px; }
       .site-header .wrap {
         height: 80px; } }
+  @media (max-width: 800px) {
+    .site-header {
+      height: auto; }
+      .site-header .wrap {
+        height: auto; } }
 
 .title-area {
   position: absolute;
@@ -1609,6 +1614,10 @@ body {
   @media (max-width: 1200px) {
     .title-area {
       margin-top: 10px; } }
+  @media (max-width: 800px) {
+    .title-area {
+      position: static;
+      width: 100%; } }
 
 .header-image .site-title > a {
   min-height: 130px;
@@ -1616,6 +1625,9 @@ body {
   @media (max-width: 1200px) {
     .header-image .site-title > a {
       background-size: 350px; } }
+  @media (max-width: 800px) {
+    .header-image .site-title > a {
+      min-height: 120px; } }
 
 #mini-hero {
   display: block;
@@ -1919,6 +1931,10 @@ a.alignright, img.alignright, .wp-caption.alignright {
       .nav-primary .genesis-nav-menu li > a {
         padding: 10px 11px 20px 11px;
         font-size: 20px; } }
+    @media (max-width: 800px) {
+      .nav-primary .genesis-nav-menu li > a {
+        font-size: 22px;
+        padding: 10px 18px 20px 18px; } }
   .nav-primary .genesis-nav-menu .current-menu-item > a {
     color: #FFFFFF;
     text-decoration: none;
@@ -1942,6 +1958,9 @@ a.alignright, img.alignright, .wp-caption.alignright {
       box-shadow: none;
       background: #f7f7f7;
       color: #000000; }
+  @media (max-width: 800px) {
+    .nav-primary {
+      position: static; } }
 
 input, select, textarea {
   font-size: 16px;

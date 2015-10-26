@@ -34,6 +34,15 @@ body {
 
     } // Breakpoint: lg
 
+    @include breakpoint( small ) {
+        height: auto;
+
+        .wrap {
+            height: auto;
+        }
+
+    } // Breakpoint: Small
+
 } // .site-header
 
 .title-area {
@@ -46,6 +55,11 @@ body {
         margin-top: 10px;
     }
 
+    @include breakpoint( small ) {
+        position: static;
+        width: 100%;
+    }
+
 } // .title-area
 
 .header-image .site-title > a {
@@ -54,6 +68,10 @@ body {
 
     @include breakpoint( large ) {
         background-size: 350px;
+    }
+
+    @include breakpoint( small ) {
+        min-height: 120px;
     }
 
 } // .header-iamge .site-title > a

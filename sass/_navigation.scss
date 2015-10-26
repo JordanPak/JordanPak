@@ -62,6 +62,11 @@
                 font-size: 20px;
             }
 
+            @include breakpoint( small ) {
+                font-size: 22px;
+                padding: 10px 18px 20px 18px;
+            }
+
         } // li > a
 
         .current-menu-item > a {
@@ -94,10 +99,10 @@
 
         } // .sub-menu a
 
-        @include breakpoint( large ) {
-            // display: none;
-        }
-
     } // .genesis-nav-menu
+
+    @include breakpoint( small ) {
+        position: static;
+    }
 
 } // .nav-primary
