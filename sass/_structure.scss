@@ -4,15 +4,12 @@
 
 
 //-- BODY --//
-
 body {
     background: $secondary-light;
 } // body
 
 
-
 //-- SITE HEADER --//
-
 .site-header {
     height: $site-header-height-large;
     min-height: 0;
@@ -78,7 +75,6 @@ body {
 } // .header-iamge .site-title > a
 
 
-
 //-- MINI-HERO --//
 #mini-hero {
     display: block;
@@ -142,9 +138,7 @@ body {
 } // .entry, .sidebar .widget
 
 
-
 //-- GRID LOOP --//
-
 .genesis-grid-even {
   float: right;
 	padding: 0 0 15px;
@@ -165,7 +159,6 @@ body {
 
 
 //-- COLUMN RESPONSIVENESS --//
-
 @include breakpoint( medium ) {
 
     .one-fourth {
