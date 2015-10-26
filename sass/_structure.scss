@@ -42,6 +42,8 @@ body {
 
 } // .site-inner
 
+
+//-- REMOVE MINI HERO --//
 .page-template-page_home, .no-mini-hero {
 
     .site-inner {
@@ -55,7 +57,7 @@ body {
 } // page_home and .no-mini-hero templates/classes
 
 
-//-- BORDERS --//
+//-- GLOBAL BORDERS --//
 .entry, .sidebar .widget {
     border-top: 5px solid $secondary-mid-light;
     border-bottom: 2px solid $secondary-mid-light;
