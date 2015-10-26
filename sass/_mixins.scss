@@ -183,7 +183,12 @@
     // One Fourth
     @if $size == one-fourth {
         width: 23.076923076923077%;
-    }
+
+        @include breakpoint( medium ) {
+            width: 48.717948717948715%;
+        }
+
+    } // one-fourth
 
     // Three Fourths
     @if $size == three-fourths {
@@ -205,7 +210,7 @@
         width: 100%;
         margin: 0;
     }
-    
+
 
     // First?
     @if $is_first == true {
