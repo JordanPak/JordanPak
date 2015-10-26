@@ -35,6 +35,9 @@
     @if $class == medium {
         @media (max-width: $breakpoint-medium) { @content; }
     }
+    @if $class == medium-large {
+        @media (max-width: $breakpoint-medium-large) { @content; }
+    }
     @if $class == large {
         @media (max-width: $breakpoint-large) { @content; }
     }

@@ -76,7 +76,20 @@ body {
 .site-inner {
     padding: 0;
     margin-top: $mini-hero-displacement;
-}
+} // .site-inner
+
+
+.site-inner, .wrap {
+
+    @include breakpoint( medium-large ) {
+        max-width: 920px;
+    }
+
+    @include breakpoint( medium ) {
+        max-width: 800px;
+    }
+
+} // .wrap
 
 .page-template-page_home .site-inner, .no-mini-hero .site-inner {
     margin-top: 0;
