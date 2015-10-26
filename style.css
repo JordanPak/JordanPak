@@ -1640,22 +1640,19 @@ body {
 .site-inner {
   padding: 0;
   margin-top: -80px; }
+  @media (max-width: 1024px) {
+    .site-inner {
+      max-width: 920px; } }
+  @media (max-width: 960px) {
+    .site-inner {
+      max-width: 800px; } }
   @media (max-width: 800px) {
     .site-inner {
+      width: 90%;
       margin-top: -160px; } }
   @media (max-width: 600px) {
     .site-inner {
       margin-top: -170px; } }
-
-@media (max-width: 1024px) {
-  .site-inner, .wrap {
-    max-width: 920px; } }
-@media (max-width: 960px) {
-  .site-inner, .wrap {
-    max-width: 800px; } }
-@media (max-width: 800px) {
-  .site-inner, .wrap {
-    width: 90%; } }
 
 .page-template-page_home .site-inner, .no-mini-hero .site-inner {
   margin-top: 0; }
@@ -1739,6 +1736,9 @@ h3 {
   text-transform: uppercase;
   font-size: 52px; }
 
+@media (max-width: 800px) {
+  .page.full-width-content .entry-title {
+    font-size: 58px; } }
 ul.big {
   margin-top: 20px;
   margin-bottom: 50px;

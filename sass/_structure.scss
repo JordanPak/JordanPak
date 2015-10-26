@@ -90,23 +90,9 @@ body {
 
 
 //-- SITE-INNER --//
-
 .site-inner {
     padding: 0;
     margin-top: $mini-hero-displacement;
-
-    @include breakpoint( small ) {
-        margin-top: $mini-hero-displacement-small;
-    }
-
-    @include breakpoint( extra-small ) {
-        margin-top: $mini-hero-displacement-extra-small;
-    }
-
-} // .site-inner
-
-
-.site-inner, .wrap {
 
     @include breakpoint( medium-large ) {
         max-width: 920px;
@@ -118,9 +104,14 @@ body {
 
     @include breakpoint( small ) {
         width: 90%;
+        margin-top: $mini-hero-displacement-small;
     }
 
-} // .wrap
+    @include breakpoint( extra-small ) {
+        margin-top: $mini-hero-displacement-extra-small;
+    }
+
+} // .site-inner
 
 .page-template-page_home .site-inner, .no-mini-hero .site-inner {
     margin-top: 0;
