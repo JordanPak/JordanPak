@@ -97,7 +97,7 @@ function jpak_nav() {
         echo wp_nav_menu( $nav_args );
 
         // Mobile Toggle
-        echo '<div class="mobile-toggle"><span class="dashicons dashicons-menu"></span></div>';
+        // echo '<div class="mobile-toggle"><span class="dashicons dashicons-menu"></span></div>';
 
     echo '</nav>';
 

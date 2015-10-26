@@ -12,30 +12,30 @@
         height: auto;
     }
 
-    .mobile-toggle {
-        display: none;
-        height: 50px;
-        width: 50px;
-        text-align: right;
-
-        @include transition-ease-in-out();
-
-        &:hover {
-            color: $primary;
-            cursor: pointer;
-        }
-
-        .dashicons {
-            width: 50px;
-            height: 50px;
-            font-size: 42px;
-        }
-
-        @include breakpoint( large ) {
-            // display: inline-block;
-        }
-
-    } // .mobile-toggle
+    // .mobile-toggle {
+    //     display: none;
+    //     height: 50px;
+    //     width: 50px;
+    //     text-align: right;
+    //
+    //     @include transition-ease-in-out();
+    //
+    //     &:hover {
+    //         color: $primary;
+    //         cursor: pointer;
+    //     }
+    //
+    //     .dashicons {
+    //         width: 50px;
+    //         height: 50px;
+    //         font-size: 42px;
+    //     }
+    //
+    //     @include breakpoint( large ) {
+    //         // display: inline-block;
+    //     }
+    //
+    // } // .mobile-toggle
 
     .genesis-nav-menu {
 
