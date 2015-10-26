@@ -200,6 +200,12 @@
         width: 82.90598290598291%;
     }
 
+    // One Whole
+    @if $size == one-whole {
+        width: 100%;
+        margin: 0;
+    }
+    
 
     // First?
     @if $is_first == true {

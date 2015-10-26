@@ -10,17 +10,31 @@
     color: $white;
     text-align: center;
 
+    @include breakpoint( small ) {
+        padding: $space-default-half * 3;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         color: $white;
     }
 
     .widget {
-
         @include col( one-third );
 
         &:first-child {
             @include col( one-third, true );
         }
+
+        @include breakpoint( small ) {
+            @include col( one-whole );
+            margin-bottom: $space-default-half;
+
+            &:first-child {
+                @include col( one-whole );
+                margin-bottom: $space-default;
+            }
+
+        } // Breakpoint: S
 
     } // .widget
 

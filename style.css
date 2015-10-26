@@ -2269,6 +2269,9 @@ p.comment-meta {
   background: #201c1d;
   color: #FFFFFF;
   text-align: center; }
+  @media (max-width: 800px) {
+    #featured-stuff {
+      padding: 60px; } }
   #featured-stuff h1, #featured-stuff h2, #featured-stuff h3, #featured-stuff h4, #featured-stuff h5, #featured-stuff h6 {
     color: #FFFFFF; }
   #featured-stuff .widget {
@@ -2281,6 +2284,19 @@ p.comment-meta {
       width: 31.623931623931625%;
       clear: both;
       margin-left: 0; }
+    @media (max-width: 800px) {
+      #featured-stuff .widget {
+        float: left;
+        margin-left: 2.564102564102564%;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px; }
+        #featured-stuff .widget:first-child {
+          float: left;
+          margin-left: 2.564102564102564%;
+          width: 100%;
+          margin: 0;
+          margin-bottom: 40px; } }
   #featured-stuff .wordpress-stuff h3 {
     display: inline-block;
     margin-bottom: 2px;
