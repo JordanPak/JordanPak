@@ -286,22 +286,8 @@
 
 .project-features {
     float: right;
-    padding: $space-default-middle;
+    padding: 0;
     width: 33%;
-    border: 2px solid $secondary-mid-light;
-
-    h3 {
-        text-align: center;
-        border-bottom: 2px solid $secondary-mid-light;
-        padding-bottom:  6px;
-        margin-bottom: 30px;
-    }
-
-    ul {
-        padding: 0;
-        margin: 0;
-    }
-
 } // .project-features
 
 .project-buttons {

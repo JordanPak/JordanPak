@@ -1800,6 +1800,29 @@ ul.checkmark {
     background-repeat: no-repeat;
     background-position: 0 5px; }
 
+ul.features {
+  margin: 0;
+  padding: 0;
+  border-radius: 6px;
+  border: 2px solid #edeeee;
+  border-bottom: 3px solid #edeeee;
+  font-size: 16px;
+  font-weight: 500; }
+  ul.features li {
+    padding: 14px 20px 14px 50px;
+    list-style-type: none;
+    background-image: url("images/bullet-checkmark.png");
+    background-repeat: no-repeat;
+    background-position: 12px 17px;
+    border-bottom: 1px solid #edeeee;
+    cursor: default;
+    -webkit-transition: all ease-in-out 150ms;
+    transition: all ease-in-out 150ms; }
+    ul.features li:last-child {
+      border-bottom: 0; }
+    ul.features li:hover {
+      background-color: #f7f7f7; }
+
 hr {
   margin: 60px 0; }
 
@@ -2626,17 +2649,8 @@ section.featuredpost {
 
 .project-features {
   float: right;
-  padding: 30px;
-  width: 33%;
-  border: 2px solid #edeeee; }
-  .project-features h3 {
-    text-align: center;
-    border-bottom: 2px solid #edeeee;
-    padding-bottom: 6px;
-    margin-bottom: 30px; }
-  .project-features ul {
-    padding: 0;
-    margin: 0; }
+  padding: 0;
+  width: 33%; }
 
 .project-buttons {
   margin-top: 40px;
