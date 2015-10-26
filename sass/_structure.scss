@@ -18,13 +18,17 @@ body {
 } // #mini-hero
 
 
-//-- SITE-INNER --//
-.site-inner {
+//-- SITE-INNER & WRAP --//
+.site-inner, .wrap {
     padding: 0;
-    margin-top: $mini-hero-displacement;
+    background: rgba(255,0,255,0.2);
 
     @include breakpoint( medium-large ) {
         max-width: 920px;
+    }
+
+    @include breakpoint( small-medium ) {
+        max-width: 800px;
     }
 
     @include breakpoint( medium ) {
@@ -33,6 +37,19 @@ body {
 
     @include breakpoint( small ) {
         width: 90%;
+    }
+
+    @include breakpoint( extra-small ) {
+    }
+
+} // .site-inner, .wrap
+
+
+//-- HERO DISPLACEMENT --//
+.site-inner {
+    margin-top: $mini-hero-displacement;
+
+    @include breakpoint( small ) {
         margin-top: $mini-hero-displacement-small;
     }
 
@@ -40,7 +57,7 @@ body {
         margin-top: $mini-hero-displacement-extra-small;
     }
 
-} // .site-inner
+} // .site-inner Hero Displacement
 
 
 //-- REMOVE MINI HERO --//

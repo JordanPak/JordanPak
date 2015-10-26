@@ -1592,18 +1592,23 @@ body {
   height: 200px;
   background: url("images/hero-bg.jpg") no-repeat top center #8dc63f; }
 
-.site-inner {
+.site-inner, .wrap {
   padding: 0;
-  margin-top: -80px; }
+  background: rgba(255, 0, 255, 0.2); }
   @media (max-width: 1024px) {
-    .site-inner {
+    .site-inner, .wrap {
       max-width: 920px; } }
   @media (max-width: 960px) {
-    .site-inner {
+    .site-inner, .wrap {
       max-width: 800px; } }
   @media (max-width: 800px) {
+    .site-inner, .wrap {
+      width: 90%; } }
+
+.site-inner {
+  margin-top: -80px; }
+  @media (max-width: 800px) {
     .site-inner {
-      width: 90%;
       margin-top: -160px; } }
   @media (max-width: 600px) {
     .site-inner {
@@ -1907,9 +1912,6 @@ a.alignright, img.alignright, .wp-caption.alignright {
     position: relative;
     height: 102px;
     padding: 0; }
-  @media (max-width: 1024px) {
-    .site-header .wrap {
-      width: 920px; } }
   @media (max-width: 1200px) {
     .site-header {
       height: 80px; }
@@ -2311,7 +2313,7 @@ p.comment-meta {
       margin-bottom: 40px; } }
   @media (max-width: 800px) {
     #featured-stuff {
-      padding: 60px; } }
+      padding: 60px 0; } }
   #featured-stuff h1, #featured-stuff h2, #featured-stuff h3, #featured-stuff h4, #featured-stuff h5, #featured-stuff h6 {
     color: #FFFFFF; }
   #featured-stuff .widget {

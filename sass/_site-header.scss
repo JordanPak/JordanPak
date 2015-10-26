@@ -14,10 +14,6 @@
         padding: 0;
     } // .wrap
 
-    @include breakpoint( medium-large ) {
-        .wrap {width: 920px;
-        }
-    }
 
     @include breakpoint( large ) {
         height: $site-header-height-medium;
