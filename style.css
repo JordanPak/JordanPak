@@ -1594,19 +1594,47 @@ body {
 
 .site-inner, .wrap {
   padding: 0; }
+  @media (max-width: 1500px) {
+    .site-inner, .wrap {
+      max-width: 1200px; } }
+  @media (max-width: 1260px) {
+    .site-inner, .wrap {
+      max-width: 1024px; } }
+  @media (max-width: 1080px) {
+    .site-inner, .wrap {
+      max-width: 960px; } }
   @media (max-width: 1024px) {
     .site-inner, .wrap {
-      max-width: 920px; } }
-  @media (max-width: 960px) {
-    .site-inner, .wrap {
       max-width: 800px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .site-inner, .wrap {
       width: 90%; } }
 
+@media (max-width: 1500px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 1260px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 1080px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 128, 0, 0.4); } }
+@media (max-width: 1024px) {
+  .wrap, .site-inner {
+    background-color: rgba(128, 0, 128, 0.4); } }
+@media (max-width: 860px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 600px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 460px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 128, 0, 0.4); } }
+
 .site-inner {
   margin-top: -80px; }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .site-inner {
       margin-top: -160px; } }
   @media (max-width: 600px) {
@@ -1618,10 +1646,10 @@ body {
 .page-template-page_home #mini-hero, .no-mini-hero #mini-hero {
   display: none; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .content {
     width: 580px; } }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .content {
     width: 100%; } }
 
@@ -1630,12 +1658,12 @@ body {
   border-bottom: 2px solid #edeeee; }
   .entry:first-child, .sidebar .widget:first-child {
     border-top-color: #67a227; }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .entry, .sidebar .widget {
       padding: 40px;
       margin-bottom: 30px; } }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .one-fourth {
     width: 48.717948717948715%; } }
 @media (max-width: 600px) {
@@ -1675,7 +1703,7 @@ h3 {
 .entry-title {
   font-size: 72px;
   margin-bottom: 0; }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .entry-title {
       font-size: 52px; } }
   @media (max-width: 460px) {
@@ -1688,7 +1716,7 @@ h3 {
   border-bottom: 2px solid #edeeee;
   margin-bottom: 45px;
   padding-bottom: 50px; }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .entry-header {
       margin-bottom: 40px;
       padding-bottom: 40px; } }
@@ -1918,12 +1946,12 @@ a.alignright, img.alignright, .wp-caption.alignright {
     position: relative;
     height: 102px;
     padding: 0; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1260px) {
     .site-header {
       height: 80px; }
       .site-header .wrap {
         height: 80px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .site-header {
       height: auto; }
       .site-header .wrap {
@@ -1934,11 +1962,11 @@ a.alignright, img.alignright, .wp-caption.alignright {
   margin-top: 30px;
   padding: 0;
   width: 460px; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1260px) {
     .title-area {
       margin-top: 20px;
       width: 360px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .title-area {
       position: static;
       width: 100%;
@@ -1948,7 +1976,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   min-height: 130px;
   background-size: contain;
   background-position: top left; }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .header-image .site-title > a {
       margin-bottom: 20px;
       min-height: 110px;
@@ -1977,11 +2005,11 @@ a.alignright, img.alignright, .wp-caption.alignright {
       text-decoration: none;
       -moz-box-shadow: inset 0 -4px #FFFFFF;
       box-shadow: inset 0 -4px #FFFFFF; }
-    @media (max-width: 1024px) {
+    @media (max-width: 1080px) {
       .nav-primary .genesis-nav-menu li > a {
         padding: 10px 11px 20px 11px;
         font-size: 20px; } }
-    @media (max-width: 800px) {
+    @media (max-width: 860px) {
       .nav-primary .genesis-nav-menu li > a {
         font-size: 22px;
         padding: 10px 18px 20px 18px; } }
@@ -2020,7 +2048,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
       box-shadow: none;
       background: #f7f7f7;
       color: #000000; }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .nav-primary {
       position: static; } }
 
@@ -2277,7 +2305,7 @@ p.comment-meta {
     #home-hero .button:hover {
       text-shadow: none;
       color: #8dc63f; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1080px) {
     #home-hero {
       padding: 60px;
       padding-top: 100px; }
@@ -2285,14 +2313,14 @@ p.comment-meta {
         font-size: 48px; }
       #home-hero p {
         font-size: 24px; } }
-  @media (max-width: 960px) {
+  @media (max-width: 1024px) {
     #home-hero {
       padding: 100px 45px 60px 45px; }
       #home-hero h2 {
         font-size: 44px; }
       #home-hero p {
         font-size: 22px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     #home-hero {
       padding: 80px 60px; }
       #home-hero .wrap {
@@ -2317,10 +2345,10 @@ p.comment-meta {
   background: #201c1d;
   color: #FFFFFF;
   text-align: center; }
-  @media (max-width: 960px) {
+  @media (max-width: 1024px) {
     #featured-stuff {
       margin-bottom: 40px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     #featured-stuff {
       padding: 60px 0; } }
   #featured-stuff h1, #featured-stuff h2, #featured-stuff h3, #featured-stuff h4, #featured-stuff h5, #featured-stuff h6 {
@@ -2335,7 +2363,7 @@ p.comment-meta {
       width: 31.623931623931625%;
       clear: both;
       margin-left: 0; }
-    @media (max-width: 800px) {
+    @media (max-width: 860px) {
       #featured-stuff .widget {
         float: left;
         margin-left: 2.564102564102564%;
@@ -2386,7 +2414,7 @@ section.featuredpost {
       width: 48.717948717948715%;
       clear: both;
       margin-left: 0; }
-    @media (max-width: 800px) {
+    @media (max-width: 860px) {
       section.featuredpost .entry {
         float: left;
         margin-left: 2.564102564102564%;
@@ -2437,10 +2465,10 @@ section.featuredpost {
     section.featuredpost .more-link .fa {
       margin-right: 3px; }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .post-type-archive-jpak_project .site-inner {
     width: 600px; } }
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .post-type-archive-jpak_project .site-inner {
     width: 550px; } }
 @media (max-width: 600px) {
@@ -2451,10 +2479,10 @@ section.featuredpost {
   padding: 10px; }
   .project-grid-entry:nth-child(2) {
     border-top-color: #67a227; }
-    @media (max-width: 960px) {
+    @media (max-width: 1024px) {
       .project-grid-entry:nth-child(2) {
         border-top-color: #edeeee; } }
-  @media (max-width: 960px) {
+  @media (max-width: 1024px) {
     .project-grid-entry {
       width: 100%;
       margin-left: 0; } }
@@ -2500,7 +2528,7 @@ section.featuredpost {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5), 0 2px 3px #000000;
     -webkit-transition: all ease-in-out 275ms;
     transition: all ease-in-out 275ms; }
-    @media (max-width: 800px) {
+    @media (max-width: 860px) {
       .project-grid-entry .entry-title, .project-grid-entry .entry-subtitle {
         padding: 0 30px; } }
     @media (max-width: 460px) {
@@ -2513,7 +2541,7 @@ section.featuredpost {
     font-size: 32px;
     font-weight: 300;
     color: #f7f7f7; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1260px) {
       .project-grid-entry .entry-title {
         font-size: 28px; } }
     @media (max-width: 600px) {
@@ -2558,14 +2586,17 @@ section.featuredpost {
     display: table; }
   .project-background-previews .wrap {
     max-width: 1400px; }
-    @media (max-width: 1400px) {
+    @media (max-width: 1500px) {
       .project-background-previews .wrap {
         max-width: 1200px; } }
-    @media (max-width: 1200px) {
+    @media (max-width: 1260px) {
       .project-background-previews .wrap {
         max-width: none;
         width: 1024px; } }
-    @media (max-width: 960px) {
+    @media (max-width: 1080px) {
+      .project-background-previews .wrap {
+        width: 960px; } }
+    @media (max-width: 1024px) {
       .project-background-previews .wrap {
         width: 960px; } }
 

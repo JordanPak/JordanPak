@@ -22,26 +22,55 @@ body {
 .site-inner, .wrap {
     padding: 0;
 
-    @include breakpoint( medium-large ) {
-        max-width: 920px;
+    @include breakpoint( extra-large ) {
+        max-width: $bp-xl-wrap;
     }
 
-    @include breakpoint( small-medium ) {
-        max-width: 800px;
+    @include breakpoint( large ) {
+        max-width: $bp-lg-wrap;
+    }
+
+    @include breakpoint( medium-large ) {
+        max-width: $bp-med-lg-wrap;
     }
 
     @include breakpoint( medium ) {
-        max-width: 800px;
+        max-width: $bp-med-wrap;
     }
 
     @include breakpoint( small ) {
-        width: 90%;
-    }
-
-    @include breakpoint( extra-small ) {
+        width: $bp-sm-wrap;
     }
 
 } // .site-inner, .wrap
+
+
+//-- BREAKPOINT TESTING --//
+.wrap, .site-inner {
+
+    @include breakpoint( extra-large ) {
+        background-color: rgba(red, .4);
+    }
+    @include breakpoint( large ) {
+        background-color: rgba(blue, .4);
+    }
+    @include breakpoint( medium-large ) {
+        background-color: rgba(green, .4);
+    }
+    @include breakpoint( medium ) {
+        background-color: rgba(purple, .4);
+    }
+    @include breakpoint( small ) {
+        background-color: rgba(red, .4);
+    }
+    @include breakpoint( extra-small ) {
+        background-color: rgba(blue, .4);
+    }
+    @include breakpoint( extra-extra-small ) {
+        background-color: rgba(green, .4);
+    }
+
+} // Breakpoint Testing
 
 
 //-- HERO DISPLACEMENT --//

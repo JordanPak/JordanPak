@@ -168,6 +168,7 @@
     @include clearfix();
 
     .wrap {
+        // max-width: none;
         max-width: 1400px;
 
         @include breakpoint( extra-large ) {
@@ -179,11 +180,17 @@
             width: 1024px;
         }
 
+        @include breakpoint( medium-large ) {
+            width: 960px;
+        }
+
         @include breakpoint( medium ) {
             width: 960px;
         }
 
-
+        // @include breakpoint( small ) {
+        //     width: 800px;
+        // }
 
     } // .wrap
 

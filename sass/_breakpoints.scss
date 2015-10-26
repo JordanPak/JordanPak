@@ -8,14 +8,24 @@
 //=============//
 
 //  BREAKPOINT                      Width       DESCRIPTION
-//  ----------------------------------------------------------------------------------
-    $breakpoint-extra-extra-small:  460px;      // 0 to Extra Extra Small
-    $breakpoint-extra-small:        600px;      // Extra Extra Small up tp Extra Small
-    $breakpoint-small:              800px;      // Extra Small up to Small
-    $breakpoint-medium:             960px;      // Small up to Medium
-    $breakpoint-medium-large:      1024px;      // Medium to Medium Large
-    $breakpoint-large:             1200px;      // Medium Large to Large (Desktop)
-    $breakpoint-extra-large:       1400px;      // Large to Extra Large
+//  ------------------------------------------------------------------------------------
+    $breakpoint-extra-extra-small:  460px;      // Applies to sizes BELOW the var. width
+    $breakpoint-extra-small:        600px;      //
+    $breakpoint-small:              860px;      //
+    $breakpoint-medium:            1024px;      //
+    $breakpoint-medium-large:      1080px;      //
+    $breakpoint-large:             1260px;      //
+    $breakpoint-extra-large:       1500px;      //
+
+
+//  WRAPPER             WIDTH      DESCRIPTION
+//  ----------------------------------------------------------------------------
+    $bp-xl-wrap:        1200px;    // At 1500px, wrapper will drop to 1200px
+    $bp-lg-wrap:        1024px;    // At 1260px, wrapper will drop to 1024px
+    $bp-med-lg-wrap:    960px;     // At 1080px, wrapper will drop to 960px ...
+    $bp-med-wrap:       800px;
+    $bp-sm-wrap:        90%;       // At 860px, wrapper will be 90% forever
+
 
 
 //=========//
