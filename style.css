@@ -1744,25 +1744,6 @@ h3 {
 .page-template-page_blog .entry-title {
   font-size: 54px; }
 
-ul.big {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  font-size: 18px; }
-  ul.big li {
-    margin-bottom: 16px; }
-
-ul.checkmark {
-  margin-left: 20px; }
-  ul.checkmark li {
-    list-style-type: none;
-    padding-left: 32px;
-    background-image: url("images/bullet-checkmark.png");
-    background-repeat: no-repeat;
-    background-position: 0 5px; }
-
-hr {
-  margin: 60px 0; }
-
 .content .entry a {
   color: inherit;
   border-bottom: 2px solid #8dc63f; }
@@ -1798,6 +1779,25 @@ p.entry-meta {
 .post-info-separator {
   margin: 0 12px;
   letter-spacing: -0.1em; }
+
+ul.big {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 18px; }
+  ul.big li {
+    margin-bottom: 16px; }
+
+ul.checkmark {
+  margin-left: 20px; }
+  ul.checkmark li {
+    list-style-type: none;
+    padding-left: 32px;
+    background-image: url("images/bullet-checkmark.png");
+    background-repeat: no-repeat;
+    background-position: 0 5px; }
+
+hr {
+  margin: 60px 0; }
 
 .share-after {
   margin-top: 60px; }

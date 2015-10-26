@@ -4,7 +4,6 @@
 
 
 //-- UTILITY --//
-
 ::-moz-selection {
     background: $secondary;
     color: $white;
@@ -18,9 +17,7 @@
 }
 
 
-
 //-- GLOBAL BODY --//
-
 body {
     font-family: $font-family-sans-serif;
     font-size: 16px;
@@ -33,9 +30,7 @@ body > div {
 }
 
 
-
 //-- HEADINGS --//
-
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-heading;
 } // Headers
@@ -53,6 +48,7 @@ h3 {
 } // h3
 
 
+//-- ENTRY TITLES & HEADERS --//
 .entry-title {
     font-size: 72px;
     margin-bottom: 0;
@@ -90,42 +86,7 @@ h3 {
 } // Blog Template entry header & title
 
 
-//-- LISTS --//
-
-ul.big {
-    margin-top: $space-default-half;
-    margin-bottom: $space-default + 10px;
-    font-size: 18px;
-
-    li {
-        margin-bottom: $space-default-half - 4px;
-    }
-
-} // ul.big
-
-ul.checkmark {
-    margin-left: $space-default-half;
-
-    li {
-        list-style-type: none;
-        padding-left: $space-default-middle + 2px;
-        background-image: url('images/bullet-checkmark.png');
-        background-repeat: no-repeat;
-        background-position: 0 5px;
-    }
-
-} // ul.checkmark
-
-
-
-//-- HORIZONAL RULE --//
-hr {
-    margin: ($space-default-half * 3) 0;
-}
-
-
 //-- INLINE ANCHORS --//
-
 .content .entry {
 
     a {
@@ -159,9 +120,7 @@ hr {
 } // .content .entry a
 
 
-
 //-- ENTRY META --//
-
 .entry-header .entry-meta {
     margin-bottom: 0;
 }
@@ -194,6 +153,37 @@ p.entry-meta {
 }
 
 
+//-- LISTS --//
+ul.big {
+    margin-top: $space-default-half;
+    margin-bottom: $space-default + 10px;
+    font-size: 18px;
+
+    li {
+        margin-bottom: $space-default-half - 4px;
+    }
+
+} // ul.big
+
+ul.checkmark {
+    margin-left: $space-default-half;
+
+    li {
+        list-style-type: none;
+        padding-left: $space-default-middle + 2px;
+        background-image: url('images/bullet-checkmark.png');
+        background-repeat: no-repeat;
+        background-position: 0 5px;
+    }
+
+} // ul.checkmark
+
+
+//-- HORIZONAL RULE --//
+hr {
+    margin: ($space-default-half * 3) 0;
+}
+
 
 //-- SHARING --//
 .share-after {
@@ -201,12 +191,10 @@ p.entry-meta {
 }
 
 
-
 //-- WIDGET --//
 .widgettitle {
     font-size: 32px;
 }
-
 
 
 //-- BUTTON --//
