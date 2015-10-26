@@ -156,7 +156,8 @@
 }
 
 .project-background-previews {
-    padding: 120px 220px 150px 220px; // padding-bottom: 140px; // With Wrap
+    // padding: 120px 220px 150px 220px; // padding-bottom: 140px; // With Wrap
+    padding: 120px 0 150px 0;
     background-image: url('images/bg-slashes.svg');
     background-repeat: no-repeat;
     background-position: right;
@@ -165,6 +166,26 @@
     background-color: $primary;
 
     @include clearfix();
+
+    .wrap {
+        max-width: 1400px;
+
+        @include breakpoint( extra-large ) {
+            max-width: 1200px;
+        }
+
+        @include breakpoint( large ) {
+            max-width: none;
+            width: 1024px;
+        }
+
+        @include breakpoint( medium ) {
+            width: 960px;
+        }
+
+
+
+    } // .wrap
 
 } // .project-background-previews
 
