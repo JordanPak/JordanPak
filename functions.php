@@ -82,15 +82,24 @@ function jpak_nav() {
 
     $nav_args = array(
         'theme_location'    => 'primary',
-        'container'         => 'nav',
-        'container_class'   => 'nav-primary',
+        'container'         => '',
+        'container_class'   => '',
         'menu_class'        => 'menu genesis-nav-menu menu-primary',
         'link_before'       => '<span>',
         'link_after'        => '</span>',
     );
 
     // Normal Nav Menu
-    echo wp_nav_menu( $nav_args );
+
+    echo '<nav class="nav-primary">';
+
+        // Primary Menu
+        echo wp_nav_menu( $nav_args );
+
+        // Mobile Toggle
+        echo '<div class="mobile-toggle"><span class="dashicons dashicons-menu"></span></div>';
+
+    echo '</nav>';
 
 } // jpak_primary_nav()
 

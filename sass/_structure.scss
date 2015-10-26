@@ -14,22 +14,25 @@ body {
 //-- SITE HEADER --//
 
 .site-header {
-    height: $site-header-height;
+    height: $site-header-height-large;
     min-height: 0;
     background: $secondary;
     color: $white;
 
     .wrap {
         position: relative;
-        height: 102px;
+        height: $site-header-height-large;
         padding: 0;
-    }
+    } // .wrap
 
-    .widget-area {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+    @include breakpoint( large ) {
+        height: $site-header-height-medium;
+
+        .wrap {
+            height: $site-header-height-medium;
+        }
+
+    } // Breakpoint: lg
 
 } // .site-header
 
@@ -38,11 +41,21 @@ body {
     margin-top: 30px;
     padding: 0;
     width: 416px;
-}
+
+    @include breakpoint( large ) {
+        margin-top: 10px;
+    }
+
+} // .title-area
 
 .header-image .site-title > a {
     min-height: 130px;
     background-size: 416px;
+
+    @include breakpoint( large ) {
+        background-size: 350px;
+    }
+
 } // .header-iamge .site-title > a
 
 
