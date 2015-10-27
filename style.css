@@ -1583,6 +1583,31 @@ li.comment {
   ol,
   ul {
     page-break-before: avoid; } }
+@media (min-width: 1920px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 255, 0, 0.5); } }
+@media (max-width: 1500px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 1260px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 1080px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 128, 0, 0.4); } }
+@media (max-width: 1024px) {
+  .wrap, .site-inner {
+    background-color: rgba(128, 0, 128, 0.4); } }
+@media (max-width: 860px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 600px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 460px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 128, 0, 0.4); } }
+
 body {
   background: #f7f7f7; }
 
@@ -1610,28 +1635,6 @@ body {
     .site-inner, .wrap {
       width: 90%; } }
 
-@media (max-width: 1500px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 0, 0, 0.4); } }
-@media (max-width: 1260px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 0, 255, 0.4); } }
-@media (max-width: 1080px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 128, 0, 0.4); } }
-@media (max-width: 1024px) {
-  .wrap, .site-inner {
-    background-color: rgba(128, 0, 128, 0.4); } }
-@media (max-width: 860px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 0, 0, 0.4); } }
-@media (max-width: 600px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 0, 255, 0.4); } }
-@media (max-width: 460px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 128, 0, 0.4); } }
-
 .site-inner {
   margin-top: -80px; }
   @media (max-width: 860px) {
@@ -1646,11 +1649,21 @@ body {
 .page-template-page_home #mini-hero, .no-mini-hero #mini-hero {
   display: none; }
 
+@media (max-width: 1260px) {
+  .content {
+    width: 660px; } }
 @media (max-width: 1080px) {
   .content {
-    width: 580px; } }
+    width: 600px; } }
 @media (max-width: 1024px) {
   .content {
+    width: 100%; } }
+
+@media (max-width: 1260px) {
+  .sidebar-primary {
+    width: 320px; } }
+@media (max-width: 1024px) {
+  .sidebar-primary {
     width: 100%; } }
 
 .entry, .sidebar .widget {

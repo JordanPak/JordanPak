@@ -45,34 +45,6 @@ body {
 } // .site-inner, .wrap
 
 
-//-- BREAKPOINT TESTING --//
-.wrap, .site-inner {
-
-    @include breakpoint( xl ) {
-        background-color: rgba(red, .4);
-    }
-    @include breakpoint( lg ) {
-        background-color: rgba(blue, .4);
-    }
-    @include breakpoint( med-lg ) {
-        background-color: rgba(green, .4);
-    }
-    @include breakpoint( med ) {
-        background-color: rgba(purple, .4);
-    }
-    @include breakpoint( sm ) {
-        background-color: rgba(red, .4);
-    }
-    @include breakpoint( xs ) {
-        background-color: rgba(blue, .4);
-    }
-    @include breakpoint( xxs ) {
-        background-color: rgba(green, .4);
-    }
-
-} // Breakpoint Testing
-
-
 //-- HERO DISPLACEMENT --//
 .site-inner {
     margin-top: $mini-hero-displacement;
@@ -102,18 +74,34 @@ body {
 } // page_home and .no-mini-hero templates/classes
 
 
-//-- CONTENT MEDIUM-LARGE FIX
+//-- CONTENT & SIDEBAR FIXES --//
 .content {
 
-    @include breakpoint( med-lg ) {
-        width: 580px;
+    @include breakpoint( lg ) {
+        width: 660px;
     }
+
+	@include breakpoint( med-lg ) {
+		width: 600px;
+	}
 
     @include breakpoint( med ) {
         width: 100%;
     }
 
-} // .content Medium-Large Fix
+} // .content
+
+.sidebar-primary {
+
+	@include breakpoint( lg ) {
+		width: 320px;
+	}
+
+	@include breakpoint( med ) {
+		width: 100%;
+	}
+
+} // .sidebar-primary
 
 
 //-- GLOBAL BORDERS --//

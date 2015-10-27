@@ -8,7 +8,8 @@
 //=============//
 
 //  BREAKPOINT 			Width 		DESCRIPTION
-//  ------------------------------------------------------------------------------------
+//  ----------------------------------------------------------------------------
+	$bp-hd-plus:		1920px;
     $bp-xl:				1500px;
     $bp-lg:				1260px;
     $bp-med-lg:			1080px;
@@ -21,8 +22,8 @@
 //  WRAPPER 			WIDTH 		DESCRIPTION
 //  ----------------------------------------------------------------------------
     $bp-xl-wrap:        1200px;		// At 1500px, wrapper will drop to 1200px
-	$bp-lg-wrap:        1024px;		// At 1260px, wrapper will drop to 1024px
-    $bp-med-lg-wrap:    960px;		// At 1080px, wrapper will drop to 960px ...
+	$bp-lg-wrap:        1024px;
+    $bp-med-lg-wrap:    960px;
     $bp-med-wrap:       800px;
     $bp-sm-wrap:        90%;		// At 860px, wrapper will be 90% forever
 
@@ -55,5 +56,47 @@
     @if $class == xl {
         @media (max-width: $bp-xl) { @content; }
     }
+	@if $class == hd-plus {
+		@media (min-width: $bp-hd-plus) { @content; }
+	}
 
 } // breakpoint()
+
+
+
+//===========//
+//  TESTING  //
+//===========//
+
+@mixin bp-testing {
+
+	@include breakpoint( hd-plus ) {
+		background-color: rgba(yellow, .5);
+	}
+    @include breakpoint( xl ) {
+        background-color: rgba(red, .4);
+    }
+    @include breakpoint( lg ) {
+        background-color: rgba(blue, .4);
+    }
+    @include breakpoint( med-lg ) {
+        background-color: rgba(green, .4);
+    }
+    @include breakpoint( med ) {
+        background-color: rgba(purple, .4);
+    }
+    @include breakpoint( sm ) {
+        background-color: rgba(red, .4);
+    }
+    @include breakpoint( xs ) {
+        background-color: rgba(blue, .4);
+    }
+    @include breakpoint( xxs ) {
+        background-color: rgba(green, .4);
+    }
+
+} // Breakpoint Testing
+
+.wrap, .site-inner {
+	@include bp-testing();
+}
