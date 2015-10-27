@@ -43,7 +43,7 @@
 
     } // .button
 
-    @include breakpoint( medium-large ) {
+    @include breakpoint( med-lg ) {
         padding: 60px;
         padding-top: 100px;
 
@@ -57,7 +57,7 @@
 
     } // Breakpoint: Lg
 
-    @include breakpoint( medium ) {
+    @include breakpoint( med ) {
         padding: 100px 45px 60px 45px;
 
         h2 {
@@ -70,7 +70,7 @@
 
     } // Breakpoint: Med
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         padding: 80px 60px;
 
         .wrap {
@@ -88,7 +88,7 @@
 
     } // Breakpoint: Sm
 
-    @include breakpoint( extra-small ) {
+    @include breakpoint( xs ) {
         padding: 60px;
 
         h2 {

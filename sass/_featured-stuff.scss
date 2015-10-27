@@ -10,11 +10,11 @@
     color: $white;
     text-align: center;
 
-    @include breakpoint( medium ) {
+    @include breakpoint( med ) {
         margin-bottom: $space-default;
     }
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         padding: ($space-default-half * 3) 0;
     }
 
@@ -29,7 +29,7 @@
             @include col( one-third, true );
         }
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             @include col( one-whole );
             margin-bottom: $space-default + 10px;
 

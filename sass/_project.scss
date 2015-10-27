@@ -4,15 +4,15 @@
 
 .post-type-archive-jpak_project .site-inner {
 
-    @include breakpoint( medium ) {
+    @include breakpoint( med ) {
         width: 600px;
     }
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         width: 550px;
     }
 
-    @include breakpoint( extra-small ) {
+    @include breakpoint( xs ) {
         width: 90%;
     }
 
@@ -24,13 +24,13 @@
     &:nth-child(2) {
         border-top-color: $primary-dark;
 
-        @include breakpoint( medium ) {
+        @include breakpoint( med ) {
             border-top-color: $secondary-mid-light;
         }
 
     } // 2nd Entry
 
-    @include breakpoint( medium ) {
+    @include breakpoint( med ) {
         width: 100%;
         margin-left: 0;
     }
@@ -46,7 +46,7 @@
                 color: $white;
                 bottom: $space-default-half * 3;
 
-                @include breakpoint( extra-extra-small ) {
+                @include breakpoint( xxs ) {
                     bottom: $space-default-middle;
                 }
 
@@ -97,11 +97,11 @@
 
         @include transition-ease-in-out( 275ms );
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             padding: 0 $space-default-middle;
         }
 
-        @include breakpoint( extra-extra-small ) {
+        @include breakpoint( xxs ) {
             padding: 0 $space-default-half;
         }
 
@@ -115,15 +115,15 @@
         font-weight: 300;
         color: $secondary-light;
 
-        @include breakpoint( large ) {
+        @include breakpoint( lg ) {
             font-size: 28px;
         }
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
             font-size: 24px;
         }
 
-        @include breakpoint( extra-extra-small ) {
+        @include breakpoint( xxs ) {
             bottom: $space-default-half + 5px;
         }
 
@@ -137,11 +137,11 @@
         letter-spacing: 0.04em;
         color: $primary;
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
             font-size: 16px;
         }
 
-        @include breakpoint( extra-extra-small ) {
+        @include breakpoint( xxs ) {
             display: none;
         }
 
@@ -171,24 +171,24 @@
         // max-width: none;
         max-width: 1400px;
 
-        @include breakpoint( extra-large ) {
+        @include breakpoint( xl ) {
             max-width: 1200px;
         }
 
-        @include breakpoint( large ) {
+        @include breakpoint( lg ) {
             max-width: none;
             width: 1024px;
         }
 
-        @include breakpoint( medium-large ) {
+        @include breakpoint( med-lg ) {
             width: 960px;
         }
 
-        @include breakpoint( medium ) {
+        @include breakpoint( med ) {
             width: 960px;
         }
 
-        // @include breakpoint( small ) {
+        // @include breakpoint( sm ) {
         //     width: 800px;
         // }
 

@@ -18,7 +18,7 @@ section.featuredpost {
             @include col( one-half, true );
         }
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             @include col( one-whole );
 
             &:first-child {
@@ -28,7 +28,7 @@ section.featuredpost {
 
         } // Breakpoint: S
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
 
             &:first-child {
                 margin-bottom: $space-default-middle;

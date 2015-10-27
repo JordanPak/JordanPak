@@ -15,7 +15,7 @@
     } // .wrap
 
 
-    @include breakpoint( large ) {
+    @include breakpoint( lg ) {
         height: $site-header-height-medium;
 
         .wrap {
@@ -24,7 +24,7 @@
 
     } // Breakpoint: lg
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         height: auto;
 
         .wrap {
@@ -43,12 +43,12 @@
     padding: 0;
     width: 460px;
 
-    @include breakpoint( large ) {
+    @include breakpoint( lg ) {
         margin-top: 20px;
         width: 360px;
     }
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         position: static;
         width: 100%;
         text-align: center;
@@ -63,7 +63,7 @@
     background-size: contain;
     background-position: top left;
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         margin-bottom: $space-default-half;
         min-height: 110px;
         width: 100%;

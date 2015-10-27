@@ -22,23 +22,23 @@ body {
 .site-inner, .wrap {
     padding: 0;
 
-    @include breakpoint( extra-large ) {
+    @include breakpoint( xl ) {
         max-width: $bp-xl-wrap;
     }
 
-    @include breakpoint( large ) {
+    @include breakpoint( lg ) {
         max-width: $bp-lg-wrap;
     }
 
-    @include breakpoint( medium-large ) {
+    @include breakpoint( med-lg ) {
         max-width: $bp-med-lg-wrap;
     }
 
-    @include breakpoint( medium ) {
+    @include breakpoint( med ) {
         max-width: $bp-med-wrap;
     }
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         width: $bp-sm-wrap;
     }
 
@@ -48,25 +48,25 @@ body {
 //-- BREAKPOINT TESTING --//
 .wrap, .site-inner {
 
-    @include breakpoint( extra-large ) {
+    @include breakpoint( xl ) {
         background-color: rgba(red, .4);
     }
-    @include breakpoint( large ) {
+    @include breakpoint( lg ) {
         background-color: rgba(blue, .4);
     }
-    @include breakpoint( medium-large ) {
+    @include breakpoint( med-lg ) {
         background-color: rgba(green, .4);
     }
-    @include breakpoint( medium ) {
+    @include breakpoint( med ) {
         background-color: rgba(purple, .4);
     }
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         background-color: rgba(red, .4);
     }
-    @include breakpoint( extra-small ) {
+    @include breakpoint( xs ) {
         background-color: rgba(blue, .4);
     }
-    @include breakpoint( extra-extra-small ) {
+    @include breakpoint( xxs ) {
         background-color: rgba(green, .4);
     }
 
@@ -77,11 +77,11 @@ body {
 .site-inner {
     margin-top: $mini-hero-displacement;
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         margin-top: $mini-hero-displacement-small;
     }
 
-    @include breakpoint( extra-small ) {
+    @include breakpoint( xs ) {
         margin-top: $mini-hero-displacement-extra-small;
     }
 
@@ -105,11 +105,11 @@ body {
 //-- CONTENT MEDIUM-LARGE FIX
 .content {
 
-    @include breakpoint( medium-large ) {
+    @include breakpoint( med-lg ) {
         width: 580px;
     }
 
-    @include breakpoint( medium ) {
+    @include breakpoint( med ) {
         width: 100%;
     }
 
@@ -125,7 +125,7 @@ body {
         border-top-color: $primary-dark;
     }
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         padding: $space-default;
         margin-bottom: $space-default-half + 10px;
     }
@@ -134,7 +134,7 @@ body {
 
 
 //-- COLUMN RESPONSIVENESS --//
-@include breakpoint( medium ) {
+@include breakpoint( med ) {
 
     .one-fourth {
         width: 48.717948717948715%;
@@ -142,7 +142,7 @@ body {
 
 } // Breakpoint: Med
 
-@include breakpoint( extra-small ) {
+@include breakpoint( xs ) {
 
     .one-fourth {
         width: 100%;

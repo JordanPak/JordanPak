@@ -53,11 +53,11 @@ h3 {
     font-size: 72px;
     margin-bottom: 0;
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         font-size: 52px;
     }
 
-    @include breakpoint( extra-extra-small ) {
+    @include breakpoint( xxs ) {
         font-size: 46px;
     }
 
@@ -70,7 +70,7 @@ h3 {
     margin-bottom: $space-default + 5px;
     padding-bottom: $space-default + 10px;
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         margin-bottom: $space-default;
         padding-bottom: $space-default;
     } // Breakpoint: S

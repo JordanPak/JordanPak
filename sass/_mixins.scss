@@ -184,7 +184,7 @@
     @if $size == one-fourth {
         width: 23.076923076923077%;
 
-        @include breakpoint( medium ) {
+        @include breakpoint( med ) {
             width: 48.717948717948715%;
         }
 
