@@ -57,6 +57,16 @@ body {
         margin-top: $mini-hero-displacement-extra-small;
     }
 
+	// &::before {
+	// 	z-index: -1;
+	// 	position: absolute;
+	// 	left: 0;
+	// 	right: 0;
+	// 	width: 100%;
+	// 	height: 200px;
+    // 	background: url('images/hero-bg.jpg') no-repeat top center $primary;
+	// }
+
 } // .site-inner Hero Displacement
 
 
