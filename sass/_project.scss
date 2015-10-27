@@ -153,7 +153,12 @@
     border: 10px solid $white;
     -moz-box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
-}
+
+	@include breakpoint( sm ) {
+		border-width: 5px;
+	}
+
+} // .project-full-image
 
 .project-background-previews {
     // padding: 120px 220px 150px 220px; // padding-bottom: 140px; // With Wrap
@@ -167,30 +172,38 @@
 
     @include clearfix();
 
+	@include breakpoint( sm ) {
+		padding: 55px 0 130px 0;
+	}
+
+	@include breakpoint( xs ) {
+		padding: 40px 0 115px 0;
+	}
+
     .wrap {
-        // max-width: none;
         max-width: 1400px;
 
         @include breakpoint( xl ) {
             max-width: 1200px;
         }
-
         @include breakpoint( lg ) {
-            max-width: none;
-            width: 1024px;
+            width: $bp-lg-wrap;
         }
-
         @include breakpoint( med-lg ) {
-            width: 960px;
+            width: $bp-med-lg-wrap;
         }
-
         @include breakpoint( med ) {
-            width: 960px;
+            width: $bp-med-wrap;
         }
-
-        // @include breakpoint( sm ) {
-        //     width: 800px;
-        // }
+        @include breakpoint( sm ) {
+            width: $bp-sm-wrap;
+        }
+		@include breakpoint( xs ) {
+            width: $bp-sm-wrap;
+        }
+		@include breakpoint( xxs ) {
+            width: $bp-sm-wrap;
+        }
 
     } // .wrap
 
