@@ -335,12 +335,26 @@
 .project-description {
     float: left;
     width: 60%;
-}
+
+	@include breakpoint( med ) {
+		float: none;
+		margin-bottom: $space-default;
+		width: 100%;
+	}
+
+} // .project-description
 
 .project-features {
     float: right;
     padding: 0;
     width: 33%;
+
+	@include breakpoint( med ) {
+		float: none;
+		width: 100%;
+		margin-bottom: $space-default;
+	}
+
 } // .project-features
 
 .project-buttons {
@@ -353,6 +367,31 @@
         border-bottom: 2px solid $primary;
     }
 
+	@include breakpoint( sm ) {
+
+		span {
+			display: none;
+		}
+
+		.button:first-child {
+			margin-right: 20px;
+		}
+
+	} // BP: sm
+
+	@include breakpoint( xs ) {
+		margin-top: $space-default-half;
+
+		.button {
+			display: block ;
+			margin-bottom: 15px;
+			width: 100%;
+			padding: 16px 24px !important;
+			font-size: 16px !important;
+		}
+
+	} // BP: xs
+
 } // .project-buttons
 
 .project-testimonial {
@@ -360,6 +399,10 @@
 
 	@include breakpoint( sm ) {
 		margin-top: $space-default-half * 7;
+	}
+
+	@include breakpoint( xs ) {
+		margin-top: $space-default-half * 5;
 	}
 
     blockquote {

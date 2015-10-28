@@ -2726,11 +2726,21 @@ section.featuredpost {
 .project-description {
   float: left;
   width: 60%; }
+  @media (max-width: 1024px) {
+    .project-description {
+      float: none;
+      margin-bottom: 40px;
+      width: 100%; } }
 
 .project-features {
   float: right;
   padding: 0;
   width: 33%; }
+  @media (max-width: 1024px) {
+    .project-features {
+      float: none;
+      width: 100%;
+      margin-bottom: 40px; } }
 
 .project-buttons {
   margin-top: 40px;
@@ -2739,12 +2749,29 @@ section.featuredpost {
     margin: 0 20px;
     font-style: italic;
     border-bottom: 2px solid #8dc63f; }
+  @media (max-width: 860px) {
+    .project-buttons span {
+      display: none; }
+    .project-buttons .button:first-child {
+      margin-right: 20px; } }
+  @media (max-width: 600px) {
+    .project-buttons {
+      margin-top: 20px; }
+      .project-buttons .button {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 16px 24px !important;
+        font-size: 16px !important; } }
 
 .project-testimonial {
   margin-top: 100px; }
   @media (max-width: 860px) {
     .project-testimonial {
       margin-top: 140px; } }
+  @media (max-width: 600px) {
+    .project-testimonial {
+      margin-top: 100px; } }
   .project-testimonial blockquote {
     display: block;
     position: relative;
