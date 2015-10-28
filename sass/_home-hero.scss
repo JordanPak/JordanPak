@@ -101,4 +101,8 @@
 
     } // Breakpoint: XS
 
+	@include breakpoint( xxs ) {
+		padding: $space-default $space-default-middle;
+	}
+
 } // #home-hero

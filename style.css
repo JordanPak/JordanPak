@@ -2376,6 +2376,9 @@ p.comment-meta {
         font-size: 38px; }
       #home-hero p {
         font-size: 20px; } }
+  @media (max-width: 460px) {
+    #home-hero {
+      padding: 40px 30px; } }
 
 #featured-stuff {
   margin: 0;
