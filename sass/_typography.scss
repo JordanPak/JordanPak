@@ -54,7 +54,7 @@ h3 {
     margin-bottom: 0;
 
     @include breakpoint( sm ) {
-        font-size: 52px;
+        font-size: 60px;
     }
 
     @include breakpoint( xxs ) {

@@ -164,7 +164,7 @@
     padding: 120px 0 150px 0;
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzYzLjIgNDQ0LjUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDM2My4yIDQ0NC41IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiM2N0EyMjciIGQ9Ik0xNzUuMywwaDYwLjNMNjAuMyw0NDQuNUgwTDE3NS4zLDB6Ii8+DQoJPHBhdGggZmlsbD0iIzY3QTIyNyIgZD0iTTMwMi45LDBoNjAuM0wxODgsNDQ0LjVoLTYwLjNMMzAyLjksMHoiLz4NCjwvZz4NCjwvc3ZnPg0K');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top right;
     background-attachment: fixed;
     background-size: contain;
     background-color: $primary;
@@ -317,20 +317,53 @@
     padding-bottom: 0;
     border: 0;
     text-align: left;
-}
+
+	@include breakpoint( med ) {
+		position: static;
+		padding-bottom: $space-default;
+		border-bottom: 2px solid $secondary-mid-light;
+		text-align: center;
+	}
+
+} // Project .entry-header
 
 .single-jpak_project .entry-title {
     margin: 0;
     padding: 0;
     border: 0;
     text-align: left;
-}
+
+	@include breakpoint( med ) {
+		text-align: center;
+	}
+
+} // Project .entry-title
 
 .project-visit-website {
     position: absolute;
     top: 0;
     right: 0;
-}
+
+	&.button-light {
+		display: none !important;
+	}
+
+	@include breakpoint( med ) {
+		position: static;
+		margin-top: $space-default-half;
+	}
+
+	@include breakpoint( xs ) {
+		display: none !important;
+		margin-top: $space-default-middle;
+
+		&.button-light {
+			display: inline-block !important;
+		}
+
+	} // BP: xs
+
+} // .project-visit-website
 
 .project-description {
     float: left;
