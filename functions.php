@@ -57,6 +57,15 @@ function jpak_global_styles() {
 } // jpak_global_styles()
 
 
+// THEME COLOR META //
+add_action( 'genesis_meta', 'jpak_meta_theme_color', 13 );
+function jpak_meta_theme_color() {
+
+	echo '<meta name="theme-color" content="#8dc63f">';
+
+} // jpak_meta_theme_color()
+
+
 add_action('after_setup_theme', 'remove_admin_bar');
 function remove_admin_bar() {
     if ( !current_user_can('administrator') && !is_admin() ) {
