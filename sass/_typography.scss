@@ -180,6 +180,10 @@ ul.checkmark {
         background-position: 0 5px;
     }
 
+	@include breakpoint( xs ) {
+		margin-left: 0;
+	}
+
 } // ul.checkmark
 
 ul.features {

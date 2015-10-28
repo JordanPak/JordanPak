@@ -1660,6 +1660,10 @@ body {
     .entry, .sidebar .widget {
       padding: 30px;
       padding-top: 40px; } }
+  @media (max-width: 460px) {
+    .entry, .sidebar .widget {
+      padding: 20px;
+      padding-top: 40px; } }
 
 @media (max-width: 1024px) {
   .one-fourth {
@@ -1775,6 +1779,9 @@ ul.checkmark {
     background-image: url("images/bullet-checkmark.png");
     background-repeat: no-repeat;
     background-position: 0 5px; }
+  @media (max-width: 600px) {
+    ul.checkmark {
+      margin-left: 0; } }
 
 ul.features {
   margin: 0;

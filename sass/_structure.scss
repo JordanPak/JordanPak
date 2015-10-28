@@ -135,6 +135,11 @@ body {
 		padding-top: $space-default;
 	}
 
+	@include breakpoint( xxs ) {
+		padding: $space-default-half;
+		padding-top: $space-default;
+	}
+
 } // .entry, .sidebar .widget
 
 
