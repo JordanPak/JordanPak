@@ -1986,6 +1986,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   @media (max-width: 860px) {
     .header-image .site-title > a {
       height: 130px;
+      background-image: url("images/logo-huge.png");
       background-position: top center; } }
   @media (max-width: 460px) {
     .header-image .site-title > a {

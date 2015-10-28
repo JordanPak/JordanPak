@@ -67,6 +67,7 @@
 
     @include breakpoint( sm ) {
         height: 130px;
+		background-image: url('images/logo-huge.png');
         background-position: top center;
     }
 
