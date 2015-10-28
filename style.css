@@ -1583,6 +1583,31 @@ li.comment {
   ol,
   ul {
     page-break-before: avoid; } }
+@media (min-width: 1920px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 255, 0, 0.5); } }
+@media (max-width: 1500px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 1260px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 1080px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 128, 0, 0.4); } }
+@media (max-width: 1024px) {
+  .wrap, .site-inner {
+    background-color: rgba(128, 0, 128, 0.4); } }
+@media (max-width: 860px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 600px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 460px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 128, 0, 0.4); } }
+
 body {
   background: #f7f7f7; }
 
@@ -2717,6 +2742,9 @@ section.featuredpost {
 
 .project-testimonial {
   margin-top: 100px; }
+  @media (max-width: 860px) {
+    .project-testimonial {
+      margin-top: 140px; } }
   .project-testimonial blockquote {
     display: block;
     position: relative;
@@ -2732,6 +2760,25 @@ section.featuredpost {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 120px;
       color: #8dc63f; }
+    @media (max-width: 1260px) {
+      .project-testimonial blockquote {
+        padding: 0 80px; }
+        .project-testimonial blockquote::before {
+          left: 0px; } }
+    @media (max-width: 1024px) {
+      .project-testimonial blockquote {
+        padding: 0 40px; }
+        .project-testimonial blockquote::before {
+          left: -20px; } }
+    @media (max-width: 860px) {
+      .project-testimonial blockquote {
+        padding: 0; }
+        .project-testimonial blockquote::before {
+          width: 100%;
+          top: -110px; } }
+    @media (max-width: 460px) {
+      .project-testimonial blockquote {
+        font-size: 20px; } }
   .project-testimonial cite {
     display: block;
     margin-top: 30px;

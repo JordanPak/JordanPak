@@ -358,6 +358,10 @@
 .project-testimonial {
     margin-top: $space-default-half * 5;
 
+	@include breakpoint( sm ) {
+		margin-top: $space-default-half * 7;
+	}
+
     blockquote {
         display: block;
         position: relative;
@@ -365,7 +369,6 @@
         padding: 0 ($space-default * 4);
         text-align: center;
         font-size: 22px;
-        // color: $secondary-mid;
 
         &::before {
             display: block;
@@ -377,6 +380,38 @@
             // font-weight: 700;
             color: $primary;
         }
+
+		@include breakpoint( lg ) {
+			padding: 0 ($space-default * 2);
+
+			&::before {
+				left: 0px;
+			}
+
+		} // BP: lg
+
+		@include breakpoint( med ) {
+			padding: 0 $space-default;
+
+			&::before {
+				left: -20px;
+			}
+
+		} // BP: med
+
+		@include breakpoint( sm ) {
+			padding: 0;
+
+			&::before {
+				width: 100%;
+				top: -110px;
+			}
+
+		} // BP: sm
+
+		@include breakpoint( xxs ) {
+			font-size: 20px;
+		}
 
     } // blockquote
 
