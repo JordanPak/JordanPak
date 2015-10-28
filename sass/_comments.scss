@@ -13,6 +13,16 @@
     background: none;
     border: 0;
 
+	@include breakpoint( sm ) {
+		padding: 30px;
+		padding-top: $space-default-half;
+	}
+
+	@include breakpoint( xs ) {
+		padding: 0;
+		padding-top: $space-default-half;
+	}
+
     h3 {
         text-align: center;
     }
@@ -66,6 +76,19 @@
         }
 
     } // .children
+
+	@include breakpoint( xs ) {
+
+		.comment article {
+			padding: $space-default-middle;
+		}
+
+		.comment .avatar {
+			position: static;
+			margin-right: $space-default-half;
+		}
+
+	} // BP: sm
 
 } // .comment-list
 
