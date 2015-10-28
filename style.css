@@ -1583,31 +1583,6 @@ li.comment {
   ol,
   ul {
     page-break-before: avoid; } }
-@media (min-width: 1920px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 255, 0, 0.5); } }
-@media (max-width: 1500px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 0, 0, 0.4); } }
-@media (max-width: 1260px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 0, 255, 0.4); } }
-@media (max-width: 1080px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 128, 0, 0.4); } }
-@media (max-width: 1024px) {
-  .wrap, .site-inner {
-    background-color: rgba(128, 0, 128, 0.4); } }
-@media (max-width: 860px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 0, 0, 0.4); } }
-@media (max-width: 600px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 0, 255, 0.4); } }
-@media (max-width: 460px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 128, 0, 0.4); } }
-
 body {
   background: #f7f7f7; }
 
@@ -2127,6 +2102,10 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   .entry-comments h3 {
     text-align: center; }
 
+.full-width-content .entry-comments, .full-width-content .comment-respond, .full-width-content .entry-pings {
+  margin: 0 auto;
+  max-width: 960px; }
+
 .comment-list {
   display: block;
   padding: 0;
@@ -2219,6 +2198,10 @@ p.comment-meta {
     color: #FFFFFF; }
   .comment-edit-link .fa {
     margin-right: 3px; }
+  @media (max-width: 600px) {
+    .comment-edit-link {
+      position: static;
+      margin-bottom: 20px; } }
 
 .comment-reply-link {
   margin-top: 10px;
@@ -2287,6 +2270,12 @@ p.comment-meta {
 .comment-respond, .entry-pings {
   background: none;
   padding: 60px; }
+  @media (max-width: 860px) {
+    .comment-respond, .entry-pings {
+      padding: 30px; } }
+  @media (max-width: 600px) {
+    .comment-respond, .entry-pings {
+      padding: 40px 0 30px 0; } }
   .comment-respond form, .entry-pings form {
     padding: 40px;
     background: white;
