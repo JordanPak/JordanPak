@@ -2613,7 +2613,7 @@ section.featuredpost {
  */
 .browser-mockup {
   display: inline-block;
-  border-top: 2em solid #edeeee;
+  border-top: 1.75em solid #edeeee;
   -moz-box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
   position: relative;
@@ -2622,24 +2622,24 @@ section.featuredpost {
     display: block;
     position: absolute;
     content: '';
-    top: -1.25em;
-    left: 1em;
-    width: 0.5em;
-    height: 0.5em;
+    top: -1.04em;
+    left: .75em;
+    width: 0.4em;
+    height: 0.4em;
     border-radius: 50%;
-    background-color: #f44;
-    box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5; }
+    background-color: #B5B5B5;
+    box-shadow: 0 0 0 2px #B5B5B5, 1.1em 0 0 2px #B5B5B5, 2.2em 0 0 2px #B5B5B5; }
   .browser-mockup.with-tab:after {
     display: block;
     position: absolute;
     content: '';
-    top: -2em;
-    left: 5.5em;
-    width: 20%;
+    top: -1.75em;
+    left: 4.5em;
+    width: 14%;
     height: 0em;
-    border-bottom: 2em solid white;
-    border-left: 0.8em solid transparent;
-    border-right: 0.8em solid transparent; }
+    border-bottom: 1.75em solid white;
+    border-left: .66em solid transparent;
+    border-right: .66em solid transparent; }
   .browser-mockup.with-url:after {
     display: block;
     position: absolute;
