@@ -2,6 +2,17 @@
 //  JordanPak | Forms  //
 //=====================//
 
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+
+	@include breakpoint( sm ) {
+		width: 100%;
+	}
+
+} // .comment-respond Inputs
+
+
 input, select, textarea {
     font-size: 16px;
     font-weight: 400;
