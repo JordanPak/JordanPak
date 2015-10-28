@@ -25,7 +25,9 @@
 	$bp-lg-wrap:        1024px;
     $bp-med-lg-wrap:    960px;
     $bp-med-wrap:       800px;
-    $bp-sm-wrap:        90%;		// At 860px, wrapper will be 90% forever
+    $bp-sm-wrap:        90%;
+	$bp-xs-wrap:		90%;
+	$bp-xxs-wrap:		95%;		// At 460px, wrapper will be 90% forever
 
 
 
@@ -98,5 +100,5 @@
 } // Breakpoint Testing
 
 .wrap, .site-inner {
-	@include bp-testing();
+	// @include bp-testing();
 }
