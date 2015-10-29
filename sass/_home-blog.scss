@@ -18,6 +18,24 @@ section.featuredpost {
             @include col( one-half, true );
         }
 
+        @include breakpoint( sm ) {
+            @include col( one-whole );
+
+            &:first-child {
+                @include col( one-whole );
+                margin-bottom: $space-default;
+            }
+
+        } // Breakpoint: S
+
+        @include breakpoint( xs ) {
+
+            &:first-child {
+                margin-bottom: $space-default-middle;
+            }
+
+        }
+
     } // .entry
 
     p {

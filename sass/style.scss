@@ -14,15 +14,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 // Default Genesis Sample Styling
 @import 'default';
 
-
 // Variables & Mixins
 @import 'variables';
+@import 'breakpoints';
 @import 'mixins';
 
 // Customizations
 @import 'structure';
 @import 'typography';
 @import 'utility';
+@import 'site-header';
 @import 'navigation';
 @import 'forms';
 @import 'footer';

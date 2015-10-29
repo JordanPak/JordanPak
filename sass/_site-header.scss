@@ -1,0 +1,78 @@
+//===========================//
+//  JordanPak | Site Header  //
+//===========================//
+
+.site-header {
+    height: $site-header-height-large;
+    min-height: 0;
+    background: $secondary;
+    color: $white;
+
+    .wrap {
+        position: relative;
+        height: $site-header-height-large;
+        padding: 0;
+    } // .wrap
+
+
+    @include breakpoint( lg ) {
+        height: $site-header-height-medium;
+
+        .wrap {
+            height: $site-header-height-medium;
+        }
+
+    } // Breakpoint: lg
+
+    @include breakpoint( sm ) {
+        height: auto;
+
+        .wrap {
+            height: auto;
+        }
+
+    } // Breakpoint: Small
+
+} // .site-header
+
+
+//-- TITLE AREA --//
+.title-area {
+    position: absolute;
+    margin-top: 30px;
+    padding: 0;
+    width: 460px;
+
+    @include breakpoint( lg ) {
+        margin-top: 20px;
+        width: 360px;
+    }
+
+    @include breakpoint( sm ) {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+} // .title-area
+
+
+//-- LOGO --//
+.header-image .site-title > a {
+	float: none;
+	display: block;
+    height: 130px;
+    background-size: contain;
+    background-position: top left;
+
+    @include breakpoint( sm ) {
+        height: 130px;
+		background-image: url('images/logo-huge.png');
+        background-position: top center;
+    }
+
+	@include breakpoint( xxs ) {
+		height: 116px;
+	}
+
+} // .header-iamge .site-title > a

@@ -29,10 +29,11 @@
 
     p {
         font-size: 28px;
+        margin: 0;
     }
 
     .button {
-        margin-top: $space-default-middle;
+        margin-top: $space-default;
         @include button-outline( white );
 
         &:hover {
@@ -41,5 +42,67 @@
         }
 
     } // .button
+
+    @include breakpoint( med-lg ) {
+        padding: 60px;
+        padding-top: 100px;
+
+        h2 {
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+    } // Breakpoint: Lg
+
+    @include breakpoint( med ) {
+        padding: 100px 45px 60px 45px;
+
+        h2 {
+            font-size: 44px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+    } // Breakpoint: Med
+
+    @include breakpoint( sm ) {
+        padding: 80px 60px;
+
+        .wrap {
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+    } // Breakpoint: Sm
+
+    @include breakpoint( xs ) {
+        padding: 60px;
+
+        h2 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+    } // Breakpoint: XS
+
+	@include breakpoint( xxs ) {
+		padding: $space-default $space-default-middle;
+	}
 
 } // #home-hero

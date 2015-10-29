@@ -5,22 +5,44 @@
 #featured-stuff {
     margin: 0;
     margin-bottom: $space-default + $space-default-half;
-    padding: ($space-default * 2) 0 $space-default 0;
+    padding: ($space-default * 2) 0;
     background: $secondary;
     color: $white;
     text-align: center;
+
+    @include breakpoint( med ) {
+        margin-bottom: $space-default;
+    }
+
+    @include breakpoint( sm ) {
+        padding: ($space-default-half * 3) 0;
+    }
 
     h1, h2, h3, h4, h5, h6 {
         color: $white;
     }
 
     .widget {
-
         @include col( one-third );
 
         &:first-child {
             @include col( one-third, true );
         }
+
+        @include breakpoint( sm ) {
+            @include col( one-whole );
+            margin-bottom: $space-default + 10px;
+
+            &:first-child {
+                @include col( one-whole );
+                margin-bottom: $space-default;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        } // Breakpoint: S
 
     } // .widget
 
@@ -37,6 +59,7 @@
         }
 
         p {
+            margin-bottom: 0;
             font-weight: 700;
             text-transform: uppercase;
             font-size: 22px;

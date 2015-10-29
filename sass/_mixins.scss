@@ -183,7 +183,12 @@
     // One Fourth
     @if $size == one-fourth {
         width: 23.076923076923077%;
-    }
+
+        @include breakpoint( med ) {
+            width: 48.717948717948715%;
+        }
+
+    } // one-fourth
 
     // Three Fourths
     @if $size == three-fourths {
@@ -198,6 +203,12 @@
     // Five Sixths
     @if $size == five-sixths {
         width: 82.90598290598291%;
+    }
+
+    // One Whole
+    @if $size == one-whole {
+        width: 100%;
+        margin: 0;
     }
 
 
