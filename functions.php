@@ -176,6 +176,19 @@ genesis_register_sidebar( array(
 ) );
 
 
+add_filter( 'the_content_more_link', 'jpak_read_more_link' );
+/**
+* Customize Read More Link
+*
+* @package JordanPak
+* @since 1.0.0
+*
+* @return string
+*/
+function jpak_read_more_link() {
+	return '<a class="more-link button button-xsm" href="' . get_permalink() . '">Continue Reading</a>';
+}
+
 
 add_filter( 'genesis_post_info', 'jpak_post_info_filter' );
 /**
