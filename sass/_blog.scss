@@ -1,0 +1,92 @@
+//====================//
+//  JordanPak | Blog  //
+//====================//
+
+.page-template-page_blog {
+
+    .entry-header {
+        padding-bottom: $space-default;
+    }
+
+    .entry-title {
+        font-size: 54px;
+    }
+
+	.entry-content {
+
+		.alignleft, .align-left, .alignright, .align-right {
+			max-width: 33%;
+
+			@include breakpoint( sm ) {
+				max-width: 50%;
+			}
+
+		} // img
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+	} // .entry-content
+
+} // Blog Template entry header & title
+
+
+//-- FULL-WIDTH BLOG POSTS --//
+.full-width-content .type-post .entry-content {
+	padding: 0 130px;
+
+	@include breakpoint( lg ) {
+		padding: 0 60px;
+	}
+
+	@include breakpoint( med ) {
+		padding: 0;
+	}
+
+
+	a.alignleft, a.align-left,
+	img.alignleft, img.align-left,
+	.wp-caption.alignleft, .wp-caption.align-left {
+		margin-left: -80px;
+
+		@include breakpoint( lg ) {
+			margin-left: 0;
+		}
+
+		@include breakpoint( sm ) {
+			max-width: 50%;
+		}
+
+		@include breakpoint( xs ) {
+			display: block;
+			float: none;
+			margin: 0 0 $space-default 0;
+			max-width: 100%;
+		}
+
+	} // left-aligned
+
+	a.alignright, a.align-right,
+	img.alignright, img.align-right,
+	.wp-caption.alignright, .wp-caption.align-right {
+		margin-right: -80px;
+
+		@include breakpoint( lg ) {
+			margin-right: 0;
+		}
+
+		@include breakpoint( sm ) {
+			max-width: 50%;
+		}
+
+		@include breakpoint( xs ) {
+			display: block;
+			float: none;
+			margin: 0 0 $space-default 0;
+			max-width: 100%;
+		}
+
+	} // right-aligned
+
+} // Full-Width Blog Posts .entry-content

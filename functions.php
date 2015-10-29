@@ -186,7 +186,7 @@ add_filter( 'the_content_more_link', 'jpak_read_more_link' );
 * @return string
 */
 function jpak_read_more_link() {
-	return '<a class="more-link button button-xsm" href="' . get_permalink() . '">Continue Reading</a>';
+	return '<p><a class="more-link button button-xsm" href="' . get_permalink() . '">Continue Reading</a></p>';
 }
 
 
