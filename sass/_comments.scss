@@ -13,11 +13,30 @@
     background: none;
     border: 0;
 
+	@include breakpoint( sm ) {
+		padding: 30px;
+		padding-top: $space-default-half;
+	}
+
+	@include breakpoint( xs ) {
+		padding: 0;
+		padding-top: $space-default-half;
+	}
+
     h3 {
         text-align: center;
     }
 
 } // .entry-contents
+
+.full-width-content {
+
+	.entry-comments, .comment-respond, .entry-pings {
+		margin: 0 auto;
+		max-width: 960px;
+	}
+
+} // .full-width-content Entry Comments
 
 .comment-list {
     display: block;
@@ -66,6 +85,19 @@
         }
 
     } // .children
+
+	@include breakpoint( xs ) {
+
+		.comment article {
+			padding: $space-default-middle;
+		}
+
+		.comment .avatar {
+			position: static;
+			margin-right: $space-default-half;
+		}
+
+	} // BP: sm
 
 } // .comment-list
 
@@ -120,7 +152,13 @@ p.comment-meta {
 
     @include button( light );
     @include button-size( xsm );
-}
+
+	@include breakpoint( xs ) {
+		position: static;
+		margin-bottom: $space-default-half;
+	}
+
+} // .comment-edit-link
 
 .comment-reply-link {
     margin-top: 10px;
@@ -155,6 +193,14 @@ p.comment-meta {
 .comment-respond, .entry-pings {
     background: none;
     padding: $space-default-half * 3;
+
+	@include breakpoint( sm ) {
+		padding: $space-default-middle;
+	}
+
+	@include breakpoint( xs ) {
+		padding: $space-default 0 $space-default-middle 0;
+	}
 
     form {
         padding: $space-default;

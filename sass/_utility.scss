@@ -5,11 +5,15 @@
 
 //-- ALIGNMENT --//
 
-a.alignleft, img.alignleft, .wp-caption.alignleft {
+a.alignleft, a.align-left,
+img.alignleft, img.align-left,
+.wp-caption.alignleft, .wp-caption.align-left {
     margin: 0 $space-default $space-default 0;
 }
 
-a.alignright, img.alignright, .wp-caption.alignright {
+a.alignright, a.align-right,
+img.alignright, img.align-right,
+.wp-caption.alignright, .wp-caption.align-right {
     margin: 0 0 $space-default $space-default;
 }
 

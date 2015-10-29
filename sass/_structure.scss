@@ -4,101 +4,166 @@
 
 
 //-- BODY --//
-
 body {
     background: $secondary-light;
 } // body
 
 
-
-//-- SITE HEADER --//
-
-.site-header {
-    height: $site-header-height;
-    min-height: 0;
-    background: $secondary;
-    color: $white;
-
-    .wrap {
-        position: relative;
-        height: 102px;
-        padding: 0;
-    }
-
-    .widget-area {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
-} // .site-header
-
-.title-area {
-    position: absolute;
-    margin-top: 30px;
-    padding: 0;
-    width: 416px;
-}
-
-.header-image .site-title > a {
-    min-height: 130px;
-    background-size: 416px;
-}
-
-.site-header .widget-area {
-    width: 800px;
-}
-
-
-
 //-- MINI-HERO --//
-
 #mini-hero {
     display: block;
     width: 100%;
     height: $mini-hero-height;
     background: url('images/hero-bg.jpg') no-repeat top center $primary;
-}
+} // #mini-hero
 
 
-
-//-- SITE-INNER --//
-
-.site-inner {
+//-- SITE-INNER & WRAP --//
+.site-inner, .wrap {
     padding: 0;
+
+    @include breakpoint( xl ) {
+        max-width: $bp-xl-wrap;
+    }
+    @include breakpoint( lg ) {
+        max-width: $bp-lg-wrap;
+    }
+    @include breakpoint( med-lg ) {
+        max-width: $bp-med-lg-wrap;
+    }
+    @include breakpoint( med ) {
+        max-width: $bp-med-wrap;
+    }
+    @include breakpoint( sm ) {
+        width: $bp-sm-wrap;
+    }
+	@include breakpoint( xs ) {
+		width: $bp-xs-wrap;
+	}
+	@include breakpoint( xxs ) {
+		width: $bp-xxs-wrap;
+	}
+
+} // .site-inner, .wrap
+
+
+//-- HERO DISPLACEMENT --//
+.site-inner {
     margin-top: $mini-hero-displacement;
-}
 
-.page-template-page_home .site-inner, .no-mini-hero .site-inner {
-    margin-top: 0;
-}
+    @include breakpoint( sm ) {
+        margin-top: $mini-hero-displacement-small;
+    }
+
+    @include breakpoint( xs ) {
+        margin-top: $mini-hero-displacement-extra-small;
+    }
+
+	// &::before {
+	// 	z-index: -1;
+	// 	position: absolute;
+	// 	left: 0;
+	// 	right: 0;
+	// 	width: 100%;
+	// 	height: 200px;
+    // 	background: url('images/hero-bg.jpg') no-repeat top center $primary;
+	// }
+
+} // .site-inner Hero Displacement
 
 
-//-- WIDGET --//
+//-- REMOVE MINI HERO --//
+.page-template-page_home, .no-mini-hero {
 
+    .site-inner {
+        margin-top: 0;
+    }
+
+    #mini-hero {
+        display: none;
+    }
+
+} // page_home and .no-mini-hero templates/classes
+
+
+//-- CONTENT & SIDEBAR FIXES --//
+.content {
+
+    @include breakpoint( lg ) {
+        width: 660px;
+    }
+
+	@include breakpoint( med-lg ) {
+		width: 600px;
+	}
+
+    @include breakpoint( med ) {
+        width: 100%;
+    }
+
+} // .content
+
+.sidebar-primary {
+
+	@include breakpoint( lg ) {
+		width: 320px;
+	}
+
+	@include breakpoint( med ) {
+		width: 100%;
+	}
+
+} // .sidebar-primary
+
+
+//-- GLOBAL BORDERS --//
 .entry, .sidebar .widget {
-    border-top: 5px solid $primary-dark;
+    border-top: 5px solid $secondary-mid-light;
     border-bottom: 2px solid $secondary-mid-light;
-}
+
+    &:first-child {
+        border-top-color: $primary-dark;
+    }
+
+    @include breakpoint( sm ) {
+        padding: $space-default;
+        margin-bottom: $space-default-half + 10px;
+    }
+
+	@include breakpoint( xs ) {
+		padding: $space-default-middle;
+		padding-top: $space-default;
+	}
+
+	@include breakpoint( xxs ) {
+		padding: $space-default-half;
+		padding-top: $space-default;
+	}
+
+} // .entry, .sidebar .widget
+
+.sidebar .widget:first-child {
+
+	@include breakpoint( med ) {
+		border-top-color: $secondary-mid-light;
+	}
+
+} // Sidebar first widget
 
 
+//-- COLUMN RESPONSIVENESS --//
+@include breakpoint( med ) {
 
-//-- GRID LOOP --//
+    .one-fourth {
+        width: 48.717948717948715%;
+    }
 
-.genesis-grid-even {
-  float: right;
-	padding: 0 0 15px;
-	width: 48%;
-}
+} // Breakpoint: Med
 
-.genesis-grid-odd {
-	clear: both;
-	float: left;
-	padding: 0 0 15px ;
-	width: 48%;
-}
+@include breakpoint( xs ) {
 
-.genesis-grid-even,
-.genesis-grid-odd {
-	margin: 0 0 20px;
-}
+    .one-fourth {
+        width: 100%;
+    }
+
+} // Breakpoint: XS

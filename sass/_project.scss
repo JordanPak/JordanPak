@@ -2,12 +2,38 @@
 //  JordanPak | Project //
 //======================//
 
+.post-type-archive-jpak_project .site-inner {
+
+    @include breakpoint( med ) {
+        width: 600px;
+    }
+
+    @include breakpoint( sm ) {
+        width: 550px;
+    }
+
+    @include breakpoint( xs ) {
+        width: 90%;
+    }
+
+} // Project Archive .site-inner
+
 .project-grid-entry {
     padding: 10px;
-    background: no-repeat top;
-    border: 0;
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.22);
-    box-shadow: 0 0 8px rgba(0,0,0,0.22);
+
+    &:nth-child(2) {
+        border-top-color: $primary-dark;
+
+        @include breakpoint( med ) {
+            border-top-color: $secondary-mid-light;
+        }
+
+    } // 2nd Entry
+
+    @include breakpoint( med ) {
+        width: 100%;
+        margin-left: 0;
+    }
 
     &.entry a {
         display: block;
@@ -18,8 +44,13 @@
 
             .entry-title {
                 color: $white;
-                bottom: 50px;
-            }
+                bottom: $space-default-half * 3;
+
+                @include breakpoint( xxs ) {
+                    bottom: $space-default-middle;
+                }
+
+            } // .entry-title
 
             .entry-subtitle {
                 opacity: 1;
@@ -58,31 +89,63 @@
     .entry-title, .entry-subtitle {
         display: block;
         position: absolute;
+        padding: 0 $space-default;
         width: 100%;
         left: 0;
         text-align: center;
         text-shadow: 0 0 8px rgba(0,0,0,0.5), 0 2px 3px $black;
 
         @include transition-ease-in-out( 275ms );
-    }
+
+        @include breakpoint( sm ) {
+            padding: 0 $space-default-middle;
+        }
+
+        @include breakpoint( xxs ) {
+            padding: 0 $space-default-half;
+        }
+
+    } // .enty-title, .entry-subtitle
 
     .entry-title {
-        bottom: $space-default-half + 5px;
+        margin: 0;
+        bottom: $space-default-middle + 5px; // 25 -> 35
         font-family: $font-family-sans-serif;
         font-size: 32px;
         font-weight: 300;
         color: $secondary-light;
-    }
+
+        @include breakpoint( lg ) {
+            font-size: 28px;
+        }
+
+        @include breakpoint( xs ) {
+            font-size: 24px;
+        }
+
+        @include breakpoint( xxs ) {
+            bottom: $space-default-half + 5px;
+        }
+
+    } // .entry-title
 
     .entry-subtitle {
         opacity: 0;
         bottom: 4px;
         font-size: 18px;
         font-weight: 700;
-        // text-transform: uppercase;
         letter-spacing: 0.04em;
         color: $primary;
-    }
+
+        @include breakpoint( xs ) {
+            font-size: 16px;
+        }
+
+        @include breakpoint( xxs ) {
+            display: none;
+        }
+
+    } // .entry-subtitle
 
 } // .project-grid-entry
 
@@ -90,18 +153,59 @@
     border: 10px solid $white;
     -moz-box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
-}
+
+	@include breakpoint( sm ) {
+		border-width: 5px;
+	}
+
+} // .project-full-image
 
 .project-background-previews {
-    padding: 120px 220px 150px 220px; // padding-bottom: 140px; // With Wrap
-    background-image: url('images/bg-slashes.svg');
+    padding: 120px 0 150px 0;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzYzLjIgNDQ0LjUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDM2My4yIDQ0NC41IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiM2N0EyMjciIGQ9Ik0xNzUuMywwaDYwLjNMNjAuMyw0NDQuNUgwTDE3NS4zLDB6Ii8+DQoJPHBhdGggZmlsbD0iIzY3QTIyNyIgZD0iTTMwMi45LDBoNjAuM0wxODgsNDQ0LjVoLTYwLjNMMzAyLjksMHoiLz4NCjwvZz4NCjwvc3ZnPg0K');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top right;
     background-attachment: fixed;
     background-size: contain;
     background-color: $primary;
 
     @include clearfix();
+
+	@include breakpoint( sm ) {
+		padding: 55px 0 130px 0;
+	}
+
+	@include breakpoint( xs ) {
+		padding: 40px 0 115px 0;
+	}
+
+    .wrap {
+        max-width: 1400px;
+
+        @include breakpoint( xl ) {
+            max-width: 1200px;
+        }
+        @include breakpoint( lg ) {
+            width: $bp-lg-wrap;
+			text-align: center;
+        }
+        @include breakpoint( med-lg ) {
+            width: $bp-med-lg-wrap;
+        }
+        @include breakpoint( med ) {
+            width: $bp-med-wrap;
+        }
+        @include breakpoint( sm ) {
+            width: $bp-sm-wrap;
+        }
+		@include breakpoint( xs ) {
+            width: $bp-sm-wrap;
+        }
+		@include breakpoint( xxs ) {
+            width: $bp-sm-wrap;
+        }
+
+    } // .wrap
 
 } // .project-background-previews
 
@@ -114,7 +218,7 @@
 
 .browser-mockup {
     display: inline-block;
-    border-top: 2em solid rgb(237, 238, 238);
+    border-top: 1.75em solid rgb(237, 238, 238);
     -moz-box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.3);
     position: relative;
@@ -124,26 +228,26 @@
         display: block;
         position: absolute;
         content: '';
-        top: -1.25em;
-        left: 1em;
-        width: 0.5em;
-        height: 0.5em;
+        top: -1.04em;
+        left: .75em;
+        width: 0.4em;
+        height: 0.4em;
         border-radius: 50%;
-        background-color: #f44;
-        box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+        background-color: #B5B5B5;
+        box-shadow: 0 0 0 2px #B5B5B5, 1.1em 0 0 2px #B5B5B5, 2.2em 0 0 2px #B5B5B5;
     }
 
     &.with-tab:after {
         display: block;
         position: absolute;
         content: '';
-        top: -2em;
-        left: 5.5em;
-        width: 20%;
+        top: -1.75em;
+        left: 4.5em;
+        width: 14%;
         height: 0em;
-        border-bottom: 2em solid white;
-        border-left: 0.8em solid transparent;
-        border-right: 0.8em solid transparent;
+        border-bottom: 1.75em solid white;
+        border-left: .66em solid transparent;
+        border-right: .66em solid transparent;
     }
 
     &.with-url:after {
@@ -169,15 +273,27 @@
     &.position-right {
         float: right;
         margin-top: -600px;
-    }
+
+		@include breakpoint( lg ) {
+			float: none;
+			margin: 60px auto 0 auto;
+			// margin-top: 60px;
+		}
+
+    } // &.position-right
 
     &.size-desktop img {
-        max-width: 1100px;
-    }
+        max-width: 100%;
+    } // &.size-desktop img
 
     &.size-mobile img {
         max-width: 500px;
-    }
+
+		@include breakpoint( sm ) {
+			max-width: 100%;
+		}
+
+    } // &.size-mobile img
 
 } // .browser-mockup
 
@@ -195,46 +311,82 @@
     text-transform: uppercase;
 } // .project-header-label
 
-.single-jpak_project.full-width-content .entry-title {
+.single-jpak_project .entry-header {
+    position: relative;
+    margin-bottom: $space-default;
+    padding-bottom: 0;
+    border: 0;
+    text-align: left;
+
+	@include breakpoint( med ) {
+		position: static;
+		padding-bottom: $space-default;
+		border-bottom: 2px solid $secondary-mid-light;
+		text-align: center;
+	}
+
+} // Project .entry-header
+
+.single-jpak_project .entry-title {
     margin: 0;
     padding: 0;
     border: 0;
     text-align: left;
-}
 
-.single-jpak_project .entry-header {
-    position: relative;
-    margin-bottom: $space-default;
-}
+	@include breakpoint( med ) {
+		text-align: center;
+	}
+
+} // Project .entry-title
 
 .project-visit-website {
     position: absolute;
     top: 0;
     right: 0;
-}
+
+	&.button-light {
+		display: none !important;
+	}
+
+	@include breakpoint( med ) {
+		position: static;
+		margin-top: $space-default-half;
+	}
+
+	@include breakpoint( xs ) {
+		display: none !important;
+		margin-top: $space-default-middle;
+
+		&.button-light {
+			display: inline-block !important;
+		}
+
+	} // BP: xs
+
+} // .project-visit-website
 
 .project-description {
     float: left;
     width: 60%;
-}
+
+	@include breakpoint( med ) {
+		float: none;
+		margin-bottom: $space-default;
+		width: 100%;
+	}
+
+} // .project-description
 
 .project-features {
     float: right;
-    padding: $space-default-middle;
+    padding: 0;
     width: 33%;
-    border: 2px solid $secondary-mid-light;
 
-    h3 {
-        text-align: center;
-        border-bottom: 2px solid $secondary-mid-light;
-        padding-bottom:  6px;
-        margin-bottom: 30px;
-    }
-
-    ul {
-        padding: 0;
-        margin: 0;
-    }
+	@include breakpoint( med ) {
+		float: none;
+		width: 100%;
+		margin-bottom: $space-default;
+	}
 
 } // .project-features
 
@@ -248,10 +400,43 @@
         border-bottom: 2px solid $primary;
     }
 
+	@include breakpoint( sm ) {
+
+		span {
+			display: none;
+		}
+
+		.button:first-child {
+			margin-right: 20px;
+		}
+
+	} // BP: sm
+
+	@include breakpoint( xs ) {
+		margin-top: $space-default-half;
+
+		.button {
+			display: block ;
+			margin-bottom: 15px;
+			width: 100%;
+			padding: 16px 24px !important;
+			font-size: 16px !important;
+		}
+
+	} // BP: xs
+
 } // .project-buttons
 
 .project-testimonial {
     margin-top: $space-default-half * 5;
+
+	@include breakpoint( sm ) {
+		margin-top: $space-default-half * 7;
+	}
+
+	@include breakpoint( xs ) {
+		margin-top: $space-default-half * 5;
+	}
 
     blockquote {
         display: block;
@@ -260,7 +445,6 @@
         padding: 0 ($space-default * 4);
         text-align: center;
         font-size: 22px;
-        // color: $secondary-mid;
 
         &::before {
             display: block;
@@ -272,6 +456,38 @@
             // font-weight: 700;
             color: $primary;
         }
+
+		@include breakpoint( lg ) {
+			padding: 0 ($space-default * 2);
+
+			&::before {
+				left: 0px;
+			}
+
+		} // BP: lg
+
+		@include breakpoint( med ) {
+			padding: 0 $space-default;
+
+			&::before {
+				left: -20px;
+			}
+
+		} // BP: med
+
+		@include breakpoint( sm ) {
+			padding: 0;
+
+			&::before {
+				width: 100%;
+				top: -110px;
+			}
+
+		} // BP: sm
+
+		@include breakpoint( xxs ) {
+			font-size: 20px;
+		}
 
     } // blockquote
 

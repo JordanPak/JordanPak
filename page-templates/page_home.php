@@ -67,9 +67,9 @@
  */
  function jpak_home_more() {
 
-    echo '<div id="home-more"><div class="wrap">';
+    echo '<div id="home-more">';
         genesis_widget_area( 'home-more' );
-    echo '</div></div>';
+    echo '</div>';
 
  } // jpak_home_hero()
 

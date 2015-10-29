@@ -4,7 +4,6 @@
 
 
 //-- UTILITY --//
-
 ::-moz-selection {
     background: $secondary;
     color: $white;
@@ -18,9 +17,7 @@
 }
 
 
-
 //-- GLOBAL BODY --//
-
 body {
     font-family: $font-family-sans-serif;
     font-size: 16px;
@@ -29,88 +26,59 @@ body {
 }
 
 body > div {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
-
 //-- HEADINGS --//
-
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-heading;
 } // Headers
 
 h1 {
     font-size: 52px;
-}
+} // h1
 
 h2 {
     font-size: 42px;
-}
+} // h2
 
 h3 {
     font-size: 32px;
-}
+} // h3
 
-.page .entry-title {
-    text-transform: uppercase;
-    font-size: 52px;
-    border-bottom: 2px solid $secondary-mid-light;
-    margin-bottom: $space-default;
-    padding-bottom: $space-default-half + 5px;
-}
 
-.page.full-width-content .entry-title {
+//-- ENTRY TITLES & HEADERS --//
+.entry-title {
     font-size: 72px;
+    margin-bottom: 0;
+
+    @include breakpoint( sm ) {
+        font-size: 60px;
+    }
+
+    @include breakpoint( xxs ) {
+        font-size: 46px;
+    }
+
+} // &.entry-title
+
+.entry-header {
     text-align: center;
-    padding-bottom: $space-default + 5px;
-    margin-bottom: $space-default + 5px;
-}
-
-.single .entry-title {
     text-transform: uppercase;
-    font-size: 52px;
-}
+    border-bottom: 2px solid $secondary-mid-light;
+    margin-bottom: $space-default + 5px;
+    padding-bottom: $space-default + 10px;
 
+    @include breakpoint( sm ) {
+        margin-bottom: $space-default;
+        padding-bottom: $space-default;
+    } // Breakpoint: S
 
-
-//-- LISTS --//
-
-ul.big {
-    margin-top: $space-default-half;
-    margin-bottom: $space-default + 10px;
-    font-size: 18px;
-
-    li {
-        margin-bottom: $space-default-half - 4px;
-    }
-
-} // ul.big
-
-ul.checkmark {
-    margin-left: $space-default-half;
-
-    li {
-        list-style-type: none;
-        padding-left: $space-default-middle + 2px;
-        background-image: url('images/bullet-checkmark.png');
-        background-repeat: no-repeat;
-        background-position: 0 5px;
-    }
-
-} // ul.checkmark
-
-
-
-//-- HORIZONAL RULE --//
-
-hr {
-    margin: ($space-default-half * 3) 0;
-}
+} // .page & .single Entry Headers
 
 
 //-- INLINE ANCHORS --//
-
 .content .entry {
 
     a {
@@ -133,7 +101,6 @@ hr {
     } // a
 
     .entry-title a {
-        font-size: 42px;
         border-bottom: 2px solid $transparent;
 
         &:hover {
@@ -145,16 +112,14 @@ hr {
 } // .content .entry a
 
 
-
 //-- ENTRY META --//
-
 .entry-header .entry-meta {
-    margin-bottom: $space-default;
+    margin-bottom: 0;
 }
 
 p.entry-meta {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     color: $secondary-mid;
 }
@@ -180,25 +145,87 @@ p.entry-meta {
 }
 
 
+//-- LISTS --//
+ul.big {
+    margin-top: $space-default-half;
+    margin-bottom: $space-default + 10px;
+    font-size: 18px;
+
+    li {
+        margin-bottom: $space-default-half - 4px;
+    }
+
+} // ul.big
+
+ul.checkmark {
+    margin-left: $space-default-half;
+
+    li {
+        list-style-type: none;
+        padding-left: $space-default-middle + 2px;
+        background-image: url('images/bullet-checkmark.png');
+        background-repeat: no-repeat;
+        background-position: 0 5px;
+    }
+
+	@include breakpoint( xs ) {
+		margin-left: 0;
+	}
+
+} // ul.checkmark
+
+ul.features {
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    border: 2px solid $secondary-mid-light;
+    border-bottom: 3px solid $secondary-mid-light;
+    font-size: 16px;
+    font-weight: 500;
+
+    li {
+        padding: 14px 20px 14px 50px;
+        list-style-type: none;
+        background-image: url('images/bullet-checkmark.png');
+        background-repeat: no-repeat;
+        background-position: 12px 17px;
+        border-bottom: 1px solid $secondary-mid-light;
+        cursor: default;
+
+        @include transition-ease-in-out( 150ms );
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        &:hover {
+            background-color: $secondary-light;
+        }
+
+    } // li
+
+} // ul.features
+
+
+//-- HORIZONAL RULE --//
+hr {
+    margin: ($space-default-half * 3) 0;
+}
+
 
 //-- SHARING --//
-
 .share-after {
     margin-top: $space-default + $space-default-half;
 }
 
 
-
 //-- WIDGET --//
-
 .widgettitle {
     font-size: 32px;
 }
 
 
-
 //-- BUTTON --//
-
 .button, .content .entry .button {
 
     @include button();

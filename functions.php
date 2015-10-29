@@ -57,12 +57,61 @@ function jpak_global_styles() {
 } // jpak_global_styles()
 
 
+// THEME COLOR META //
+add_action( 'genesis_meta', 'jpak_meta_theme_color', 13 );
+function jpak_meta_theme_color() {
+
+	echo '<meta name="theme-color" content="#8dc63f">';
+
+} // jpak_meta_theme_color()
+
+
 add_action('after_setup_theme', 'remove_admin_bar');
 function remove_admin_bar() {
     if ( !current_user_can('administrator') && !is_admin() ) {
       show_admin_bar(false);
     }
 } // remove_admin_bar()
+
+
+
+// NAVIGATION
+unregister_sidebar( 'header-right' );                       // Remove header-right Widget Area
+remove_action( 'genesis_after_header', 'genesis_do_nav' );  // Remove Default Menu Location
+add_action( 'genesis_header', 'jpak_nav', 13 );
+/**
+* Navigation
+*
+* Custom navigation - Outputs Primary Menu & Mobile Toggle
+*
+* @package JordanPak
+* @since 1.0.0
+*/
+function jpak_nav() {
+
+    $nav_args = array(
+        'theme_location'    => 'primary',
+        'container'         => '',
+        'container_class'   => '',
+        'menu_class'        => 'menu genesis-nav-menu menu-primary',
+        'link_before'       => '<span>',
+        'link_after'        => '</span>',
+    );
+
+    // Normal Nav Menu
+
+    echo '<nav class="nav-primary">';
+
+        // Primary Menu
+        echo wp_nav_menu( $nav_args );
+
+        // Mobile Toggle
+        // echo '<div class="mobile-toggle"><span class="dashicons dashicons-menu"></span></div>';
+
+    echo '</nav>';
+
+} // jpak_primary_nav()
+
 
 
 add_action( 'genesis_after_header', 'jpak_mini_hero' );
@@ -76,10 +125,8 @@ add_action( 'genesis_after_header', 'jpak_mini_hero' );
 */
 function jpak_mini_hero() {
 
-    // Display if Default Page
-    if ( basename( get_page_template() ) == 'page.php' ) {
-        echo '<div id="mini-hero"></div>';
-    }
+    // $template = basename( get_page_template() );
+    echo '<div id="mini-hero"></div>';
 
 } // jpak_mini_hero()
 
@@ -128,6 +175,19 @@ genesis_register_sidebar( array(
     // 'description'   => __( '', 'jpak' ),
 ) );
 
+
+add_filter( 'the_content_more_link', 'jpak_read_more_link' );
+/**
+* Customize Read More Link
+*
+* @package JordanPak
+* @since 1.0.0
+*
+* @return string
+*/
+function jpak_read_more_link() {
+	return '<p><a class="more-link button button-xsm" href="' . get_permalink() . '">Continue Reading</a></p>';
+}
 
 
 add_filter( 'genesis_post_info', 'jpak_post_info_filter' );
