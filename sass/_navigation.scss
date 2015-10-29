@@ -40,7 +40,8 @@
     .genesis-nav-menu {
 
         li > a {
-            padding: 10px 18px 20px 18px;
+			margin: 0 5px;
+            padding: 10px 13px 20px 13px;
             color: $secondary-mid-light;
             font-family: $font-family-heading;
             font-size: 22px;
@@ -58,17 +59,20 @@
             } // :hover
 
             @include breakpoint( med-lg ) {
-                padding: 10px 11px 20px 11px;
+				margin: 0 3px;
+                padding: 10px 8px 20px 8px;
                 font-size: 20px;
             }
 
             @include breakpoint( sm ) {
+				margin: 0 5px;
+                padding: 10px 13px 20px 13px;
                 font-size: 22px;
-                padding: 10px 18px 20px 18px;
             }
 
             @include breakpoint( xs ) {
-                padding: 10px 18px 18px 18px;
+				margin: 0 6px;
+                padding: 10px 12px 18px 12px;
 
                 &:hover {
                     color: $primary;
