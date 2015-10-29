@@ -142,6 +142,14 @@ body {
 
 } // .entry, .sidebar .widget
 
+.sidebar .widget:first-child {
+
+	@include breakpoint( med ) {
+		border-top-color: $secondary-mid-light;
+	}
+
+} // Sidebar first widget
+
 
 //-- COLUMN RESPONSIVENESS --//
 @include breakpoint( med ) {

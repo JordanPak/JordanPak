@@ -1666,6 +1666,10 @@ body {
       padding-top: 40px; } }
 
 @media (max-width: 1024px) {
+  .sidebar .widget:first-child {
+    border-top-color: #edeeee; } }
+
+@media (max-width: 1024px) {
   .one-fourth {
     width: 48.717948717948715%; } }
 @media (max-width: 600px) {
