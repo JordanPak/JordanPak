@@ -143,6 +143,43 @@ body {
 } // .entry, .sidebar .widget
 
 
+//-- FULL-WIDTH BLOG POSTS --//
+.full-width-content .type-post .entry-content {
+	padding: 0 130px;
+
+	@include breakpoint( lg ) {
+		padding: 0 60px;
+	}
+
+	@include breakpoint( med ) {
+		padding: 0;
+	}
+
+	a.alignleft, a.align-left,
+	img.alignleft, img.align-left,
+	.wp-caption.alignleft, .wp-caption.align-left {
+		margin-left: -80px;
+
+		@include breakpoint( lg ) {
+			margin-left: 0;
+		}
+
+	} // left-aligned
+
+	a.alignright, a.align-right,
+	img.alignright, img.align-right,
+	.wp-caption.alignright, .wp-caption.align-right {
+		margin-right: -80px;
+
+		@include breakpoint( lg ) {
+			margin-right: 0;
+		}
+
+	} // right-aligned
+
+} // Full-Width Blog Posts .entry-content
+
+
 //-- COLUMN RESPONSIVENESS --//
 @include breakpoint( med ) {
 
