@@ -2118,11 +2118,22 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 .site-footer {
   background: #201c1d;
   color: #FFFFFF; }
+  .site-footer p {
+    font-weight: 300;
+    color: #edeeee; }
   .site-footer a {
     color: #FFFFFF;
-    border-bottom: 1px solid #8dc63f; }
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms; }
     .site-footer a:hover {
-      border-bottom: 2px solid #8dc63f; }
+      border-bottom: 1px solid #8dc63f; }
+  .site-footer span {
+    margin: 0 10px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: #8dc63f; }
 
 .page-template-page_blog .entry-header, .archive.category .entry-header {
   margin: 0;
