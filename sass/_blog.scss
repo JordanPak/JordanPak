@@ -2,10 +2,14 @@
 //  JordanPak | Blog  //
 //====================//
 
-.page-template-page_blog {
+// BLOG & CATEGORY PAGES //
+.page-template-page_blog, .archive.category {
 
     .entry-header {
-        padding-bottom: $space-default;
+		margin: 0;
+        padding-bottom: $space-default-middle;
+		text-align: left;
+		border: 0;
     }
 
     .entry-title {
@@ -31,6 +35,19 @@
 
 } // Blog Template entry header & title
 
+
+//-- ARCHIVE-SPECIFIC STUFF --//
+.archive-description {
+	border-top: 5px solid $primary-dark;
+	border-bottom: 2px solid $secondary-mid-light;
+	text-align: center;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.archive-title {
+	margin-bottom: $space-default-half;
+}
 
 //-- FULL-WIDTH BLOG POSTS --//
 .full-width-content .type-post .entry-content {
