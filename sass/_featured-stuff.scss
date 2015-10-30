@@ -5,7 +5,7 @@
 #featured-stuff {
     margin: 0;
     margin-bottom: $space-default + $space-default-half;
-    padding: ($space-default * 2) 0;
+    padding: ($space-default-half * 3) 0; //($space-default * 2) 0;
     background: $secondary;
     color: $white;
     text-align: center;
@@ -43,6 +43,31 @@
             }
 
         } // Breakpoint: S
+
+		.widgettitle {
+			margin-bottom: 10px;
+			font-weight: 300;
+			font-size: 28px;
+
+			.fa {
+				margin-right: 14px;
+			}
+
+		} // .widgettitle
+
+		p {
+			margin-bottom: $space-default-half;
+			font-size: 16px;
+			font-weight: 300;
+		}
+
+		img {
+			margin-top: 10px;
+		}
+
+		.button-lg {
+			margin-top: $space-default;
+		}
 
     } // .widget
 

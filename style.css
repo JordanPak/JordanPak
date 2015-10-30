@@ -1888,8 +1888,8 @@ hr {
   .button.button-sm, .content .entry .button.button-sm {
     padding: 6px 14px 5px 14px; }
   .button.button-lg, .content .entry .button.button-lg {
-    padding: 13px 28px 13px 28px;
-    font-size: 22px;
+    padding: 11px 28px 11px 28px;
+    font-size: 20px;
     font-weight: 700;
     font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 0;
@@ -2457,7 +2457,7 @@ p.comment-meta {
 #featured-stuff {
   margin: 0;
   margin-bottom: 60px;
-  padding: 80px 0;
+  padding: 60px 0;
   background: #201c1d;
   color: #FFFFFF;
   text-align: center; }
@@ -2494,6 +2494,20 @@ p.comment-meta {
           margin-bottom: 40px; }
         #featured-stuff .widget:last-child {
           margin-bottom: 0; } }
+    #featured-stuff .widget .widgettitle {
+      margin-bottom: 10px;
+      font-weight: 300;
+      font-size: 28px; }
+      #featured-stuff .widget .widgettitle .fa {
+        margin-right: 14px; }
+    #featured-stuff .widget p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 300; }
+    #featured-stuff .widget img {
+      margin-top: 10px; }
+    #featured-stuff .widget .button-lg {
+      margin-top: 40px; }
   #featured-stuff .wordpress-stuff h3 {
     display: inline-block;
     margin-bottom: 2px;
