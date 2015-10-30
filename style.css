@@ -2455,9 +2455,7 @@ p.comment-meta {
         font-size: 20px; } }
 
 #featured-stuff {
-  margin: 0;
-  margin-bottom: 60px;
-  padding: 60px 0;
+  margin: 0 0 60px 0;
   background: #201c1d;
   color: #FFFFFF;
   text-align: center; }
@@ -2466,13 +2464,12 @@ p.comment-meta {
       margin-bottom: 40px; } }
   @media (max-width: 860px) {
     #featured-stuff {
-      padding: 60px 0; } }
-  #featured-stuff h1, #featured-stuff h2, #featured-stuff h3, #featured-stuff h4, #featured-stuff h5, #featured-stuff h6 {
-    color: #FFFFFF; }
+      padding: 30px 0; } }
   #featured-stuff .widget {
     float: left;
     margin-left: 2.564102564102564%;
-    width: 31.623931623931625%; }
+    width: 31.623931623931625%;
+    padding: 50px 0; }
     #featured-stuff .widget:first-child {
       float: left;
       margin-left: 2.564102564102564%;
@@ -2485,19 +2482,17 @@ p.comment-meta {
         margin-left: 2.564102564102564%;
         width: 100%;
         margin: 0;
-        margin-bottom: 50px; }
+        padding: 30px 0; }
         #featured-stuff .widget:first-child {
           float: left;
           margin-left: 2.564102564102564%;
           width: 100%;
-          margin: 0;
-          margin-bottom: 40px; }
-        #featured-stuff .widget:last-child {
-          margin-bottom: 0; } }
+          margin: 0; } }
     #featured-stuff .widget .widgettitle {
       margin-bottom: 10px;
       font-weight: 300;
-      font-size: 28px; }
+      font-size: 28px;
+      color: #FFFFFF; }
       #featured-stuff .widget .widgettitle .fa {
         margin-right: 14px; }
     #featured-stuff .widget p {
@@ -2508,6 +2503,9 @@ p.comment-meta {
       margin-top: 10px; }
     #featured-stuff .widget .button-lg {
       margin-top: 40px; }
+      @media (max-width: 860px) {
+        #featured-stuff .widget .button-lg {
+          margin-top: 20px; } }
   #featured-stuff .wordpress-stuff h3 {
     display: inline-block;
     margin-bottom: 2px;
