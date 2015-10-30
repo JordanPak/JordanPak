@@ -1695,7 +1695,10 @@ body > div {
   font-size: 18px; }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-top: 45px;
   font-family: "bebas-neue", "Roboto Condensed", sans-serif; }
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-top: 0; }
 
 h1 {
   font-size: 52px; }
@@ -1705,6 +1708,9 @@ h2 {
 
 h3 {
   font-size: 32px; }
+
+h4 {
+  font-size: 28px; }
 
 .entry-title {
   font-size: 72px;
@@ -2138,6 +2144,18 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   @media (max-width: 1024px) {
     .full-width-content .type-post .entry-content {
       padding: 0; } }
+  .full-width-content .type-post .entry-content p:first-child {
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #797a7d;
+    text-align: center; }
+    .full-width-content .type-post .entry-content p:first-child::after {
+      content: '';
+      display: inline-block;
+      width: 150px;
+      border-top: 1px solid #edeeee;
+      margin-top: 40px; }
   .full-width-content .type-post .entry-content a.alignleft, .full-width-content .type-post .entry-content a.align-left,
   .full-width-content .type-post .entry-content img.alignleft, .full-width-content .type-post .entry-content img.align-left,
   .full-width-content .type-post .entry-content .wp-caption.alignleft, .full-width-content .type-post .entry-content .wp-caption.align-left {
