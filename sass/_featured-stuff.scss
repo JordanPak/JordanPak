@@ -2,10 +2,9 @@
 //  JordanPak | Widget: Featured WP Stuff  //
 //=========================================//
 
+//-- WIDGET AREA --//
 #featured-stuff {
-    margin: 0;
-    margin-bottom: $space-default + $space-default-half;
-    padding: ($space-default-half * 3) 0; //($space-default * 2) 0;
+    margin: 0 0 60px 0;
     background: $secondary;
     color: $white;
     text-align: center;
@@ -14,32 +13,26 @@
         margin-bottom: $space-default;
     }
 
-    @include breakpoint( sm ) {
-        padding: ($space-default-half * 3) 0;
-    }
+	@include breakpoint( sm ) {
+		padding: 30px 0;
+	}
 
-    h1, h2, h3, h4, h5, h6 {
-        color: $white;
-    }
-
+	// TEXT WIDGET
     .widget {
         @include col( one-third );
+		padding: 50px 0;
 
         &:first-child {
             @include col( one-third, true );
         }
 
         @include breakpoint( sm ) {
-            @include col( one-whole );
-            margin-bottom: $space-default + 10px;
+
+			@include col( one-whole );
+			padding: 30px 0;
 
             &:first-child {
                 @include col( one-whole );
-                margin-bottom: $space-default;
-            }
-
-            &:last-child {
-                margin-bottom: 0;
             }
 
         } // Breakpoint: S
@@ -48,6 +41,7 @@
 			margin-bottom: 10px;
 			font-weight: 300;
 			font-size: 28px;
+			color: $white;
 
 			.fa {
 				margin-right: 14px;
@@ -67,9 +61,14 @@
 
 		.button-lg {
 			margin-top: $space-default;
-		}
 
-    } // .widget
+			@include breakpoint( sm ) {
+				margin-top: $space-default-half;
+			}
+
+		} // .button-lg
+
+    } // TEXT .widget
 
     .wordpress-stuff {
 
