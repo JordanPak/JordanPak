@@ -252,3 +252,17 @@ function jpak_footer_creds( $creds ) {
 	$creds .= '<span>//</span><a href="' . wp_login_url() . '">Client Login</a>';
 	return $creds;
 }
+
+
+/**
+* Customize Login Screen
+*
+* @package JordanPak
+* @since 1.0.0
+*
+* @return string
+*/
+function jpak_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
+}
+add_action( 'login_enqueue_scripts', 'jpak_login_stylesheet' );

@@ -1,0 +1,15 @@
+body.login {
+	background: url('images/hero-bg.jpg') no-repeat top center #8dc63f;
+}
+
+.login h1 a {
+	background-image: url('images/site-login-logo.png');
+	padding-bottom: 0px;
+	width: 130px;
+	height: 120px;
+	background-size: 130px;
+}
+
+body.login div#login p#nav a, body.login div#login p#backtoblog a {
+	color: white;
+}
