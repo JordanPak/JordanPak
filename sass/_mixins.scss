@@ -133,10 +133,12 @@
         padding: 12px 24px 11px 24px;
     }
     @if $size == lg {
-        padding: 12px 30px 13px 30px;
+        padding: 13px 28px 13px 28px;
         font-size: 22px;
-        font-weight: normal;
-        font-family: $font-family-heading;
+        font-weight: 700;
+        font-family: $font-family-condensed;
+		letter-spacing: 0;
+		word-spacing: 0.1em;
     }
 
 } // button-size()
