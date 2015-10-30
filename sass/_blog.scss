@@ -44,6 +44,22 @@
 		padding: 0;
 	}
 
+	p:first-child {
+		margin-bottom: $space-default;
+		font-size: 22px;
+		font-weight: 300;
+		color: $secondary-mid;
+		text-align: center;
+
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 150px;
+			border-top: 1px solid $secondary-mid-light;
+			margin-top: 43px;
+		}
+
+	} // p:first-child
 
 	a.alignleft, a.align-left,
 	img.alignleft, img.align-left,
