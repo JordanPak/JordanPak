@@ -6,14 +6,29 @@
     background: $secondary;
     color: $white;
 
+	p {
+		font-weight: 300;
+		color: $secondary-mid-light;
+	}
+
     a {
         color: $white;
-        border-bottom: 1px solid $primary;
+        font-weight: 500;
+		border-bottom: 1px solid $transparent;
+		@include transition-ease-in-out();
 
         &:hover {
-            border-bottom: 2px solid $primary;
+            border-bottom: 1px solid $primary;
         }
 
     } // a
+
+	span {
+		margin: 0 10px;
+		// font-weight: 700;
+		font-size: 18px;
+		letter-spacing: -1px;
+		color: $primary;
+	}
 
 } // .site-footer

@@ -247,6 +247,22 @@ add_filter('genesis_footer_creds_text', 'jpak_footer_creds');
 * @return string
 */
 function jpak_footer_creds( $creds ) {
-	$creds = '[footer_copyright] Jordan Pakrosnis &middot; Powered by <b>WordPress</b> and the <b>Genesis Framework</b>';
+	$creds = '[footer_copyright] Jordan Pakrosnis &middot;';
+	$creds .= ' Powered by <a href="https://wordpress.org/" target="_BLANK">WordPress</a> and the <a href="http://www.studiopress.com/features" target="_BLANK">Genesis Framework</a>';
+	$creds .= '<span>//</span><a href="' . wp_login_url() . '">Client Login</a>';
 	return $creds;
 }
+
+
+/**
+* Customize Login Screen
+*
+* @package JordanPak
+* @since 1.0.0
+*
+* @return string
+*/
+function jpak_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
+}
+add_action( 'login_enqueue_scripts', 'jpak_login_stylesheet' );
