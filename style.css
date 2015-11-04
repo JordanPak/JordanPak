@@ -1973,17 +1973,17 @@ img.alignright, img.align-right,
       .site-header .wrap {
         height: auto; } }
 
-.title-area {
+.title-area, .header-full-width .title-area {
   position: absolute;
   margin-top: 30px;
   padding: 0;
   width: 460px; }
   @media (max-width: 1260px) {
-    .title-area {
+    .title-area, .header-full-width .title-area {
       margin-top: 20px;
       width: 360px; } }
   @media (max-width: 860px) {
-    .title-area {
+    .title-area, .header-full-width .title-area {
       position: static;
       width: 100%;
       text-align: center; } }
