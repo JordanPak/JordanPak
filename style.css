@@ -1988,6 +1988,9 @@ img.alignright, img.align-right,
       width: 100%;
       text-align: center; } }
 
+.header-full-width .title-area {
+  width: inherit; }
+
 .header-image .site-title > a {
   float: none;
   display: block;

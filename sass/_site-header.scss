@@ -56,6 +56,10 @@
 
 } // .title-area
 
+.header-full-width .title-area {
+	width: inherit;
+} // .header-full-width .title-area
+
 
 //-- LOGO --//
 .header-image .site-title > a {
