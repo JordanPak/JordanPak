@@ -37,7 +37,7 @@
 
 
 //-- TITLE AREA --//
-.title-area {
+.title-area, .header-full-width .title-area {
     position: absolute;
     margin-top: 30px;
     padding: 0;
@@ -55,10 +55,6 @@
     }
 
 } // .title-area
-
-.header-full-width .title-area {
-	width: inherit;
-} // .header-full-width .title-area
 
 
 //-- LOGO --//
