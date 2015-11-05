@@ -22,14 +22,16 @@
 
     // Default Styles
     display: inline-block;
-    padding: 12px 24px 11px 24px;
+    padding: 11px 24px;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .030em;
     border: 0;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+	-moz-box-shadow: inset 0 -3px $primary-dark;
+	box-shadow: inset 0 -3px $primary-dark;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     background: $primary;
     color: $white;
 
@@ -44,6 +46,8 @@
     &:hover {
         color: $white;
         background: $primary-dark;
+		-moz-box-shadow: inset 0 2px $primary-darker;
+		box-shadow: inset 0 2px $primary-darker;
     }
 
 
@@ -51,9 +55,13 @@
     @if $color == dark {
         background: $secondary;
         color: $white;
+		-moz-box-shadow: 0 -3px $secondary-dark;
+		box-shadow: 0 3px $secondary-dark;
 
         &:hover {
-            background: $black;
+            background: $secondary-dark;
+			-moz-box-shadow: inset 0 2px $black;
+			box-shadow: inset 0 2px $black;
         }
 
     } // Dark
@@ -79,6 +87,8 @@
     background: none;
     color: $primary;
     border: 2px solid $primary;
+	-moz-box-shadow: none;
+	box-shadow: none;
 
     // Default Outline Hover
     &:hover {
