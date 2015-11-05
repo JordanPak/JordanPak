@@ -1859,8 +1859,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
     transition: all ease-in-out 200ms;
     background: #201c1d;
     color: #FFFFFF;
-    -moz-box-shadow: 0 -3px #171616;
-    box-shadow: 0 3px #171616; }
+    -moz-box-shadow: inset 0 -3px #000000;
+    box-shadow: inset 0 -3px #000000; }
     button.button-dark .fa, input[type="button"].button-dark .fa, input[type="reset"].button-dark .fa, input[type="submit"].button-dark .fa, .button.button-dark .fa, .content .entry .button.button-dark .fa {
       margin-right: 10px; }
     button.button-dark:hover, input[type="button"].button-dark:hover, input[type="reset"].button-dark:hover, input[type="submit"].button-dark:hover, .button.button-dark:hover, .content .entry .button.button-dark:hover {
@@ -1889,7 +1889,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms;
     background: #edeeee;
-    color: #201c1d; }
+    color: #201c1d;
+    -moz-box-shadow: inset 0 -3px rgba(121, 122, 125, 0.2);
+    box-shadow: inset 0 -3px rgba(121, 122, 125, 0.2); }
     button.button-light .fa, input[type="button"].button-light .fa, input[type="reset"].button-light .fa, input[type="submit"].button-light .fa, .button.button-light .fa, .content .entry .button.button-light .fa {
       margin-right: 10px; }
     button.button-light:hover, input[type="button"].button-light:hover, input[type="reset"].button-light:hover, input[type="submit"].button-light:hover, .button.button-light:hover, .content .entry .button.button-light:hover {
@@ -1898,22 +1900,27 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
       -moz-box-shadow: inset 0 2px #548420;
       box-shadow: inset 0 2px #548420; }
     button.button-light:hover, input[type="button"].button-light:hover, input[type="reset"].button-light:hover, input[type="submit"].button-light:hover, .button.button-light:hover, .content .entry .button.button-light:hover {
-      background: #201c1d;
-      color: #FFFFFF; }
+      background: rgba(121, 122, 125, 0.25);
+      color: #201c1d;
+      -moz-box-shadow: inset 0 2px rgba(121, 122, 125, 0.3);
+      box-shadow: inset 0 2px rgba(121, 122, 125, 0.3); }
   button.button-xsm, input[type="button"].button-xsm, input[type="reset"].button-xsm, input[type="submit"].button-xsm, .button.button-xsm, .content .entry .button.button-xsm {
-    padding: 4px 12px 3px 12px;
+    padding: 4px 12px 4px 12px;
     font-size: 12px; }
     button.button-xsm .fa, input[type="button"].button-xsm .fa, input[type="reset"].button-xsm .fa, input[type="submit"].button-xsm .fa, .button.button-xsm .fa, .content .entry .button.button-xsm .fa {
       margin-right: 3px; }
   button.button-sm, input[type="button"].button-sm, input[type="reset"].button-sm, input[type="submit"].button-sm, .button.button-sm, .content .entry .button.button-sm {
-    padding: 6px 14px 5px 14px; }
+    padding: 6px 14px 6px 14px; }
   button.button-lg, input[type="button"].button-lg, input[type="reset"].button-lg, input[type="submit"].button-lg, .button.button-lg, .content .entry .button.button-lg {
-    padding: 11px 28px 11px 28px;
-    font-size: 20px;
+    padding: 13px 30px 15px 30px;
+    font-size: 22px;
+    line-height: normal;
     font-weight: 700;
     font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 0;
     word-spacing: 0.1em; }
+    button.button-lg .fa, input[type="button"].button-lg .fa, input[type="reset"].button-lg .fa, input[type="submit"].button-lg .fa, .button.button-lg .fa, .content .entry .button.button-lg .fa {
+      margin-right: 13px; }
   button.button-outline, input[type="button"].button-outline, input[type="reset"].button-outline, input[type="submit"].button-outline, .button.button-outline, .content .entry .button.button-outline {
     background: none;
     color: #8dc63f;
@@ -2355,7 +2362,9 @@ p.comment-meta {
   transition: all ease-in-out 200ms;
   background: #edeeee;
   color: #201c1d;
-  padding: 4px 12px 3px 12px;
+  -moz-box-shadow: inset 0 -3px rgba(121, 122, 125, 0.2);
+  box-shadow: inset 0 -3px rgba(121, 122, 125, 0.2);
+  padding: 4px 12px 4px 12px;
   font-size: 12px; }
   .comment-edit-link .fa {
     margin-right: 10px; }
@@ -2365,8 +2374,10 @@ p.comment-meta {
     -moz-box-shadow: inset 0 2px #548420;
     box-shadow: inset 0 2px #548420; }
   .comment-edit-link:hover {
-    background: #201c1d;
-    color: #FFFFFF; }
+    background: rgba(121, 122, 125, 0.25);
+    color: #201c1d;
+    -moz-box-shadow: inset 0 2px rgba(121, 122, 125, 0.3);
+    box-shadow: inset 0 2px rgba(121, 122, 125, 0.3); }
   .comment-edit-link .fa {
     margin-right: 3px; }
   @media (max-width: 600px) {
@@ -2391,7 +2402,7 @@ p.comment-meta {
   color: #FFFFFF;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
-  padding: 6px 14px 5px 14px; }
+  padding: 6px 14px 6px 14px; }
   .comment-reply-link .fa {
     margin-right: 10px; }
   .comment-reply-link:hover {
@@ -2427,7 +2438,9 @@ p.comment-meta {
   transition: all ease-in-out 200ms;
   background: #edeeee;
   color: #201c1d;
-  padding: 4px 12px 3px 12px;
+  -moz-box-shadow: inset 0 -3px rgba(121, 122, 125, 0.2);
+  box-shadow: inset 0 -3px rgba(121, 122, 125, 0.2);
+  padding: 4px 12px 4px 12px;
   font-size: 12px;
   margin-left: 10px;
   position: relative;
@@ -2441,8 +2454,10 @@ p.comment-meta {
     -moz-box-shadow: inset 0 2px #548420;
     box-shadow: inset 0 2px #548420; }
   #cancel-comment-reply-link:hover {
-    background: #201c1d;
-    color: #FFFFFF; }
+    background: rgba(121, 122, 125, 0.25);
+    color: #201c1d;
+    -moz-box-shadow: inset 0 2px rgba(121, 122, 125, 0.3);
+    box-shadow: inset 0 2px rgba(121, 122, 125, 0.3); }
   #cancel-comment-reply-link .fa {
     margin-right: 3px; }
 
@@ -2674,11 +2689,11 @@ section.featuredpost {
     color: #FFFFFF;
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms;
-    padding: 4px 12px 3px 12px;
+    padding: 4px 12px 4px 12px;
     font-size: 12px;
     display: block;
     margin-top: 30px;
-    width: 150px;
+    width: 110px;
     text-align: center; }
     section.featuredpost .more-link .fa {
       margin-right: 10px; }
@@ -2691,7 +2706,7 @@ section.featuredpost {
       margin-right: 3px; }
     @media (max-width: 860px) {
       section.featuredpost .more-link {
-        padding: 6px 14px 5px 14px; } }
+        padding: 6px 14px 6px 14px; } }
 
 @media (max-width: 1024px) {
   .post-type-archive-jpak_project .site-inner {

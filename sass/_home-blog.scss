@@ -75,7 +75,7 @@ section.featuredpost {
         @include button-size( xsm );
 		display: block;
 		margin-top: $space-default-middle;
-		width: 150px;
+		width: 110px;
 		text-align: center;
 
 		@include breakpoint( sm ) {

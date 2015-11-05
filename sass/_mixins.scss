@@ -55,8 +55,8 @@
     @if $color == dark {
         background: $secondary;
         color: $white;
-		-moz-box-shadow: 0 -3px $secondary-dark;
-		box-shadow: 0 3px $secondary-dark;
+		-moz-box-shadow: inset 0 -3px $black;
+		box-shadow: inset 0 -3px $black;
 
         &:hover {
             background: $secondary-dark;
@@ -70,10 +70,14 @@
     @if $color == light {
         background: $secondary-mid-light;
         color: $secondary;
+        -moz-box-shadow: inset 0 -3px rgba($secondary-mid, 0.20);
+		box-shadow: inset 0 -3px rgba($secondary-mid, 0.20);
 
         &:hover {
-            background: $secondary;
-            color: $white;
+            background: rgba($secondary-mid, 0.25);
+            color: $secondary;
+            -moz-box-shadow: inset 0 2px rgba($secondary-mid, 0.3);
+            box-shadow: inset 0 2px rgba($secondary-mid, 0.3);
         }
 
     } // Light
@@ -127,8 +131,28 @@
 
 @mixin button-size( $size: med ) {
 
+    @if $size == lg {
+        padding: 13px 30px 15px 30px;
+        font-size: 22px;
+        line-height: normal;
+        font-weight: 700;
+        font-family: $font-family-condensed;
+		letter-spacing: 0;
+		word-spacing: 0.1em;
+
+        .fa {
+            margin-right: 13px;
+        }
+
+    } // lg
+    @if $size == med {
+        padding: 12px 24px 11px 24px;
+    }
+    @if $size == sm {
+        padding: 6px ($space-default-half - 6px) 6px ($space-default-half - 6px);
+    }
     @if $size == xsm {
-        padding: 4px ($space-default-half - 8px) 3px ($space-default-half - 8px);
+        padding: 4px ($space-default-half - 8px) 4px ($space-default-half - 8px);
         font-size: 12px;
 
         .fa {
@@ -136,20 +160,6 @@
         }
 
     } // xsm
-    @if $size == sm {
-        padding: 6px ($space-default-half - 6px) 5px ($space-default-half - 6px);
-    }
-    @if $size == med {
-        padding: 12px 24px 11px 24px;
-    }
-    @if $size == lg {
-        padding: 11px 28px 11px 28px;
-        font-size: 20px;
-        font-weight: 700;
-        font-family: $font-family-condensed;
-		letter-spacing: 0;
-		word-spacing: 0.1em;
-    }
 
 } // button-size()
 
