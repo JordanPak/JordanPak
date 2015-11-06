@@ -105,7 +105,7 @@ h4 {
         }
 
         &.button {
-            border: none;
+            // border: none;
         }
 
     } // a
@@ -236,9 +236,9 @@ hr {
 
 
 //-- BUTTON --//
-.button, .content .entry .button {
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .content .entry .button {
 
-    @include button();
+	@include button();
 
     // Additional Colors
     &.button-dark {
@@ -274,4 +274,4 @@ hr {
 
     } // &.button-outline
 
-} // .button
+} // All Buttons

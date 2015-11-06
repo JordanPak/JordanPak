@@ -7,6 +7,20 @@ section.featuredpost {
 
     @include clearfix();
 
+	.widgettitle {
+		margin-bottom: 25px;
+		text-align: center;
+		font-family: $font-family-sans-serif;
+		font-weight: 300;
+		font-size: 34px;
+		letter-spacing: -0.038em;
+
+		a {
+			color: $secondary-mid;
+		}
+
+	} // .widgettitle
+
     .entry {
         padding: $space-default;
         background: $white;
@@ -14,14 +28,14 @@ section.featuredpost {
 
         @include col( one-half );
 
-        &:first-child {
+        &:nth-child(2) {
             @include col( one-half, true );
         }
 
         @include breakpoint( sm ) {
             @include col( one-whole );
 
-            &:first-child {
+            &:nth-child(2) {
                 @include col( one-whole );
                 margin-bottom: $space-default;
             }
@@ -30,7 +44,7 @@ section.featuredpost {
 
         @include breakpoint( xs ) {
 
-            &:first-child {
+            &:nth-child(2) {
                 margin-bottom: $space-default-middle;
             }
 

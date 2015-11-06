@@ -344,23 +344,14 @@
     top: 0;
     right: 0;
 
-	&.button-light {
-		display: none !important;
-	}
-
 	@include breakpoint( med ) {
 		position: static;
 		margin-top: $space-default-half;
 	}
 
 	@include breakpoint( xs ) {
-		display: none !important;
+        padding: 4px ($space-default-half - 8px) 4px ($space-default-half - 8px) !important;
 		margin-top: $space-default-middle;
-
-		&.button-light {
-			display: inline-block !important;
-		}
-
 	} // BP: xs
 
 } // .project-visit-website
