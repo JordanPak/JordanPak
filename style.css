@@ -2961,18 +2961,14 @@ section.featuredpost {
   position: absolute;
   top: 0;
   right: 0; }
-  .project-visit-website.button-light {
-    display: none !important; }
   @media (max-width: 1024px) {
     .project-visit-website {
       position: static;
       margin-top: 20px; } }
   @media (max-width: 600px) {
     .project-visit-website {
-      display: none !important;
-      margin-top: 30px; }
-      .project-visit-website.button-light {
-        display: inline-block !important; } }
+      padding: 4px 12px 4px 12px !important;
+      margin-top: 30px; } }
 
 .project-description {
   float: left;
