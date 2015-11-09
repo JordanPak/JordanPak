@@ -12,6 +12,7 @@
 	$secondary-dark:	#171616
 	$secondary:			#201c1d		JP Gray
 	$secondary-mid:		#797a7d		JP Dark Gray
+	$secondary-mid-l	#edeeee
 	$secondary-light:	#f7f7f7		JP Light Gray
 
 	FONTS
@@ -35,10 +36,32 @@ body {
 	color: #fff;
 }
 
+h1, h2, h3, h4, #header_title {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
 #document_wrap {
 	border: 0;
 }
 
 #invoice #doc .doc_total, #invoice .button.primary_button {
 	background-color: #8dc63f;
+}
+
+#line_items_totals b, #doc dt {
+	font-weight: 700;
+}
+
+#doc dd {
+	font-weight: 400;
+	/*border-left-color: #edeeee;*/
+}
+
+#invoice #line_total {
+	color: #8dc63f;
+	font-weight: 700;
+}
+
+#doc_notes {
+	margin-bottom: 60px;
 }
