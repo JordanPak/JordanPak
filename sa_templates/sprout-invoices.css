@@ -44,6 +44,14 @@ h1, h2, h3, h4, #header_title {
 	border: 0;
 }
 
+#header_logo {
+	margin-bottom: 60px;
+}
+
+#logo img {
+	max-height: 90px;
+}
+
 #invoice #doc .doc_total, #invoice .button.primary_button {
 	background-color: #8dc63f;
 }
