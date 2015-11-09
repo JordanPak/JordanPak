@@ -1,0 +1,183 @@
+/* JordanPak - Custom Sprout Invocies CSS */
+
+/*
+	COLORS
+	------
+
+	$primary:			#8dc63f		JP Green
+	$primary-dark:		#67a227
+	$primary-darker:	#548420
+	$primary-darkest:	#3c6a0a
+
+	$secondary-dark:	#171616
+	$secondary:			#201c1d		JP Gray
+	$secondary-mid:		#797a7d		JP Dark Gray
+	$secondary-mid-l	#edeeee
+	$secondary-light:	#f7f7f7		JP Light Gray
+
+	FONTS
+	-----
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+
+*/
+
+body {
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #f5f5f5;
+}
+
+#outer_doc_wrap {
+	padding-bottom: 0;
+}
+
+#doc_header_wrap, .stuck #doc_header_wrap {
+	background-color: #201c1d;
+	border: 0;
+	border-top: 5px solid #000;
+	border-bottom: 5px solid #8dc63f;
+	color: #fff;
+}
+
+h1, h2, h3, h4, #header_title, p.title {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#header_title {
+	padding: 25px 40px;
+}
+
+.doc_type {
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+p.title {
+	margin-top: 12px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+#document_wrap {
+	border: 0;
+}
+
+#header_wrap {
+	margin-bottom: 0px;
+}
+
+#header_logo {
+	margin-bottom: 60px;
+}
+
+#logo img {
+	max-height: 90px;
+}
+
+#invoice #doc .doc_total, #invoice .button.primary_button {
+	background-color: #8dc63f;
+}
+
+#doc .doc_total, .button.primary_button {
+	background-color: #8dc63f;
+}
+
+#invoice .button, .button, .button.primary_button {
+	background-color: #8dc63f;
+	padding: 9px 16px 11px 16px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	-moz-box-shadow: inset 0 -3px #67a227;
+	box-shadow: inset 0 -3px #67a227;
+	transition: all ease-in-out 100ms;
+}
+
+#invoice .button:hover, #invoice .button.primary_button:hover {
+	background: #67a227;
+	-moz-box-shadow: inset 0 2px #548420;
+	box-shadow: inset 0 2px #548420;
+}
+
+.button[href="#decline"] {
+	margin-left: 6px;
+}
+
+#line_items_totals b, #doc dt {
+	font-weight: 700;
+}
+
+#doc dd {
+	font-weight: 400;
+	/*border-left-color: #edeeee;*/
+}
+
+.line_items_header {
+	margin-top: 60px;
+	margin-bottom: 4px;
+	border-bottom: 2px solid #201c1d;
+}
+
+.line_item {
+	margin-bottom: 0;
+	padding: 24px 0;
+	min-height: 0;
+	border-bottom: 1px solid #edeeee;
+}
+
+.line_item .column {
+	padding: 0;
+	background-color: none;
+}
+
+#items .line_item .column {
+	background: none;
+}
+
+.line_items_header .line_item .column {
+	padding-bottom: 10px;
+}
+
+#line_items_footer {
+	margin-top: 40px;
+	border: 0;
+}
+
+#line_items_totals {
+	padding: 10px 0 0 20px;
+	border-left: 2px solid #edeeee;
+}
+
+#invoice #line_total, #line_total {
+	color: #8dc63f;
+	font-weight: 700;
+}
+
+div#doc_notes {
+	margin-bottom: 60px;
+}
+
+#footer_wrap {
+	border-top: 5px solid #edeeee;
+}
+
+#doc_history {
+	display: none;
+}
+
+.dropdown .si-dropdown-menu, .dropdown .dropdown-panel {
+	border-radius: 0px;
+}
+
+.dropdown .si-dropdown-menu LI > A:hover, .dropdown .si-dropdown-menu LABEL:hover {
+	background-color: #8dc63f;
+}
+
+.sa-form input[type="text"], .sa-form input[type="password"], .sa-form input[type="email"], .sa-form input[type="url"], .sa-form input[type="date"], .sa-form input[type="month"], .sa-form input[type="time"], .sa-form input[type="datetime"], .sa-form input[type="datetime-local"], .sa-form input[type="week"], .sa-form input[type="number"], .sa-form input[type="search"], .sa-form input[type="tel"], .sa-form input[type="color"], .sa-form select, .sa-form textarea {
+	border-radius: 0;
+	box-shadow: none;
+}

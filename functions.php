@@ -266,3 +266,13 @@ function jpak_login_stylesheet() {
     wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
 }
 add_action( 'login_enqueue_scripts', 'jpak_login_stylesheet' );
+
+
+/**
+ * Hook into si_head hook and add Roboto Font
+ *
+ */
+function jpak_si_add_google_font() {
+	echo '<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,700italic,500,500italic|Roboto+Condensed:400,700" rel="stylesheet" type="text/css">';
+}
+add_action( 'si_head', 'jpak_si_add_google_font' );
