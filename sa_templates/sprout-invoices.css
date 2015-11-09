@@ -29,15 +29,20 @@ body {
 	background-color: #f5f5f5;
 }
 
-#doc_header_wrap {
+#doc_header_wrap, .stuck #doc_header_wrap {
 	background-color: #201c1d;
 	border: 0;
 	border-top: 5px solid #000;
+	border-bottom: 5px solid #8dc63f;
 	color: #fff;
 }
 
 h1, h2, h3, h4, #header_title {
 	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#header_title {
+	padding: 25px 40px;
 }
 
 #document_wrap {
@@ -56,6 +61,22 @@ h1, h2, h3, h4, #header_title {
 	background-color: #8dc63f;
 }
 
+#invoice .button {
+	background-color: #8dc63f;
+	padding: 9px 16px 11px 16px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	-moz-box-shadow: inset 0 -3px #67a227;
+	box-shadow: inset 0 -3px #67a227;
+	transition: all ease-in-out 100ms;
+}
+
+#invoice .button:hover, #invoice .button.primary_button:hover {
+	background: #67a227;
+	-moz-box-shadow: inset 0 2px #548420;
+	box-shadow: inset 0 2px #548420;
+}
+
 #line_items_totals b, #doc dt {
 	font-weight: 700;
 }
@@ -72,4 +93,9 @@ h1, h2, h3, h4, #header_title {
 
 #doc_notes {
 	margin-bottom: 60px;
+}
+
+.sa-form input[type="text"], .sa-form input[type="password"], .sa-form input[type="email"], .sa-form input[type="url"], .sa-form input[type="date"], .sa-form input[type="month"], .sa-form input[type="time"], .sa-form input[type="datetime"], .sa-form input[type="datetime-local"], .sa-form input[type="week"], .sa-form input[type="number"], .sa-form input[type="search"], .sa-form input[type="tel"], .sa-form input[type="color"], .sa-form select, .sa-form textarea {
+	border-radius: 0;
+	box-shadow: none;
 }
