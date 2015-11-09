@@ -147,6 +147,14 @@ div#doc_notes {
 	display: none;
 }
 
+.dropdown .si-dropdown-menu, .dropdown .dropdown-panel {
+	border-radius: 0px;
+}
+
+.dropdown .si-dropdown-menu LI > A:hover, .dropdown .si-dropdown-menu LABEL:hover {
+	background-color: #8dc63f;
+}
+
 .sa-form input[type="text"], .sa-form input[type="password"], .sa-form input[type="email"], .sa-form input[type="url"], .sa-form input[type="date"], .sa-form input[type="month"], .sa-form input[type="time"], .sa-form input[type="datetime"], .sa-form input[type="datetime-local"], .sa-form input[type="week"], .sa-form input[type="number"], .sa-form input[type="search"], .sa-form input[type="tel"], .sa-form input[type="color"], .sa-form select, .sa-form textarea {
 	border-radius: 0;
 	box-shadow: none;
