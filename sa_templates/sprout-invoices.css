@@ -41,12 +41,26 @@ body {
 	color: #fff;
 }
 
-h1, h2, h3, h4, #header_title {
+h1, h2, h3, h4, #header_title, p.title {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
 #header_title {
 	padding: 25px 40px;
+}
+
+.doc_type {
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+p.title {
+	margin-top: 12px;
+	font-weight: 700;
+	font-size: 20px;
 }
 
 #document_wrap {
