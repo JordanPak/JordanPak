@@ -83,7 +83,11 @@ p.title {
 	background-color: #8dc63f;
 }
 
-#invoice .button {
+#doc .doc_total, .button.primary_button {
+	background-color: #8dc63f;
+}
+
+#invoice .button, .button, .button.primary_button {
 	background-color: #8dc63f;
 	padding: 9px 16px 11px 16px;
 	text-transform: uppercase;
@@ -97,6 +101,10 @@ p.title {
 	background: #67a227;
 	-moz-box-shadow: inset 0 2px #548420;
 	box-shadow: inset 0 2px #548420;
+}
+
+.button[href="#decline"] {
+	margin-left: 6px;
 }
 
 #line_items_totals b, #doc dt {
@@ -144,7 +152,7 @@ p.title {
 	border-left: 2px solid #edeeee;
 }
 
-#invoice #line_total {
+#invoice #line_total, #line_total {
 	color: #8dc63f;
 	font-weight: 700;
 }
