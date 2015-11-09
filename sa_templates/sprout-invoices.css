@@ -1,0 +1,21 @@
+/* JordanPak - Custom Sprout Invocies CSS */
+
+/*
+	COLORS
+	------
+
+	$primary:			#8dc63f		JP Green
+	$primary-dark:		#67a227
+	$primary-darker:	#548420
+	$primary-darkest:	#3c6a0a
+
+	$secondary-dark:	#171616
+	$secondary:			#201c1d		JP Gray
+	$secondary-mid:		#797a7d		JP Dark Gray
+	$secondary-light:	#f7f7f7		JP Light Gray
+
+*/
+
+#invoice #doc .doc_total, #invoice .button.primary_button {
+	background-color: #8dc63f;
+}
