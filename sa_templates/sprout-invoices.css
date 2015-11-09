@@ -14,10 +14,17 @@
 	$secondary-mid:		#797a7d		JP Dark Gray
 	$secondary-light:	#f7f7f7		JP Light Gray
 
+	FONTS
+	-----
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+
 */
 
 body {
 	color: #333;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 
 #invoice #doc .doc_total, #invoice .button.primary_button {
