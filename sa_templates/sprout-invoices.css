@@ -177,6 +177,22 @@ div#doc_notes {
 	background-color: #8dc63f;
 }
 
+#status {
+	padding: 2px 18px;
+	color: #8dc63f;
+	border-color: #8dc63f;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 68px;
+}
+
+#status.void {
+	padding: 2px 10px;
+	font-size: 32px;
+	color: #201c1d;
+	border-width: 4px;
+	border-color: #201c1d;
+}
+
 .sa-form input[type="text"], .sa-form input[type="password"], .sa-form input[type="email"], .sa-form input[type="url"], .sa-form input[type="date"], .sa-form input[type="month"], .sa-form input[type="time"], .sa-form input[type="datetime"], .sa-form input[type="datetime-local"], .sa-form input[type="week"], .sa-form input[type="number"], .sa-form input[type="search"], .sa-form input[type="tel"], .sa-form input[type="color"], .sa-form select, .sa-form textarea {
 	border-radius: 0;
 	box-shadow: none;
