@@ -16,6 +16,10 @@
 
 */
 
+body {
+	color: #333;
+}
+
 #invoice #doc .doc_total, #invoice .button.primary_button {
 	background-color: #8dc63f;
 }
