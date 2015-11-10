@@ -29,6 +29,10 @@ body {
 	background-color: #f5f5f5;
 }
 
+p, pre, #items .line_item .column {
+	line-height: 22px;
+}
+
 a {
 	border-bottom: 1px solid #8dc63f;
 	font-style: italic;
@@ -155,7 +159,7 @@ address {
 
 .line_item {
 	margin-bottom: 0;
-	padding: 24px 0;
+	padding: 22px 0;
 	min-height: 0;
 	border-bottom: 1px solid #edeeee;
 }
@@ -170,7 +174,7 @@ address {
 }
 
 .line_items_header .line_item .column {
-	padding-bottom: 10px;
+	padding-bottom: 4px;
 }
 
 #line_items_footer {
