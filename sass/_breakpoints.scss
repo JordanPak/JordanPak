@@ -7,28 +7,27 @@
 //  VARIABLES  //
 //=============//
 
-//  BREAKPOINT 			Width 		DESCRIPTION
+//  BREAKPOINT 			WIDTH		DESCRIPTION
 //  ----------------------------------------------------------------------------
-	$bp-hd-plus:		1920px;
-    $bp-xl:				1500px;
-    $bp-lg:				1260px;
-    $bp-med-lg:			1080px;
-    $bp-med:			1024px;
-    $bp-sm:				860px;
-    $bp-xs:				600px;
-    $bp-xxs:			460px;
+	$bp-hd-plus:		1920px;		//  Min. width used below
+	$bp-xl:				1500px;
+	$bp-lg:				1260px;
+	$bp-med-lg:			1080px;
+	$bp-med:			1024px;
+	$bp-sm:				860px;
+	$bp-xs:				600px;
+	$bp-xxs:			460px;
 
 
-//  WRAPPER 			WIDTH 		DESCRIPTION
+//  WRAPPER				WIDTH 		DESCRIPTION
 //  ----------------------------------------------------------------------------
-    $bp-xl-wrap:        1200px;		// At 1500px, wrapper will drop to 1200px
-	$bp-lg-wrap:        1024px;
-    $bp-med-lg-wrap:    960px;
-    $bp-med-wrap:       800px;
-    $bp-sm-wrap:        90%;
-	$bp-xs-wrap:		90%;
-	$bp-xxs-wrap:		95%;		// At 460px, wrapper will be 90% forever
-
+    $bp-xl-wrap:		1200px;		// At 1500px, wrapper will drop to 1200px
+    $bp-lg-wrap:		1024px;
+    $bp-med-lg-wrap:	960px;
+    $bp-med-wrap:		800px;
+    $bp-sm-wrap:		90%;
+    $bp-xs-wrap:		90%;
+    $bp-xxs-wrap:		95%;		// At 460px, wrapper will be 90% forever
 
 
 //=========//
