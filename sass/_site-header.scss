@@ -65,6 +65,10 @@
     background-size: contain;
     background-position: top left;
 
+	@include retina-image() {
+		background-image: url('images/logo-huge.png');
+	}
+
     @include breakpoint( sm ) {
         height: 130px;
 		background-image: url('images/logo-huge.png');

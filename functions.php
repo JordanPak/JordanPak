@@ -166,7 +166,7 @@ genesis_register_sidebar( array(
 genesis_register_sidebar( array(
     'id'            => 'featured-stuff',
     'name'          => __( 'Featured WP Stuff', 'jpak' ),
-    'description'   => __( '3-Column Area for Text Widgets', 'jpak' ),
+    'description'   => __( '3-Column Area for Text Widgets. Use <div class="wordpress-stuff"> with <h3> and <p> for middle label.', 'jpak' ),
 ) );
 
 genesis_register_sidebar( array(
