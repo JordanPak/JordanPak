@@ -1733,6 +1733,9 @@ h4 {
       margin-bottom: 40px;
       padding-bottom: 40px; } }
 
+a:active, a:hover, a:focus {
+  outline: none; }
+
 .content .entry a {
   color: inherit;
   border-bottom: 2px solid #8dc63f; }

@@ -88,6 +88,16 @@ h4 {
 } // .page & .single Entry Headers
 
 
+//-- GLOBAL ANCHORS --//
+a {
+
+	&:active, &:hover, &:focus {
+		outline: none;
+	}
+
+} // a
+
+
 //-- INLINE ANCHORS --//
 .content .entry {
 
