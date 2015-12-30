@@ -2482,7 +2482,8 @@ p.comment-meta {
   background: url("images/hero-bg.jpg") no-repeat top center #8dc63f;
   color: #FFFFFF;
   text-align: center;
-  text-shadow: 0 0 10px #67a227, 0 1px 3px #67a227; }
+  text-shadow: 0 0 10px #67a227, 0 1px 3px #67a227;
+  cursor: default; }
   #home-hero h2 {
     font-size: 60px;
     font-family: "Roboto", sans-serif;
