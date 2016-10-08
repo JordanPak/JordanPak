@@ -48,11 +48,16 @@ a:hover {
 }
 
 #doc_header_wrap, .stuck #doc_header_wrap {
+	width: 880px;
 	background-color: #201c1d;
 	border: 0;
 	border-top: 5px solid #000;
 	border-bottom: 5px solid #8dc63f;
 	color: #fff;
+}
+
+#doc_actions {
+	margin-top: 2px;
 }
 
 h1, h2, h3, h4, #header_title, p.title {
