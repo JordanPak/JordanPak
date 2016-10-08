@@ -1,15 +1,49 @@
 body.login {
 	background: url('images/hero-bg.jpg') no-repeat top center #8dc63f;
+	background-size: cover;
+}
+
+.login h1 {
+	margin-bottom: 20px;
 }
 
 .login h1 a {
-	background-image: url('images/site-login-logo.png');
+	margin-bottom: 0;
 	padding-bottom: 0px;
-	width: 130px;
-	height: 120px;
-	background-size: 130px;
+	width: 100%;
+	background-image: url('images/logo.png');
+	background-size: contain;
+}
+
+.login form {
+	margin-top: 0;
+	border-top: 5px solid #333333;
+}
+
+.login #nav {
+	background: #333333;
 }
 
 body.login div#login p#nav a, body.login div#login p#backtoblog a {
 	color: white;
+}
+
+.wp-core-ui .button-primary {
+	background: #8dc63f;
+	border-color: #74b42c #74b42c #74b42c;
+	box-shadow: 0 1px 0 #74b42c;
+	text-shadow: 0 -1px 1px #74b42c,1px 0 1px #74b42c,0 1px 1px #74b42c,-1px 0 1px #74b42c;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+	background: #74b42c;
+	border-color: #508c0d;
+}
+
+.wp-core-ui .button-primary.active, .wp-core-ui .button-primary.active:focus, .wp-core-ui .button-primary.active:hover, .wp-core-ui .button-primary:active {
+	box-shadow: inset 0 2px 0 #508c0d;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary:focus {
+	box-shadow: 0 1px 0 #74b42c, 0 0 2px 1px #8dc63f;
 }
