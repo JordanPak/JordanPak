@@ -173,6 +173,30 @@ address {
 	background: none;
 }
 
+#items .line_item ul {
+	margin-bottom: 40px;
+	padding-left: 35px;
+	list-style-type: none;
+}
+
+#items .line_item ul li {
+	position: relative;
+	margin: 5px 0 15px 0;
+}
+
+#items .line_item ul li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 7px;
+	left: -16px;
+	border-radius: 9999px;
+	background: #8dc63f;
+	width: 7px;
+	height: 7px;
+}
+
+
 .line_items_header .line_item .column {
 	padding-bottom: 4px;
 }
