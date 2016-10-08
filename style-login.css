@@ -3,6 +3,20 @@ body.login {
 	background-size: cover;
 }
 
+body.login::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 30%;
+	background: linear-gradient( to bottom, #8dc63f, rgba( 255,255,255,0 ) );
+}
+
+#login {
+	position: relative;
+	z-index: 1;
+}
+
 .login h1 {
 	margin-bottom: 20px;
 }
@@ -18,10 +32,6 @@ body.login {
 .login form {
 	margin-top: 0;
 	border-top: 5px solid #333333;
-}
-
-.login #nav {
-	background: #333333;
 }
 
 body.login div#login p#nav a, body.login div#login p#backtoblog a {
