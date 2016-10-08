@@ -33,7 +33,7 @@ p, pre, #items .line_item .column {
 	line-height: 22px;
 }
 
-a {
+#outer_doc_wrap a {
 	border-bottom: 1px solid #8dc63f;
 	font-style: italic;
 	transition: all ease-in-out 200ms;
@@ -48,11 +48,16 @@ a:hover {
 }
 
 #doc_header_wrap, .stuck #doc_header_wrap {
+	width: 880px;
 	background-color: #201c1d;
 	border: 0;
 	border-top: 5px solid #000;
 	border-bottom: 5px solid #8dc63f;
 	color: #fff;
+}
+
+#doc_actions {
+	margin-top: 2px;
 }
 
 h1, h2, h3, h4, #header_title, p.title {
@@ -172,6 +177,30 @@ address {
 #items .line_item .column {
 	background: none;
 }
+
+#items .line_item ul {
+	margin-bottom: 40px;
+	padding-left: 35px;
+	list-style-type: none;
+}
+
+#items .line_item ul li {
+	position: relative;
+	margin: 5px 0 15px 0;
+}
+
+#items .line_item ul li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 7px;
+	left: -16px;
+	border-radius: 9999px;
+	background: #8dc63f;
+	width: 7px;
+	height: 7px;
+}
+
 
 .line_items_header .line_item .column {
 	padding-bottom: 4px;

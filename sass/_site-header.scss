@@ -3,6 +3,8 @@
 //===========================//
 
 .site-header {
+    position: relative;
+    z-index: 2;
     height: $site-header-height-large;
     min-height: 0;
     background: $secondary;
