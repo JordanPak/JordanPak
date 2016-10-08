@@ -11,14 +11,39 @@ body {
 
 //-- MINI-HERO --//
 #mini-hero {
+    position: relative;
     display: block;
     width: 100%;
     height: $mini-hero-height;
-    background: url('images/hero-bg.jpg') no-repeat top center $primary;
+    background: url('images/hero-bg-3.jpg') no-repeat top center $primary;
+    background-size: cover;
+
+    &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+
+    &:before {
+        top: 0;
+        height: 60px;
+        background: linear-gradient( to bottom, rgba( $primary, 0.7 ), $transparent );
+    }
+    &:after {
+        bottom: 0;
+        height: 100px;
+        background: linear-gradient( to bottom, $transparent, rgba( $primary, 0.8 ) );
+    }
 } // #mini-hero
 
 
 //-- SITE-INNER & WRAP --//
+.site-inner {
+    position: relative;
+}
+
 .site-inner, .wrap {
     padding: 0;
 
