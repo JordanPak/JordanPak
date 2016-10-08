@@ -3,12 +3,38 @@
 //=================================//
 
 #home-hero {
-	padding: 150px 0 130px 0;
-    background: url('images/hero-bg.jpg') no-repeat top center $primary;
+    position: relative;
+	padding: 180px 0 160px 0;
+    background: url('images/hero-bg-3.jpg') no-repeat top center $primary;
+    background-size: cover;
     color: $white;
     text-align: center;
     text-shadow: 0 0 10px $primary-dark, 0 1px 3px $primary-dark;
 	cursor: default;
+
+    &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+
+    &:before {
+        top: 0;
+        height: 90px;
+        background: linear-gradient( to bottom, $primary, $transparent );
+    }
+    &:after {
+        bottom: 0;
+        height: 130px;
+        background: linear-gradient( to bottom, $transparent, #6cad14 );
+    }
+
+    > div {
+        position: relative;
+        z-index: 1;
+    }
 
     h2 {
         font-size: 60px;
