@@ -33,7 +33,7 @@ p, pre, #items .line_item .column {
 	line-height: 22px;
 }
 
-#outer_doc_wrap a {
+#doc_line_items a {
 	border-bottom: 1px solid #8dc63f;
 	font-style: italic;
 	transition: all ease-in-out 200ms;
